@@ -218,7 +218,7 @@ namespace munin_node_Service
 
 			command = command.TrimEnd(new[] {'\n'});
 
-			Console.WriteLine("Got command: {0}", command);
+			Log(String.Format("Got command: {0}", command));
 			string cmd = command;
 			string arg = null;
 
@@ -249,7 +249,7 @@ namespace munin_node_Service
 						Send("# Unknown service\n.\n", answerSocket);
 						break;
 					}
-					Send(plugin.GetConfig(), answerSocket);
+					Send(FormatForMunin(plugin.GetConfig()), answerSocket);
 					break;
 				case "fetch":
 					// Return values for a specific plugin
@@ -259,7 +259,7 @@ namespace munin_node_Service
 						Send("# Unknown service\n.\n", answerSocket);
 						break;
 					}
-					Send(plugin.GetValues(), answerSocket);
+					Send(FormatForMunin(plugin.GetValues()), answerSocket);
 					break;
 				case "nodes":
 					// Return alle nodes this munin-node queries (only this node)
@@ -277,6 +277,16 @@ namespace munin_node_Service
 					break;
 			}
 			return true;
+		}
+
+		private string FormatForMunin(string input)
+		{
+			if (input.EndsWith("\n") && !input.EndsWith("\n.\n"))
+				return input + ".\n";
+			if (!input.EndsWith("\n") && !input.EndsWith("\n.\n"))
+				return input + "\n.\n";
+
+			return input;
 		}
 	}
 }

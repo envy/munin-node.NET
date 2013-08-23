@@ -31,7 +31,7 @@ namespace UptimePlugin
 	    public override string GetValues()
 	    {
 		    var ts = TimeSpan.FromSeconds(_performanceCounter.NextValue());
-		    return String.Format("uptime.value {0}\n.\n", ts.TotalDays.ToString("0.00", CultureInfo.InvariantCulture));
+			return String.Format("uptime.value {0}\n.\n", DoubleToString(ts.TotalDays));
 	    }
 
 	    public override string GetName()

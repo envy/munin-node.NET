@@ -7033,3 +7033,6415 @@ Bytes Received By Disconnected Clients
 2426
 Bytes Transmitted By Disconnected Clients
 
+
+
+
+1
+1847
+2
+System
+4
+Arbeitsspeicher
+6
+Prozessorzeit (%)
+10
+Lesevorgänge/s
+12
+Schreibvorgänge/s
+14
+Dateisteuervorgänge/s
+16
+Bytes gelesen/s
+18
+Bytes geschrieben/s
+20
+Dateisteuerbytes/s
+24
+Verfügbare Bytes
+26
+Zugesicherte Bytes
+28
+Seitenfehler/s
+30
+Zusagegrenze
+32
+Schreibkopien/s
+34
+Wechselfehler/s
+36
+Cachefehler/s
+38
+Nullforderungsfehler/s
+40
+Seiten/s
+42
+Seitenlesevorgänge/s
+44
+Prozessor-Warteschlangenlänge
+46
+Threadstatus
+48
+Geänderte Seiten/s
+50
+Seiten-Schreibvorgänge/s
+52
+Suchdienst
+54
+Serverankündigungen/s
+56
+Auslagerungsseiten (Bytes)
+58
+Nicht-Auslagerungsseiten (Bytes)
+60
+Auslagerungsseiten reserviert
+64
+Nichtauslagerungsseiten reserviert
+66
+Auslagerungsseiten: Residente Bytes
+68
+Systemcode: Gesamtanzahl Bytes
+70
+Systemcode: Residente Bytes
+72
+Systemtreiber: Gesamtanzahl Bytes
+74
+Systemtreiber: Residente Bytes
+76
+Systemcache: Residente Bytes
+78
+Domänenankündigungen/s
+80
+Wahlpakete/s
+82
+Mailslot-Schreibvorgänge/s
+84
+Serverlistenanforderungen/s
+86
+Cache
+88
+Datenzuordnungen/s
+90
+Datenzuordnungen/s (sync.)
+92
+Datenzuordnungen/s (async.)
+94
+Datenzuordnungstreffer (%)
+96
+Datenzuordnung - Festsetzungen/s
+98
+Festsetzung - Lesevorgänge/s
+100
+Festsetzung - Lesevorgänge/s (sync.)
+102
+Festsetzung - Lesevorgänge/s (async.)
+104
+Festsetzung - Lesetreffer (%)
+106
+Kopieren - Lesevorgänge/s
+108
+Kopieren - Lesevorgänge/s (sync.)
+110
+Kopieren - Lesevorgänge/s (async.)
+112
+Kopieren - Lesetreffer (%)
+114
+MDL-Lesevorgänge/s
+116
+MDL-Lesevorgänge/s (sync.)
+118
+MDL-Lesevorgänge/s (async.)
+120
+MDL-Lesetreffer (%)
+122
+Vorauslesevorgänge/s
+124
+Schnelle Lesevorgänge/s
+126
+Schnelle Lesevorgänge/s (sync.)
+128
+Schnelle Lesevorgänge/s (async.)
+130
+Schnelllesen-Ressourcefehltreffer/s
+132
+Schnelllesen nicht möglich/s
+134
+Verzögertes Schreiben - Leerungen/s
+136
+Verzögertes Schreiben - Seiten/s
+138
+Datenleerungen/s
+140
+Datenleerung - Seiten/s
+142
+Benutzerzeit (%)
+144
+Privilegierte Zeit (%)
+146
+Kontextwechsel/s
+148
+Interrupts/s
+150
+Systemaufrufe/s
+152
+Ebene 1 Auffüllen des TLB/s
+154
+Ebene 2 Auffüllen des TLB/s
+156
+Serveraufzählungen/s
+158
+Domänenaufzählungen/s
+160
+Sonstige Aufzählungen/s
+162
+Nicht erhaltene Serverankündigungen
+164
+Nicht erhaltene Mailslotdatagramme
+166
+Nicht verarbeitete Serverlistenanforderungen
+168
+Zuordnungsfehler bei Serverankündigungen/s
+170
+Mailslot-Zuordnungsfehler
+172
+Virtuelle Bytes (max.)
+174
+Virtuelle Größe
+178
+Arbeitsseiten (max.)
+180
+Arbeitsseiten
+182
+Auslagerungsdatei (max. Bytes)
+184
+Auslagerungsdatei (Bytes)
+186
+Private Bytes
+188
+Gesamtanzahl Ankündigungen/s
+190
+Gesamtanzahl Aufzählungen/s
+198
+Aktuelle Warteschlangenlänge
+200
+Zeit (%)
+202
+Lesezeit (%)
+204
+Schreibzeit (%)
+206
+Mittlere Sek./Übertragung
+208
+Mittlere Sek./Lesevorgänge
+210
+Mittlere Sek./Schreibvorgänge
+212
+Übertragungen/s
+214
+Lesevorgänge/s
+216
+Schreibvorgänge/s
+218
+Bytes/s
+220
+Bytes gelesen/s
+222
+Bytes geschrieben/s
+224
+Mittlere Bytes/Übertragung
+226
+Mittlere Bytes/Lesevorgang
+228
+Mittlere Bytes/Schreibvorgang
+230
+Prozess
+232
+Thread
+234
+Physikalischer Datenträger
+236
+Logischer Datenträger
+238
+Prozessor
+240
+Gesamtprozessorzeit (%)
+242
+Gesamtbenutzerzeit (%)
+244
+Gesamte privilegierte Zeit (%)
+246
+Gesamtanzahl Interrupts/s
+248
+Prozesse
+250
+Threads
+252
+Ereignisse
+254
+Semaphore
+256
+Mutexe
+258
+Abschnitte
+260
+Objekte
+262
+Redirectordienst
+264
+Empfangene Bytes/s
+266
+Empfangene Pakete/s
+268
+Ausgelagerte Bytes gelesen/s
+270
+Nicht-ausgelagerte Bytes gelesen/s
+272
+Cachebytes gelesen/s
+274
+Netzwerkbytes gelesen/s
+276
+Übertragene Bytes/s
+278
+Übertragene Pakete/s
+280
+Ausgelagerte Bytes geschrieben/s
+282
+Nicht-ausgelagerte Bytes geschrieben/s
+284
+Cachebytes geschrieben/s
+286
+Netzwerkbytes geschrieben/s
+288
+Lesevorgänge/s
+290
+Zufällige Lesevorgänge/s
+292
+Pakete gelesen/s
+294
+Große Pakete gelesen/s
+296
+Kleine Pakete gelesen/s
+298
+Schreibvorgänge/s
+300
+Zufällige Schreibvorgänge/s
+302
+Pakete geschrieben/s
+304
+Große Pakete geschrieben/s
+306
+Kleine Pakete geschrieben/s
+308
+Lesevorgänge verweigert/s
+310
+Schreibvorgänge verweigert/s
+312
+Netzwerkfehler/s
+314
+Serversitzungen
+316
+Erneute Serververbindungen
+318
+Kernverbindungen
+320
+Lan Manager 2.0-Verbindungen
+322
+Lan Manager 2.1-Verbindungen
+324
+Windows-Verbindungen
+326
+Servertrennungen
+328
+Nicht reagierende Serversitzungen
+330
+Server
+336
+Threadverzögerungsursache
+340
+Sitzungen mit Zeitüberschreitung
+342
+Sitzungen mit zu vielen Fehlern
+344
+Abgemeldete Sitzungen
+346
+Getrennte Sitzungen
+348
+Anmeldefehler
+350
+Zugriffsberechtigungsfehler
+352
+Zugriffsfehler
+354
+Systemfehler
+356
+Abgelehnte Sperranforderungen
+358
+Nicht genügend Arbeitselemente
+360
+Gesamtanzahl geöffneter Dateien
+362
+Geöffnete Dateien
+366
+Offene Suchvorgänge
+370
+Nicht-Auslagerungsseitenfehler
+372
+Nicht-Auslagerungsseiten (max.)
+376
+Auslagerungsseitenfehler
+378
+Auslagerungsseiten (max.)
+388
+Gesamtanzahl Bytes/s
+392
+Aktuelle Befehle
+398
+NWLink-NetBIOS
+400
+Pakete/s
+404
+Kontextblöcke in Warteschlange/s
+406
+Dateivorgänge/s
+408
+Freier Speicherplatz (%)
+410
+MB frei
+412
+Geöffnete Verbindungen
+414
+Verbindungen ohne Wiederholungen
+416
+Verbindungen mit Wiederholungen
+418
+Lokale Trennungen
+420
+Remotetrennungen
+422
+Verbindungsfehler
+424
+Adapterfehler
+426
+Verbindung mit Zeitüberschreitung
+428
+Abgebrochene Verbindungen
+430
+Remote-Ressourcenfehler
+432
+Lokaler Ressourcenfehler
+434
+Fehler, nicht gefunden
+436
+Fehler, keine Reaktion
+438
+Datagramme/s
+440
+Datagrammbytes/s
+442
+Datagramme gesendet/s
+444
+Datagrammbytes gesendet/s
+446
+Datagramme empfangen/s
+448
+Datagrammbytes empfangen/s
+452
+Pakete gesendet/s
+456
+Rahmen/s
+458
+Rahmenbytes/s
+460
+Rahmen gesendet/s
+462
+Rahmenbytes gesendet/s
+464
+Rahmen empfangen/s
+466
+Rahmenbytes empfangen/s
+468
+Rahmen erneut gesendet/s
+470
+Rahmenbytes erneut gesendet/s
+472
+Rahmen abgelehnt/s
+474
+Rahmenbytes abgelehnt/s
+476
+Reaktionen verfallen
+478
+Bestätigung verfallen
+480
+Maximales Sendefenster
+482
+Durchschnittliches Sendefenster
+484
+Piggyback-Bestätigung in Warteschlange/s
+486
+Piggyback-Bestätigung: Zeitüberschreitung
+488
+NWLink-IPX
+490
+NWLink-SPX
+492
+NetBEUI
+494
+NetBEUI-Ressource
+496
+Maximal verwendet
+498
+Durchschnittlich verwendet
+500
+Zeiten erschöpft
+502
+NBT-Verbindung
+506
+Bytes gesendet/s
+508
+Gesamtanzahl Bytes/s
+510
+Netzwerkschnittstelle
+512
+Bytes/s
+520
+Aktuelle Bandbreite
+524
+Unicastpakete empfangen/s
+526
+Nicht-Unicastpakete empfangen/s
+528
+Empfangene Pakete, verworfen
+530
+Empfangene Pakete, Fehler
+532
+Empfangene Pakete, unbekannt
+536
+Unicastpakete gesendet/s
+538
+Nicht-Unicastpakete gesendet/s
+540
+Ausgehende Pakete, verworfen
+542
+Ausgehende Pakete, Fehler
+544
+Ausgabewarteschlangenlänge
+546
+IPv4
+548
+IPv6
+552
+Erhaltene Datagramme, Vorspannfehler
+554
+Erhaltene Datagramme, Adressfehler
+556
+Weitergeleitete Datagramme/s
+558
+Empfangene Datagramme mit unbekanntem Protokoll
+560
+Empfangene Datagramme verworfen
+562
+Empfangene Datagramme übergeben/s
+566
+Ausgehende Datagramme verworfen
+568
+Ausgehende Datagramme ohne Route
+570
+Fragmente empfangen/s
+572
+Fragmente zusammengesetzt/s
+574
+Fragment-Zusammensetzungsfehler
+576
+Fragmentierte Datagramme/s
+578
+Fragmentierungsfehler
+580
+Erzeugte Fragmente/s
+582
+ICMP
+584
+Meldungen/s
+586
+Meldungen empfangen/s
+588
+Meldungen empfangen, Fehler
+590
+Empfangene ""Ziel nicht erreichbar""-Meldung
+592
+Empfangene Zeitüberschreitungsmeldungen
+594
+Empfangene Parameterproblemmeldungen
+596
+Empfangene Quelldrosselungsmeldungen
+598
+Empfangene umgeleitete Meldungen/s
+600
+Empfangene Echomeldungen/s
+602
+Empfangene Echoantwortmeldungen/s
+604
+Empfangene Zeiteintragsmeldungen/s
+606
+Empfangene Zeiteintragsantwortmeldungen/s
+608
+Empfangene Adressmaskenmeldungen
+610
+Empfangene Adressmaskenantwortmeldungen
+612
+Meldungen gesendet/s
+614
+Meldungen gesendet, Fehler
+616
+Gesendete ""Ziel nicht erreichbar""-Meldung
+618
+Gesendete Zeitüberschreitungsmeldungen
+620
+Gesendete Parameterproblemmeldungen
+622
+Gesendete Quelldrosselungsmeldungen
+624
+Gesendete umgeleitete Meldungen/s
+626
+Gesendete Echomeldungen/s
+628
+Gesendete Echoantwortmeldungen/s
+630
+Gesendete Zeiteintragsmeldungen/s
+632
+Gesendete Zeiteintragsantwortmeldungen/s
+634
+Gesendete Adressmaskenmeldungen
+636
+Gesendete Adressmaskenantwortmeldungen
+638
+TCPv4
+640
+Segmente/s
+642
+Hergestellte Verbindungen
+644
+Aktive Verbindungen
+646
+Passive Verbindungen
+648
+Verbindungsfehler
+650
+Zurückgesetzte Verbindungen
+652
+Segmente empfangen/s
+654
+Segmente gesendet/s
+656
+Erneut übertragene Segmente/s
+658
+UDPv4
+660
+Gesamte DPC-Zeit (%)
+662
+Gesamte Interruptzeit (%)
+664
+Erhaltene Datagramme, kein Port/s
+666
+Erhaltene Datagramme, Fehler
+670
+Speicherplatz
+672
+Zuordungsfehler
+674
+Systembetriebszeit
+676
+Systemhandleanzahl
+678
+Freie Seitentabelleneinträge
+680
+Threadanzahl
+682
+Basispriorität
+684
+Verstrichene Zeit
+686
+Ausrichtungskorrekturen/s
+688
+Ausnahmeverteilungen/s
+690
+Gleitkommaemulationen/s
+692
+Anmeldungen/s
+694
+Aktuelle Priorität
+696
+DPC-Zeit (%)
+698
+Interruptzeit (%)
+700
+Auslagerungsdatei
+702
+Belegung (%)
+704
+Maximale Belegung (%)
+706
+Startadresse
+708
+Benutzer-PC
+710
+Zugeordneter Speicherplatz - Kein Zugriff
+712
+Zugeordneter Speicherplatz - Nur Lesen
+714
+Zugeordneter Speicherplatz - Lesen/Schreiben
+716
+Zugeordneter Speicherplatz - Kopieren-beim-Schreiben
+718
+Zugeordneter Speicherplatz - Ausführen
+720
+Zugeordneter Speicherplatz - Ausführen, nur Lesen
+722
+Zugeordneter Speicherplatz - Ausführen, Lesen/Schreiben
+724
+Zugeordneter Speicherplatz - Ausführen, Kopieren-beim-Schreiben
+726
+Reservierter Speicherplatz - Kein Zugriff
+728
+Reservierter Speicherplatz - Nur Lesen
+730
+Reservierter Speicherplatz - Lesen/Schreiben
+732
+Reservierter Speicherplatz - Kopieren beim Schreiben
+734
+Reservierter Speicherplatz - Ausführen
+736
+Reservierter Speicherplatz - Ausführen, nur Lesen
+738
+Reservierter Speicherplatz - Ausführen, Lesen/Schreiben
+740
+Abbild
+742
+Reservierter Speicherplatz - Ausführen, Kopieren-beim-Schreiben
+744
+Nicht zugeordneter Speicherplatz - Kein Zugriff
+746
+Nicht zugeordneter Speicherplatz - Nur Lesen
+748
+Nicht zugeordneter Speicherplatz - Lesen/Schreiben
+750
+Nicht zugeordneter Speicherplatz - Kopieren-beim-Schreiben
+752
+Nicht zugeordneter Speicherplatz - Ausführen
+754
+Nicht zugeordneter Speicherplatz - Ausführen, nur Lesen
+756
+Nicht zugeordneter Speicherplatz - Ausführen, Lesen/Schreiben
+758
+Nicht zugeordneter Speicherplatz - Ausführen, Kopieren-beim-Schreiben
+760
+Image-Speicherplatz - Kein Zugriff
+762
+Image-Speicherplatz - Nur Lesen
+764
+Image-Speicherplatz - Lesen/Schreiben
+766
+Image-Speicherplatz - Kopieren-beim-Schreiben
+768
+Image-Speicherplatz - Ausführen
+770
+Image-Speicherplatz - Ausführen, nur Lesen
+772
+Image-Speicherplatz - Ausführen, Lesen/Schreiben
+774
+Image-Speicherplatz - Ausführen, Kopieren-beim-Schreiben
+776
+Image, reservierte Bytes
+778
+Image, freie Bytes
+780
+Reservierte Bytes
+782
+Freie Bytes
+784
+Prozesskennung
+786
+Prozessadressraum
+788
+Kein Zugriff
+790
+Nur Lesen
+792
+Lesen/Schreiben
+794
+Kopieren-beim-Schreiben
+796
+Ausführen
+798
+Ausführen, nur Lesen
+800
+Ausführen, Lesen/Schreiben
+802
+Ausführen, Kopieren-beim-Schreiben
+804
+Threadkennung
+806
+Mailslot-Empfangsfehler
+808
+Mailslot-Schreibfehler
+810
+Fehler beim Öffnen der Mailslots/s
+812
+Doppelte Hauptankündigungen
+814
+Unzulässige Datagramme/s
+816
+Threaddetails
+818
+Cachebytes
+820
+Cachebytes (max.)
+822
+Seiteneingabe/s
+824
+Übergangsseiten mit neuem Zweck/s
+872
+Übertragene Bytes
+874
+Empfangene Bytes
+876
+Rahmen gesendet
+878
+Rahmen empfangen
+880
+Komprimierung gesendeter Bytes (%)
+882
+Komprimierung empfangener Bytes (%)
+884
+CRC-Fehler
+886
+Zeitüberschreitungsfehler
+888
+Serieller Überlauffehler
+890
+Ausrichtungsfehler
+892
+Pufferüberlauffehler
+894
+Fehler insgesamt
+896
+Übertragene Bytes/s
+898
+Empfangene Bytes/s
+900
+Rahmen gesendet/s
+902
+Rahmen empfangen/s
+904
+Fehler insgesamt/s
+908
+Verbindungen insgesamt
+920
+WINS-Server
+922
+Einzelregistrierungen/s
+924
+Gruppenregistrierungen/s
+926
+Registrierungen insgesamt/s
+928
+Einzelerneuerungen/s
+930
+Gruppenerneuerungen/s
+932
+Erneuerungen insgesamt/s
+934
+Freigaben/s
+936
+Abfragen/s
+938
+Einzelkonflikte/s
+940
+Gruppenkonflikte/s
+942
+Konflikte insgesamt/s
+944
+Erfolgreiche Freigaben/s
+946
+Fehlgeschlagene Freigaben/s
+948
+Erfolgreiche Abfragen/s
+950
+Fehlgeschlagene Abfragen/s
+952
+Handleanzahl
+1000
+MacFile-Server
+1002
+Maximaler Auslagerungsspeicher
+1004
+Aktueller Auslagerungsspeicher
+1006
+Maximaler Nicht-Auslagerungsspeicher
+1008
+Aktueller Nicht-Auslagerungsspeicher
+1010
+Aktuelle Sitzungen
+1012
+Maximale Sitzungen
+1014
+Aktuell geöffnete Dateien
+1016
+Maximal geöffnete Dateien
+1018
+Fehlgeschlagene Anmeldungen
+1020
+Gelesene Daten/s
+1022
+Geschriebene Daten/s
+1024
+Erhaltene Daten/s
+1026
+Gesendete Daten/s
+1028
+Aktuelle Warteschlangenlänge
+1030
+Maximale Warteschlangenlänge
+1032
+Aktuelle Threads
+1034
+Maximale Threads
+1050
+AppleTalk
+1052
+Empfangene Pakete/s
+1054
+Gesendete Pakete/s
+1056
+Empfangene Bytes/s
+1058
+Gesendete Bytes/s
+1060
+Durchschnittliche Zeit/DDP-Paket
+1062
+DDP-Pakete/s
+1064
+Durchschnittliche Zeit/AARP-Paket
+1066
+AARP-Pakete/s
+1068
+Durchschnittliche Zeit/ATP-Paket
+1070
+ATP-Pakete/s
+1072
+Durchschnittliche Zeit/NBP-Paket
+1074
+NBP-Pakete/s
+1076
+Durchschnittliche Zeit/ZIP-Paket
+1078
+ZIP-Pakete/s
+1080
+Durchschnittliche Zeit/RTMP-Paket
+1082
+RTMP-Pakete/s
+1084
+Lokale ATP-Wiederholungen
+1086
+ATP-Antwortzeitüberschreitungen
+1088
+ATP-XO-Antwort/s
+1090
+ATP-ALO-Antwort/s
+1092
+Empfangene ATP-Freigaben/s
+1094
+Aktueller Nicht-Auslagerungsspeicher
+1096
+Vom Router empfangene Pakete/s
+1098
+Ausgelassene Pakete
+1100
+Netzwerk-ATP-Wiederholungen
+1102
+An Router gesendete Pakete/s
+1110
+Netzwerksegment
+1112
+Gesamtanzahl empfangener Rahmen/s
+1114
+Gesamtanzahl empfangener Bytes/s
+1116
+Empfangene Rundsendungsrahmen/s
+1118
+Empfangene Multicastrahmen/s
+1120
+Netzwerknutzung (%)
+1124
+Broadcastrahmen (%)
+1126
+Multicastrahmen (%)
+1150
+Telefonie
+1152
+Leitungen
+1154
+Telefongeräte
+1156
+Belegte Leitungen
+1158
+Aktive Telefone
+1160
+Ausgehende Anrufe/s
+1162
+Eingehende Anrufe/s
+1164
+Clientanwendungen
+1166
+Aktuelle ausgehende Anrufe
+1168
+Aktuelle eingehende Anrufe
+1232
+NCP-Leseanforderungen für Packet Burst/s
+1234
+Zeitüberschreitungen bei Packet Burst-Leseanforderung/s
+1236
+NCP-Schreibanforderungen für Packet Burst/s
+1238
+Zeitüberschreitungen bei Packet Burst-Schreibanforderung/s
+1240
+Packet Burst-E/A/s
+1260
+Anmeldungen insgesamt
+1262
+Gesamtanzahl permanenter Handles
+1264
+Anzahl permanenter Handles mit Verbindungswiederherstellung
+1266
+Hashheaderanforderungen für SMB-BranchCache
+1268
+Hashgenerierungsanforderungen für SMB-BranchCache
+1270
+Empfangene Hashanforderungen für SMB-BranchCache
+1272
+Gesendete Hashantworten für SMB-BranchCache
+1274
+Gesendete Hashbytes für SMB-BranchCache
+1276
+Stabile Handles gesamt
+1278
+Stabile Handles mit wiederhergestellter Verbindung
+1300
+Serverwarteschlangen
+1302
+Warteschlangenlänge
+1304
+Aktive Threads
+1306
+Verfügbare Threads
+1308
+Verfügbare Arbeitselemente
+1310
+Geliehene Arbeitselemente
+1312
+Nicht genügend Arbeitselemente
+1314
+Aktuelle Clients
+1320
+Bytes übertragen/s
+1324
+Bytes gelesen/s
+1328
+Bytes geschrieben/s
+1332
+Vorgänge insgesamt/s
+1334
+DPCs in Warteschlange/s
+1336
+DPC-Rate
+1342
+Gesamtanzahl DPCs in Warteschlange/s
+1344
+DPC-Rate insgesamt
+1350
+Max. verwendete Registrierungsgröße (%)
+1360
+VL-Speicher
+1362
+VLM - belegte virtuelle Größe (%)
+1364
+VLM - virtuelle Größe
+1366
+VLM - virtuelle Größe (max.)
+1368
+VLM - verfügbare virtuelle Größe
+1370
+VLM - festgelegter virtueller Speicher
+1372
+VLM - festgelegter virtueller Speicher (max.)
+1374
+System-VLM - festgelegter virtueller Speicher
+1376
+System-VLM - festgelegter virtueller Speicher (max.)
+1378
+System-VLM - festgelegter, gemeinsam genutzter virtueller Speicher
+1380
+Verfügbare KB
+1382
+Verfügbare MB
+1400
+Durchschnittl. Warteschlangenlänge des Datenträgers
+1402
+Durchschnittl. Warteschlangenlänge der Datenträger-Lesevorgänge
+1404
+Durchschnittl. Warteschlangenlänge der Datenträger-Schreibvorgänge
+1406
+Zugesicherte verwendete Bytes (%)
+1408
+Volles Image
+1410
+Prozesskennung erstellen
+1412
+E/A-Lesevorgänge/s
+1414
+E/A-Schreibvorgänge/s
+1416
+E/A-Datenvorgänge/s
+1418
+Andere E/A-Vorgänge/s
+1420
+E/A-Bytes gelesen/s
+1422
+E/A-Bytes geschrieben/s
+1424
+E/A-Datenbytes/s
+1426
+Andere E/A-Bytes/s
+1450
+Druckerwarteschlange
+1452
+Gesamtanzahl gedruckter Aufträge
+1454
+Bytes gedruckt/s
+1456
+Gesamtanzahl gedruckter Seiten
+1458
+Aufträge
+1460
+Referenzen
+1462
+Referenzenmaximum
+1464
+Aufträge in Warteschlange
+1466
+Maximale Auftragsanzahl in Warteschlange
+1468
+Kein Papier
+1470
+Nicht bereit
+1472
+Auftragsfehler
+1474
+Netzwerkdrucker aufzählen
+1476
+Netzwerkdrucker hinzufügen
+1478
+Arbeitsseiten - privat
+1480
+Arbeitsseiten - gemeinsam genutzt
+1482
+Leerlaufzeit (%)
+1484
+Teil-E/A/s
+1500
+Auftragsobjekt
+1502
+Aktuelle Prozessorzeit (%)
+1504
+Aktuelle Benutzermoduszeit (%)
+1506
+Aktuelle Kernelmoduszeit (%)
+1508
+Dieser Zeitraum (ms) - Prozessor
+1510
+Dieser Zeitraum (ms) - Benutzermodus
+1512
+Dieser Zeitraum (ms) - Kernelmodus
+1514
+Seiten/s
+1516
+Prozesse insgesamt
+1518
+Prozessanzahl - aktiv
+1520
+Prozessanzahl - abgebrochen
+1522
+Gesamtzeit (ms) - Prozessor
+1524
+Gesamtzeit (ms) - Benutzermodus
+1526
+Gesamtzeit (ms) - Kernelmodus
+1530
+TCPv6
+1532
+UDPv6
+1534
+ICMPv6
+1536
+Erhaltenes Paket zu groß
+1538
+Erhaltene Mitgliedsabfrage
+1540
+Erhaltener Mitgliedsbericht
+1542
+Erhaltene Mitgliedschaftskündigung
+1544
+Erhaltene Routeranfrage
+1546
+Erhaltene Routerankündigung
+1548
+Auftragsobjektdetails
+1550
+Erhaltene Nachbaranfrage
+1552
+Erhaltene Nachbarankündigung
+1554
+Gesendetes Paket zu groß
+1556
+Gesendete Mitgliedschaftsanfrage
+1558
+Gesendetes Mitgliedsbericht
+1560
+Gesendete Mitgliedschaftskündigung
+1562
+Gesendete Routeranfrage
+1564
+Gesendete Routerankündigung
+1566
+Gesendete Nachbaranfrage
+1568
+Gesendete Nachbarankündigung
+1570
+Systemweite Sicherheitsstatistiken
+1572
+NTLM-Authentifizierung
+1574
+Kerberos-Authentifizierungen
+1576
+KDC-AS-Anforderungen
+1578
+KDC-TGS-Anforderungen
+1580
+SChannel-Sitzungscacheeinträge
+1582
+Aktive SChannel-Sitzungscacheeinträge
+1584
+Clientseitige vollständige SSL-Handshakes
+1586
+Clientseitige SSL-Handshakes zur erneuten Verbindungsherstellung
+1588
+Serverseitige vollständige SSL-Handshakes
+1590
+Serverseitige SSL-Handshakes zur erneuten Verbindungsherstellung
+1592
+Digestauthentifizierung
+1594
+Weitergeleitete Kerberos-Anforderungen
+1596
+Abgeladene Verbindungen
+1598
+Aktive TCP-Verbindungen für RSC
+1600
+TCP-RSC: zusammengefügte Pakete/Sek.
+1602
+TCP-RSC: Ausnahmen/Sek.
+1604
+TCP RSC: durchschnittliche Paketgröße
+1620
+AS-Anforderungen mit KDC-Armoring
+1622
+TGS-Anforderungen mit KDC-Armoring
+1624
+KDC-Ansprüche unterstützende AS-Anforderungen
+1626
+KDC-Ansprüche unterstützende TGS-Anforderungen für vom Dienst bestätigte ID
+1628
+KDC-TGS-Anforderungen für klassische eingeschränkte Delegierung
+1630
+KDC-TGS-Anforderungen für eingeschränkte Delegierung vom Typ "resource"
+1632
+KDC-Ansprüche unterstützende TGS-Anforderungen
+1670
+Sicherheitsstatistiken pro Prozess
+1672
+Anmeldeinformationshandles
+1674
+Kontexthandles
+1676
+Freie und Nullseitenlisten - Bytes
+1678
+Geänderte Seitenliste - Bytes
+1680
+Standbycache-Reservebytes
+1682
+Standbycache- Bytes mit normaler Priorität
+1684
+Standbycache-Kernbytes
+1686
+Langfristige durchschnittliche Lebensdauer im Standbycache (Sek.)
+1746
+Leerlaufzeit (%)
+1748
+% C1-Zeit
+1750
+% C2-Zeit
+1752
+% C3-Zeit
+1754
+C1-Übergänge/s
+1756
+C2-Übergänge/s
+1758
+C3-Übergänge/s
+1760
+Heap
+1762
+Zugesicherte Bytes
+1764
+Reservierte Bytes
+1766
+Virtuelle Größe
+1768
+Freie Bytes
+1770
+Freie Listenlänge
+1772
+Durchschnittl. Zuweisungsrate
+1774
+Durchschnittl. freie Rate
+1776
+Länge des nicht zugewiesenen Bereichs
+1778
+Freie Zuweisungen
+1780
+Zwischengespeicherte Zuweisungen/s
+1782
+Zwischengespeicherte Bytes/s
+1784
+Zuweisungen <1K/s
+1786
+Frei <1K/s
+1788
+Zuweisungen 1-8K/s
+1790
+Frei 1-8K/s
+1792
+Zuweisungen über 8K/s
+1794
+Frei über 8K/s
+1796
+Zuweisungen gesamt/s
+1798
+Frei insgesamt/s
+1800
+Blöcke im Heapcache
+1802
+Größte Cachetiefe
+1804
+% Fragmentierung
+1806
+% VA-Fragmentierung
+1808
+Heapsperrungskonflikt
+1810
+Modifizierte Seiten
+1812
+Schwellenwert für modifizierte Seite
+1814
+Arbeitsspeicher für NUMA-Knoten
+1816
+MB gesamt
+1818
+Freie und Nullseitenlisten - MB
+1820
+Netzwerkadapter
+1822
+Standbyliste MB
+1824
+Verfügbare MB
+1826
+Hash-V2-Headeranforderungen für SMB-BranchCache
+1828
+Hash-V2-Generierungsanforderungen für SMB-BranchCache
+1830
+Empfangene Hash-V2-Anforderungen für SMB-BranchCache
+1832
+Gesendete Hash-V2-Antworten für SMB-BranchCache
+1834
+Gesendete Hash-V2-Bytes für SMB-BranchCache
+1836
+Hash-V2-Anforderungen für SMB-BranchCache, die von Deduplizierung verarbeitet wurden
+1846
+End Marker
+2036
+WF (System.Workflow) 4.0.0.0
+2038
+Erstellte Workflows
+2040
+Erstellte Workflows/Sekunde
+2042
+Entladene Workflows
+2044
+Entladene Workflows/Sekunde
+2046
+Geladene Workflows
+2048
+Geladene Workflows/Sekunde
+2050
+Abgeschlossene Workflows
+2052
+Abgeschlossene Workflows/Sekunde
+2054
+Angehaltene Workflows
+2056
+Angehaltene Workflows/Sekunde
+2058
+Beendete Workflows
+2060
+Beendete Workflows/Sekunde
+2062
+Workflows im Arbeitsspeicher
+2064
+Abgebrochene Workflows
+2066
+Abgebrochene Workflows/Sekunde
+2068
+Persistent gespeicherte Workflows
+2070
+Persistent gespeicherte Workflows/Sekunde
+2072
+Ausgeführte Workflows
+2074
+Workflows im Leerlauf/Sekunde
+2076
+Ausführbare Workflows
+2078
+Ausstehende Workflows
+2080
+Windows Workflow Foundation
+2082
+Workflows Created
+2084
+Workflows Created/sec
+2086
+Workflows Unloaded
+2088
+Workflows Unloaded/sec
+2090
+Workflows Loaded
+2092
+Workflows Loaded/sec
+2094
+Workflows Completed
+2096
+Workflows Completed/sec
+2098
+Workflows Suspended
+2100
+Workflows Suspended/sec
+2102
+Workflows Terminated
+2104
+Workflows Terminated/sec
+2106
+Workflows In Memory
+2108
+Workflows Aborted
+2110
+Workflows Aborted/sec
+2112
+Workflows Persisted
+2114
+Workflows Persisted/sec
+2116
+Workflows Executing
+2118
+Workflows Idle/sec
+2120
+Workflows Runnable
+2122
+Workflows Pending
+2124
+VMware
+2126
+Virtual Disk Transfers/sec
+2128
+Virtual Disk Reads/sec
+2130
+Virtual Disk Writes/sec
+2132
+Virtual Disk Bytes Transferred/sec
+2134
+Virtual Disk Bytes Read/sec
+2136
+Virtual Disk Bytes Written/sec
+2138
+Guest Locked Memory Bytes
+2140
+Guest Virtual Physical Memory Bytes
+2142
+Percent Guest Physical Memory Touched
+2144
+Network Transfers/sec
+2146
+Network Bytes Transferred/sec
+2148
+Network Transfer Errors/sec
+2150
+Network Packets Sent/sec
+2152
+Network Bytes Sent/sec
+2154
+Network Send Errors/sec
+2156
+Network Packets Received/sec
+2158
+Network Bytes Received/sec
+2160
+Network Receive Errors/sec
+2162
+Terminaldienstesitzungen
+2164
+Telefonie
+2166
+Anzahl Leitungen
+2168
+Anzahl Telefoniedienste
+2170
+Anzahl aktiver Leitungen
+2172
+Anzahl aktiver Telefone
+2174
+Ausgehende Anrufe/s
+2176
+Eingehende Anrufe/s
+2178
+Anzahl der Clientanwendungen
+2180
+Aktuelle ausgehende Anrufe
+2182
+Aktuelle eingehende Anrufe
+2184
+SMSvcHost 4.0.0.0
+2186
+Protokollfehler über "net.tcp"
+2188
+Protokollfehler über "net.pipe"
+2190
+Verteilungsfehler über "net.tcp"
+2192
+Verteilungsfehler über "net.pipe"
+2194
+Über "net.tcp" verteilte Verbindungen
+2196
+Über "net.pipe" verteilte Verbindungen
+2198
+Über "net.tcp" akzeptierte Verbindungen
+2200
+Über "net.pipe" akzeptierte Verbindungen
+2202
+Aktive Registrierungen für "net.tcp"
+2204
+Aktive Registrierungen für "net.pipe"
+2206
+Registrierte URIs für "net.tcp"
+2208
+Registrierte URIs für "net.pipe"
+2210
+URIs mit aufgehobener Registrierung für "net.tcp"
+2212
+URIs mit aufgehobener Registrierung für "net.pipe"
+2214
+SMSvcHost 3.0.0.0
+2216
+Protocol Failures over net.tcp
+2218
+Protocol Failures over net.pipe
+2220
+Dispatch Failures over net.tcp
+2222
+Dispatch Failures over net.pipe
+2224
+Connections Dispatched over net.tcp
+2226
+Connections Dispatched over net.pipe
+2228
+Connections Accepted over net.tcp
+2230
+Connections Accepted over net.pipe
+2232
+Registrations Active for net.tcp
+2234
+Registrations Active for net.pipe
+2236
+Uris Registered for net.tcp
+2238
+Uris Registered for net.pipe
+2240
+Uris Unregistered for net.tcp
+2242
+Uris Unregistered for net.pipe
+2244
+ServiceModelService 3.0.0.0
+2246
+Calls
+2248
+Calls Per Second
+2250
+Calls Outstanding
+2252
+Calls Failed
+2254
+Calls Failed Per Second
+2256
+Calls Faulted
+2258
+Calls Faulted Per Second
+2260
+Calls Duration
+2262
+Calls Duration Base
+2264
+Transactions Flowed
+2266
+Transactions Flowed Per Second
+2268
+Transacted Operations Committed
+2270
+Transacted Operations Committed Per Second
+2272
+Transacted Operations Aborted
+2274
+Transacted Operations Aborted Per Second
+2276
+Transacted Operations In Doubt
+2278
+Transacted Operations In Doubt Per Second
+2280
+Security Validation and Authentication Failures
+2282
+Security Validation and Authentication Failures Per Second
+2284
+Security Calls Not Authorized
+2286
+Security Calls Not Authorized Per Second
+2288
+Instances
+2290
+Instances Created Per Second
+2292
+Reliable Messaging Sessions Faulted
+2294
+Reliable Messaging Sessions Faulted Per Second
+2296
+Reliable Messaging Messages Dropped
+2298
+Reliable Messaging Messages Dropped Per Second
+2300
+Queued Poison Messages
+2302
+Queued Poison Messages Per Second
+2304
+Queued Messages Rejected
+2306
+Queued Messages Rejected Per Second
+2308
+Queued Messages Dropped
+2310
+Queued Messages Dropped Per Second
+2312
+ServiceModelOperation 3.0.0.0
+2314
+Calls
+2316
+Calls Per Second
+2318
+Calls Outstanding
+2320
+Calls Failed
+2322
+Call Failed Per Second
+2324
+Calls Faulted
+2326
+Calls Faulted Per Second
+2328
+Calls Duration
+2330
+Calls Duration Base
+2332
+Transactions Flowed
+2334
+Transactions Flowed Per Second
+2336
+Security Validation and Authentication Failures
+2338
+Security Validation and Authentication Failures Per Second
+2340
+Security Calls Not Authorized
+2342
+Security Calls Not Authorized Per Second
+2344
+ServiceModelEndpoint 3.0.0.0
+2346
+Calls
+2348
+Calls Per Second
+2350
+Calls Outstanding
+2352
+Calls Failed
+2354
+Calls Failed Per Second
+2356
+Calls Faulted
+2358
+Calls Faulted Per Second
+2360
+Calls Duration
+2362
+Calls Duration Base
+2364
+Transactions Flowed
+2366
+Transactions Flowed Per Second
+2368
+Security Validation and Authentication Failures
+2370
+Security Validation and Authentication Failures Per Second
+2372
+Security Calls Not Authorized
+2374
+Security Calls Not Authorized Per Second
+2376
+Reliable Messaging Sessions Faulted
+2378
+Reliable Messaging Sessions Faulted Per Second
+2380
+Reliable Messaging Messages Dropped
+2382
+Reliable Messaging Messages Dropped Per Second
+2384
+ReadyBoost-Cache
+2386
+Zwischengespeicherte Bytes
+2388
+Belegter Cachespeicher
+2390
+Komprimierungsverhältnis
+2392
+Gesamte Cachegröße in Bytes
+2394
+Cachelesevorgänge/s
+2396
+Cache: gelesene Bytes/s
+2398
+Übersprungene Lesevorgänge/s
+2400
+Übersprungene Lesevorgänge: Bytes/s
+2402
+Gesamtanzahl Lesevorgänge/s
+2404
+Gelesene Bytes/s insgesamt
+2406
+MSDTC Bridge 4.0.0.0
+2408
+Nachrichtensendefehler/Sekunde
+2410
+Prepare-Retry-Anzahl/Sekunde
+2412
+Commit-Retry-Anzahl/Sekunde
+2414
+Prepared-Retry-Anzahl/Sekunde
+2416
+Replay-Retry-Anzahl/Sekunde
+2418
+Anzahl der empfangenen Faults/Sekunde
+2420
+Anzahl der gesendeten Faults/Sekunde
+2422
+Durchschnittliche Zeit für Antwort eines Teilnehmers auf Prepare-Nachricht
+2424
+Basisindikator für die durchschnittliche Zeit für Antwort eines Teilnehmers auf Prepare-Nachricht
+2426
+Durchschnittliche Zeit für Antwort eines Teilnehmers auf Commit-Nachricht
+2428
+Basisindikator für die durchschnittliche Zeit für Antwort eines Teilnehmers auf Commit-Nachricht
+2430
+MSDTC Bridge 3.0.0.0
+2432
+Message send failures/sec
+2434
+Prepare retry count/sec
+2436
+Commit retry count/sec
+2438
+Prepared retry count/sec
+2440
+Replay retry count/sec
+2442
+Faults received count/sec
+2444
+Faults sent count/sec
+2446
+Average participant prepare response time
+2448
+Average participant prepare response time Base
+2450
+Average participant commit response time
+2452
+Average participant commit response time Base
+2454
+Distributed Transaction Coordinator
+2456
+Aktive Transaktionen
+2458
+Durchgeführte Transaktionen
+2460
+Abgebrochene Transaktionen
+2462
+Unsichere Transaktionen
+2464
+Max. aktive Transaktionen
+2466
+Zwangsweise durchgeführte Transaktionen
+2468
+Zwangsweise abgebrochene Transaktionen
+2470
+Antwortzeit -- Minimum
+2472
+Antwortzeit -- Durchschnitt
+2474
+Antwortzeit -- Maximum
+2476
+Transaktionen/Sek
+2478
+Durchgeführte Transaktionen/Sek.
+2480
+Abgebrochene Transaktionen/Sek.
+2482
+Datenbank
+2484
+Konvertierte Seiten/Sek.
+2486
+Konvertierte Seiten
+2488
+Konvertierte Datensätze/Sek.
+2490
+Konvertierte Datensätze
+2492
+Defragmentierungstasks
+2494
+Ausstehende Defragmentierungstasks
+2496
+Verworfene Defragmentierungstasks
+2498
+Geplante Defragmentierungstasks/Sek.
+2500
+Abgeschlossene Defragmentierungstasks/Sek.
+2502
+Heapzuweisungen/Sek.
+2504
+Heapfreigaben/Sek.
+2506
+Heapzuweisungen
+2508
+Zugewiesene Heapbytes
+2510
+Reservierte Seitenbytes
+2512
+Übergebene Seitenbytes
+2514
+FCB Async Scan/sec
+2516
+FCB Async Purge/sec
+2518
+FCB Async Threshold-Scan/sec
+2520
+FCB Async Threshold-Purge/sec
+2522
+FCB Async Threshold Purge Failures (Conflicts)/sec
+2524
+FCB Async Threshold Purge Failures (In Use)/sec
+2526
+FCB Async Threshold Purge Failures (Sentinel)/sec
+2528
+FCB Async Threshold Purge Failures (Delete Pending)/sec
+2530
+FCB Async Threshold Purge Failures (Outstanding Versions)/sec
+2532
+FCB Async Threshold Purge Failures (LV Outstanding)/sec
+2534
+FCB Async Threshold Purge Failures (Index Outstanding)/sec
+2536
+FCB Async Threshold Purge Failures (Active Tasks)/sec
+2538
+FCB Async Threshold Purge Failures (Callbacks)/sec
+2540
+FCB Async Threshold Purge Failures (Other)/sec
+2542
+FCB Async Purge Failures (Conflicts)/sec
+2544
+FCB Async Purge Failures (In Use)/sec
+2546
+FCB Async Purge Failures (Sentinel)/sec
+2548
+FCB Async Purge Failures (Delete Pending)/sec
+2550
+FCB Async Purge Failures (Outstanding Versions)/sec
+2552
+FCB Async Purge Failures (LV Outstanding)/sec
+2554
+FCB Async Purge Failures (Index Outstanding)/sec
+2556
+FCB Async Purge Failures (Active Tasks)/sec
+2558
+FCB Async Purge Failures (Callbacks)/sec
+2560
+FCB Async Purge Failures (Other)/sec
+2562
+FCB Sync Purge/sec
+2564
+FCB Sync Purge Stalls/sec
+2566
+Auf Versionscleanup wartende FCB-Zuweisungen/Sek.
+2568
+FCB-Löschung beim Schließen des Cursors/Sek.
+2570
+FCB-Cache % Treffer
+2572
+No name
+2574
+FCB-Cacheverzögerungen/Sek.
+2576
+Maximaler FCB-Cache
+2578
+Bevorzugter FCB-Cache
+2580
+Zugewiesener FCB-Cache
+2582
+FCB Cache Allocated/sec
+2584
+Verfügbarer FCB-Cache
+2586
+FCB Attached RCEs
+2588
+Sessions In Use
+2590
+Sessions % Used
+2592
+No name
+2594
+Resource Manager FCB Allocated
+2596
+Resource Manager FCB Allocated Used
+2598
+Resource Manager FCB Quota
+2600
+Resource Manager FUCB Allocated
+2602
+Resource Manager FUCB Allocated Used
+2604
+Resource Manager FUCB Quota
+2606
+Resource Manager TDB Allocated
+2608
+Resource Manager TDB Allocated Used
+2610
+Resource Manager TDB Quota
+2612
+Resource Manager IDB Allocated
+2614
+Resource Manager IDB Allocated Used
+2616
+Resource Manager IDB Quota
+2618
+Tabelle öffnen: % Cache-Treffer
+2620
+No name
+2622
+Tabelle öffnen: Cache-Treffer/Sek.
+2624
+Tabelle öffnen: Cache-Verfehler/Sek.
+2626
+Table Open Pages Read/sec
+2628
+Table Open Pages Preread/sec
+2630
+Tabelle öffnen: Operationen/Sek.
+2632
+Tabelle schließen: Operationen/Sek.
+2634
+Geöffnete Tabellen
+2636
+Log Bytes Write/sec
+2638
+Generierte Protokollbytes/Sek.
+2640
+Verwendete Bytes im Protokollpuffer
+2642
+Freie Bytes im Protokollpuffer
+2644
+Wartende Protokollthreads
+2646
+Protokollprüfpunkttiefe
+2648
+Prüfpunkttiefe für Protokollgenerierung
+2650
+Log Checkpoint Maintenance Outstanding IO Max
+2652
+User Read Only Transaction Commits to Level 0/sec
+2654
+User Read/Write Transaction Commits to Level 0 (Durable)/sec
+2656
+User Read/Write Transaction Commits to Level 0 (Lazy)/sec
+2658
+User Wait All Transaction Commits/sec
+2660
+User Wait Last Transaction Commits/sec
+2662
+User Transaction Commits to Level 0/sec
+2664
+User Read Only Transaction Rollbacks to Level 0/sec
+2666
+User Read/Write Transaction Rollbacks to Level 0/sec
+2668
+User Transaction Rollbacks to Level 0/sec
+2670
+System Read Only Transaction Commits to Level 0/sec
+2672
+System Read/Write Transaction Commits to Level 0 (Durable)/sec
+2674
+System Read/Write Transaction Commits to Level 0 (Lazy)/sec
+2676
+System Transaction Commits to Level 0/sec
+2678
+System Read Only Transaction Rollbacks to Level 0/sec
+2680
+System Read/Write Transaction Rollbacks to Level 0/sec
+2682
+System Transaction Rollbacks to Level 0/sec
+2684
+Datenbank: Verbrauchte asynchrone Dateierweiterung durch Seitenzuweisung/Sek.
+2686
+Database Page Allocation File Extension Stalls/sec
+2688
+Database Page Allocation File Shrink Stalls/sec
+2690
+Log Records/sec
+2692
+Log Buffer Capacity Flushes/sec
+2694
+Log Buffer Commit Flushes/sec
+2696
+Log Buffer Flushes Skipped/sec
+2698
+Log Buffer Flushes Blocked/sec
+2700
+Protokollpuffer: Leerungen/Sek.
+2702
+Protokollschreiboperationen/Sek.
+2704
+Protokollierung vollständiger Segmente, Schreibvorgänge/Sek.
+2706
+Protokollierung Teilsegmente, Schreibvorgänge/Sek.
+2708
+Protokolldatensatzverzögerungen/Sek.
+2710
+Version Buckets Allocated
+2712
+Version Buckets Allocated for Deletes
+2714
+Auf Versionscleanup wartende Version-Bucket-Zuweisungen/Sek.
+2716
+Version Store Average RCE Bookmark Length
+2718
+Version Store Unnecessary Calls/sec
+2720
+Version Store Cleanup Tasks Asynchronously Dispatched/sec
+2722
+Version Store Cleanup Tasks Synchronously Dispatched/sec
+2724
+Version Store Cleanup Tasks Discarded/sec
+2726
+Version Store Cleanup Tasks Failures/sec
+2728
+Datensatz-Einfügevorgänge/Sek.
+2730
+Datensatz-Löschvorgänge/Sek.
+2732
+Datensatz-Ersetzungsvorgänge/Sek.
+2734
+Datensatz: Nicht erforderliche Ersetzungsvorgänge/Sek.
+2736
+Datensatz: Redundante Ersetzungsvorgänge/Sek.
+2738
+Escrow-Aktualisierung von Datensätzen/Sek.
+2740
+Sekundärer Index: Einfügevorgänge/Sek.
+2742
+Sekundärer Index: Löschvorgänge/Sek.
+2744
+Falsche Indexspaltenaktualisierungen/Sek.
+2746
+Falsche Tupel-Indexspaltenaktualisierungen/Sek.
+2748
+Datensatz: Aktualisierte intrinsische Long-Werte/Sek.
+2750
+Datensatz: Hinzugefügte getrennte Long-Werte/Sek.
+2752
+Datensatz: Erzwungene getrennte Long-Werte/Sek.
+2754
+Datensatz: Alle erzwungenen getrennten Long-Werte/Sek.
+2756
+Datensatz: Alle Verweise für getrennte Long-Werte/Sek.
+2758
+Datensatz: Alle Verweise für getrennte Long-Werte aufheben/Sek.
+2760
+Getrennter Long-Wert: Suchvorgänge/Sek.
+2762
+Getrennter Long-Wert: Abrufvorgänge/Sek.
+2764
+Getrennter Long-Wert: Erstellungsvorgänge/Sek.
+2766
+Long-Value Maximum LID
+2768
+Getrennter Long-Wert: Aktualisierungsvorgänge/Sek.
+2770
+Getrennter Long-Wert: Löschvorgänge/Sek.
+2772
+Getrennter Long-Wert: Kopiervorgänge/Sek.
+2774
+Getrennter Long-Wert: Fragmentsuchvorgänge/Sek.
+2776
+Getrennter Long-Wert: Fragmentabrufvorgänge/Sek.
+2778
+Getrennter Long-Wert: Fragmentanfügevorgänge/Sek.
+2780
+Getrennter Long-Wert: Fragmentersetzungsvorgänge/Sek.
+2782
+Getrennter Long-Wert: Fragmentlöschvorgänge/Sek.
+2784
+Getrennter Long-Wert: Fragmentkopiervorgänge/Sek.
+2786
+B+ Tree Append Splits/sec
+2788
+B+ Tree Right Splits/sec
+2790
+B+ Tree: Hotpoint-Rechtsteilungen/Sek.
+2792
+B+ Tree Vertical Splits/sec
+2794
+B+ Tree Splits/sec
+2796
+B+ Tree Empty Page Merges/sec
+2798
+B+ Tree Right Merges/sec
+2800
+B+ Tree Partial Merges/sec
+2802
+B+ Tree: Linkszusammenführungen/Sek.
+2804
+B+ Tree: Teillinkszusammenführungen/Sek.
+2806
+B+ Tree: Seitenverschiebevorgänge/Sek.
+2808
+B+ Tree Merges/sec
+2810
+B+ Tree: Fehler bei einfachen Seitenbereinigungsversuchen/Sek.
+2812
+B+ Tree Seek Short Circuits/sec
+2814
+B+ Tree: Rechtzeitige Prereads/Sek.
+2816
+B+ Tree Unnecessary Sibling Latches/sec
+2818
+B+ Tree Move Nexts/sec
+2820
+B+ Tree: Operation Nächster Datensatz (Nicht sichtbare Knoten ausgelassen)/Sek.
+2822
+B+ Tree Move Nexts (Nodes Filtered)/sec
+2824
+B+ Tree Move Prevs/sec
+2826
+B+ Tree: Operation Vorhergehender Datensatz (Nicht sichtbare Knoten ausgelassen)/Sek.
+2828
+B+ Tree Move Prevs (Nodes Filtered)/sec
+2830
+B+ Tree Seeks/sec
+2832
+B+ Tree Inserts/sec
+2834
+B+ Tree Replaces/sec
+2836
+B+ Tree Flag Deletes/sec
+2838
+B+ Tree Deletes/sec
+2840
+B+ Tree Appends/sec
+2842
+B+ Tree Creates/sec
+2844
+B+ Tree Creates (Total)
+2846
+B+ Tree Destroys/sec
+2848
+B+ Tree Destroys (Total)
+2850
+Datenbankcachefehler/Sek.
+2852
+Datenbankcache % Treffer
+2854
+No name
+2856
+Datenbankcache % Treffer (unkorreliert)
+2858
+No name
+2860
+Datenbankcachanforderungen/Sek.
+2862
+Datenbankcache % fixiert
+2864
+No name
+2866
+Database Cache % Clean
+2868
+No name
+2870
+Datenbankseiten: Asynchrone Leseoperationen/Sek.
+2872
+Datenbankseiten: Synchrone Leseoperationen/Sek.
+2874
+Datenbank: Geänderte Seiten/Sek.
+2876
+Database Pages Dirtied (Repeatedly)/sec
+2878
+Database Pages Written/sec
+2880
+Datenbank: Ausgegebene rechtzeitige Schreibvorgänge (gesamt)
+2882
+Database Pages Transferred/sec
+2884
+OS Memory Pages Trimmed/sec
+2886
+Database Pages Trimmed/sec
+2888
+Database Pages Non-Resident Reclaimed (Soft Faulted)/sec
+2890
+Database Pages Non-Resident Reclaimed (Failed)/sec
+2892
+Database Pages Non-Resident Re-read/sec
+2894
+Database Pages Non-Resident Evicted (Normally)/sec
+2896
+Database Pages Non-Resident Faulted In Average Latency
+2898
+No name
+2900
+Datenbankseite: Latches/Sek.
+2902
+Datenbankseite: Fast Latches/Sek.
+2904
+Datenbankseite: Ungültige Latch Hints/Sek.
+2906
+Datenbankcache % Fast Latch
+2908
+No name
+2910
+Database Page Touches (Non-Touch)/sec
+2912
+Database Page Touches (k=1)/sec
+2914
+Database Page Touches (k=2)/sec
+2916
+Database Page Touches (Correlated)/sec
+2918
+Database Pages Colded (Ext)/sec
+2920
+Database Pages Colded (Int)/sec
+2922
+Datenbankseite: Latchkonflikte/Sek.
+2924
+Datenbankseite: Latchverzögerungen/Sek.
+2926
+Datenbankcache % verfügbar
+2928
+No name
+2930
+Database Page Faults/sec
+2932
+Database Page Evictions/sec
+2934
+Database Page Evictions (Preread Untouched)/sec
+2936
+Database Page Evictions (k=1)/sec
+2938
+Database Page Evictions (k=2)/sec
+2940
+Database Page Evictions (Scavenging)/sec
+2942
+Database Page Evictions (Shrink)/sec
+2944
+Database Page Evictions (Purge)/sec
+2946
+Database Page Evictions (Patch)/sec
+2948
+Database Page Fault Stalls/sec
+2950
+Datenbankcachegröße (MB)
+2952
+Datenbank: Cachegröße
+2954
+Datenbankcache: Effektive Größe (MB)
+2956
+Datenbankcache: Effektive Größe
+2958
+Datenbankcache: Zugesicherter Arbeitsspeicher (MB)
+2960
+Datenbankcache: Zugesicherter Arbeitsspeicher
+2962
+Datenbankcache: Reservierter Arbeitsspeicher (MB)
+2964
+Datenbankcache: Reservierter Arbeitsspeicher
+2966
+Database Cache Size Target (MB)
+2968
+Database Cache Size Target
+2970
+Datenbank: Min. Cachegröße
+2972
+Datenbank: Max. Cachegröße
+2974
+Vorhandene Datenbankcachegröße
+2976
+Vorhandene Datenbankcachegröße (MB)
+2978
+Database Cache Size Unattached (MB)
+2980
+Datenbank: Cache % mindestens verfügbar
+2982
+No name
+2984
+Datenbank: Cache % maximal verfügbar
+2986
+No name
+2988
+Database Pages Preread/sec
+2990
+Database Page Preread Stalls/sec
+2992
+Database Pages Preread (Unnecessary)/sec
+2994
+Database Pages Dehydrated/sec
+2996
+Database Pages Rehydrated/sec
+2998
+Datenbank: Seiten mit Versionsanmerkungen/Sek.
+3000
+Datenbank: Seitenversion kopiert/Sek.
+3002
+Datenbank: Cache % mit Versionsanmerkungen
+3004
+No name
+3006
+Datenbankseiten: Wiederholte Schreibvorgänge/Sek.
+3008
+Database Pages Flushed (Cache Shrink)/sec
+3010
+Database Pages Flushed (Checkpoint)/sec
+3012
+Database Pages Flushed (Checkpoint Foreground)/sec
+3014
+Database Pages Flushed (Context Flush)/sec
+3016
+Database Pages Flushed (Idle)/sec
+3018
+Database Pages Flushed (Filthy Foreground)/sec
+3020
+Database Pages Flushed (Scavenge)/sec
+3022
+Database Pages Flushed Opportunely/sec
+3024
+Database Pages Flushed Opportunely Clean/sec
+3026
+Geschriebene Datenbankseiten: Zusammengeführt/Sek.
+3028
+Gelesene Datenbankseiten: Zusammengeführt/Sek.
+3030
+Database cache lifetime
+3032
+Datenbank: Seitenverlaufsdatensätze
+3034
+Database Page History % Hit
+3036
+No name
+3038
+Datenbank: Seitenscans/Sek.
+3040
+Database Page Scans Out-of-Order/sec
+3042
+No name
+3044
+Vorhandene Datenbankcachegröße %
+3046
+No name
+3048
+Datenbankcache: % pausierende Seiten
+3050
+No name
+3052
+Database Pages Repeatedly Read/sec
+3054
+Streamingsicherung: Gelesene Seiten/Sek.
+3056
+Onlinedegfragmentierung: Seitenverweise/Sek.
+3058
+Onlinedefragmentierung: Gelesene Seiten/Sek.
+3060
+Onlinedefragmentierung: Seitenpreread/Sek.
+3062
+Onlinedefragmentierung: Bearbeitete Seiten/Sek.
+3064
+Onlinedefragmentierung: Erneut bearbeitete Seiten/Sek.
+3066
+Onlinedefragmentierung: Freigegebene Seiten/Sek.
+3068
+Onlinedefragmentierung: Datenverschiebvorgänge/Sek.
+3070
+Onlinedefragmentierung: Seitenverschiebvorgänge/Sek.
+3072
+Onlinedefragmentierung: Protokolldatensätze/Sek.
+3074
+Onlinedefragmentierung: Durchschn. Protokollbytes
+3076
+No name
+3078
+Datenbankwartung: Dauer seit letzter
+3080
+Database Maintenance Pages Read
+3082
+Database Maintenance Pages Read/sec
+3084
+Database Maintenance Pages Zeroed
+3086
+Database Maintenance Pages Zeroed/sec
+3088
+Datenbankwartung: Fehlerhafte Seitenprüfsummen
+3090
+Database Maintenance IO Reads/sec
+3092
+Database Maintenance IO Reads Average Bytes
+3094
+No name
+3096
+Database Maintenance Throttle Setting
+3098
+Database Maintenance IO Re-Reads/sec
+3100
+Database Maintenance IO Re-Reads Average Bytes
+3102
+No name
+3104
+Database Maintenance IO Re-Reads Average Latency
+3106
+No name
+3108
+Datenbankaufgaben: Seitenverweise/Sek.
+3110
+Datenbankaufgaben: Gelesene Seiten/Sek.
+3112
+Datenbankaufgaben: Seitenpreread/Sek.
+3114
+Datenbankaufgaben: Bearbeitete Seiten/Sek.
+3116
+Datenbankaufgaben: Erneut bearbeitete Seiten/Sek.
+3118
+Datenbankaufgaben: Protokolldatensätze/Sek.
+3120
+Datenbankaufgaben: Durchschnittliche Protokollbytes
+3122
+No name
+3124
+E/A: Datenbankleseoperationen (Angefügt)/Sek.
+3126
+E/A: Durchschnittliche Wartezeit für Datenbankleseoperationen (Angefügt)
+3128
+No name
+3130
+I/O Database Reads (Attached) Average Bytes
+3132
+No name
+3134
+I/O Database Reads (Attached) In Heap
+3136
+I/O Database Reads (Attached) Async Pending
+3138
+I/O Database Reads (Attached) Abnormal Latency/sec
+3140
+E/A: Datenbankleseoperationen (Wiederherstellung)/Sek.
+3142
+E/A: Durchschnittliche Wartezeit für Datenbankleseoperationen (Wiederherstellung)
+3144
+No name
+3146
+I/O Database Reads (Recovery) Average Bytes
+3148
+No name
+3150
+I/O Database Reads (Recovery) In Heap
+3152
+I/O Database Reads (Recovery) Async Pending
+3154
+I/O Database Reads (Recovery) Abnormal Latency/sec
+3156
+E/A: Datenbankleseoperationen/Sek.
+3158
+E/A: Durchschnittliche Wartezeit für Datenbankleseoperationen
+3160
+No name
+3162
+I/O Database Reads Average Bytes
+3164
+No name
+3166
+I/O Database Reads In Heap
+3168
+I/O Database Reads Async Pending
+3170
+I/O Database Reads Abnormal Latency/sec
+3172
+E/A: Protokollleseoperationen/Sek.
+3174
+E/A: Durchschnittliche Wartezeit für Protokollleseoperationen
+3176
+No name
+3178
+E/A: Durchschnittliche Anzahl von Bytes für Protokollleseoperationen
+3180
+No name
+3182
+E/A: Protokollleseoperationen im Heap
+3184
+E/A: Ausstehende asynchrone Protokollleseoperationen
+3186
+E/A: Nicht ordnungsgemäße Wartezeit für Protokollleseoperationen/Sek.
+3188
+E/A: Datenbankschreiboperationen (Angefügt)/Sek.
+3190
+E/A: Durchschnittliche Wartezeit für Datenbankschreiboperationen (Angefügt)
+3192
+No name
+3194
+I/O Database Writes (Attached) Average Bytes
+3196
+No name
+3198
+I/O Database Writes (Attached) In Heap
+3200
+I/O Database Writes (Attached) Async Pending
+3202
+I/O Database Writes (Attached) Abnormal Latency/sec
+3204
+E/A: Datenbankschreiboperationen (Wiederherstellung)/Sek.
+3206
+E/A: Durchschnittliche Wartezeit für Datenbankschreiboperationen (Wiederherstellung)
+3208
+No name
+3210
+I/O Database Writes (Recovery) Average Bytes
+3212
+No name
+3214
+I/O Database Writes (Recovery) In Heap
+3216
+I/O Database Writes (Recovery) Async Pending
+3218
+I/O Database Writes (Recovery) Abnormal Latency/sec
+3220
+E/A: Datenbankschreiboperationen/Sek.
+3222
+E/A: Durchschnittliche Wartezeit für Datenbankschreiboperationen
+3224
+No name
+3226
+I/O Database Writes Average Bytes
+3228
+No name
+3230
+I/O Database Writes In Heap
+3232
+I/O Database Writes Async Pending
+3234
+I/O Database Writes Abnormal Latency/sec
+3236
+E/A: Protokollschreiboperationen/Sek.
+3238
+E/A: Durchschnittliche Wartezeit für Protokollschreiboperationen
+3240
+No name
+3242
+E/A: Durchschnittliche Anzahl von Bytes für Protokollschreiboperationen
+3244
+No name
+3246
+E/A: Protokollschreiboperationen im Heap
+3248
+E/A: Ausstehende asynchrone Protokollschreiboperationen
+3250
+E/A: Nicht ordnungsgemäße Wartezeit für Protokollschreiboperationen/Sek.
+3252
+Blockierte Threads/Sek.
+3254
+Blockierte Threads
+3256
+Datensatzbytes: Fehler bei der Komprimierung/Sek.
+3258
+Pages Reorganized (Other)/sec
+3260
+Pages Reorganized (Free Space Request)/sec
+3262
+Pages Reorganized (Page Move Logging)/sec
+3264
+Pages Reorganized (Dehydrate Buffer)/sec
+3266
+Program Marker
+3268
+Datenbank ==> TableClasses
+3270
+Datensatz-Einfügevorgänge/Sek.
+3272
+Datensatz-Löschvorgänge/Sek.
+3274
+Datensatz-Ersetzungsvorgänge/Sek.
+3276
+Datensatz: Nicht erforderliche Ersetzungsvorgänge/Sek.
+3278
+Datensatz: Redundante Ersetzungsvorgänge/Sek.
+3280
+Escrow-Aktualisierung von Datensätzen/Sek.
+3282
+Sekundärer Index: Einfügevorgänge/Sek.
+3284
+Sekundärer Index: Löschvorgänge/Sek.
+3286
+Falsche Indexspaltenaktualisierungen/Sek.
+3288
+Falsche Tupel-Indexspaltenaktualisierungen/Sek.
+3290
+Datensatz: Aktualisierte intrinsische Long-Werte/Sek.
+3292
+Datensatz: Hinzugefügte getrennte Long-Werte/Sek.
+3294
+Datensatz: Erzwungene getrennte Long-Werte/Sek.
+3296
+Datensatz: Alle erzwungenen getrennten Long-Werte/Sek.
+3298
+Datensatz: Alle Verweise für getrennte Long-Werte/Sek.
+3300
+Datensatz: Alle Verweise für getrennte Long-Werte aufheben/Sek.
+3302
+Getrennter Long-Wert: Suchvorgänge/Sek.
+3304
+Getrennter Long-Wert: Abrufvorgänge/Sek.
+3306
+Getrennter Long-Wert: Erstellungsvorgänge/Sek.
+3308
+Long-Value Maximum LID
+3310
+Getrennter Long-Wert: Aktualisierungsvorgänge/Sek.
+3312
+Getrennter Long-Wert: Löschvorgänge/Sek.
+3314
+Getrennter Long-Wert: Kopiervorgänge/Sek.
+3316
+Getrennter Long-Wert: Fragmentsuchvorgänge/Sek.
+3318
+Getrennter Long-Wert: Fragmentabrufvorgänge/Sek.
+3320
+Getrennter Long-Wert: Fragmentanfügevorgänge/Sek.
+3322
+Getrennter Long-Wert: Fragmentersetzungsvorgänge/Sek.
+3324
+Getrennter Long-Wert: Fragmentlöschvorgänge/Sek.
+3326
+Getrennter Long-Wert: Fragmentkopiervorgänge/Sek.
+3328
+B+ Tree: Anfügungsteilungen/Sek.
+3330
+B+ Tree: Rechtsteilungen/Sek.
+3332
+B+ Tree: Hotpoint-Rechtsteilungen/Sek.
+3334
+B+ Tree: Vertikale Teilungen/Sek.
+3336
+B+ Tree: Teilungen/Sek.
+3338
+B+-Gesamtstruktur: Zusammenführungen leerer Seiten/Sek.
+3340
+B+ Tree: Rechtszusammenführungen/Sek.
+3342
+B+ Tree: Teilzusammenführungen/Sek.
+3344
+B+ Tree: Linkszusammenführungen/Sek.
+3346
+B+ Tree: Teillinkszusammenführungen/Sek.
+3348
+B+ Tree: Seitenverschiebevorgänge/Sek.
+3350
+B+ Tree: Zusammenführungen/Sek.
+3352
+B+ Tree: Fehler bei einfachen Seitenbereinigungsversuchen/Sek.
+3354
+B+ Tree: Suchen nach Kurzschlüssen/Sek.
+3356
+B+ Tree: Rechtzeitige Prereads/Sek.
+3358
+B+ Tree: Unnötige Sibling Latches/Sek.
+3360
+B+ Tree: Operation Nächster Datensatz/Sek.
+3362
+B+ Tree: Operation Nächster Datensatz (Nicht sichtbare Knoten ausgelassen)/Sek.
+3364
+B+ Tree Move Nexts (Nodes Filtered)/sec
+3366
+B+ Tree: Operation Vorhergehender Datensatz/Sek.
+3368
+B+ Tree: Operation Vorhergehender Datensatz (Nicht sichtbare Knoten ausgelassen)/Sek.
+3370
+B+ Tree Move Prevs (Nodes Filtered)/sec
+3372
+B+ Tree: Suchoperationen/Sek.
+3374
+B+ Tree: Einfügeoperationen/Sek.
+3376
+B+ Tree: Ersetzungen/Sek.
+3378
+B+ Tree: Flaglöschungen/Sek.
+3380
+B+ Tree: Löschvorgänge/Sek.
+3382
+B+ Tree: Anfügungen/Sek.
+3384
+B+ Tree: Erstellungen/Sek.
+3386
+B+ Tree: Erstellungen (Gesamt)
+3388
+B+ Tree: Löschungen/Sek.
+3390
+B+ Tree: Löschungen (Gesamt)
+3392
+Datenbank: Preread nicht behandelter Seiten/Sek.
+3394
+Database Page Evictions (k=1)/sec
+3396
+Database Page Evictions (k=2)/sec
+3398
+Database Page Evictions (Scavenging)/sec
+3400
+Database Page Evictions (Shrink)/sec
+3402
+Database Page Evictions (Purge)/sec
+3404
+Database Page Evictions (Patch)/sec
+3406
+Datenbankcachegröße (MB)
+3408
+Datenbank: Cachegröße
+3410
+Datenbankcachefehler/Sek.
+3412
+Datenbankcache % Treffer
+3414
+No name
+3416
+Datenbankcache % Treffer (unkorreliert)
+3418
+No name
+3420
+Datenbankcachanforderungen/Sek.
+3422
+Datenbankseiten: Asynchrone Leseoperationen/Sek.
+3424
+Datenbankseiten: Synchrone Leseoperationen/Sek.
+3426
+Database Pages Dirtied/sec
+3428
+Database Pages Dirtied (Repeatedly)/sec
+3430
+Datenbankseiten: Geschrieben/Sek.
+3432
+Datenbank: Übertragene Seiten/Sek.
+3434
+Database Pages Non-Resident Reclaimed (Soft Faulted)/sec
+3436
+Database Pages Non-Resident Reclaimed (Failed)/sec
+3438
+Database Pages Non-Resident Re-read/sec
+3440
+Database Pages Non-Resident Evicted (Normally)/sec
+3442
+Database Page Touches (Non-Touch)/sec
+3444
+Database Page Touches (k=1)/sec
+3446
+Database Page Touches (k=2)/sec
+3448
+Database Page Touches (Correlated)/sec
+3450
+Database Pages Colded (Ext)/sec
+3452
+Database Pages Colded (Int)/sec
+3454
+Datenbank: Seitenpreread/Sek.
+3456
+Database Page Preread Stalls/sec
+3458
+Database Pages Preread (Unnecessary)/sec
+3460
+Database Pages Dehydrated/sec
+3462
+Database Pages Rehydrated/sec
+3464
+Datenbank: Seiten mit Versionsanmerkungen/Sek.
+3466
+Datenbank: Seitenversion kopiert/Sek.
+3468
+Datenbankseiten: Wiederholte Schreibvorgänge/Sek.
+3470
+Database Pages Flushed (Cache Shrink)/sec
+3472
+Database Pages Flushed (Checkpoint)/sec
+3474
+Database Pages Flushed (Checkpoint Foreground)/sec
+3476
+Database Pages Flushed (Context Flush)/sec
+3478
+Database Pages Flushed (Idle)/sec
+3480
+Database Pages Flushed (Filthy Foreground)/sec
+3482
+Database Pages Flushed (Scavenge)/sec
+3484
+Database Pages Flushed Opportunely/sec
+3486
+Database Pages Flushed Opportunely Clean/sec
+3488
+Geschriebene Datenbankseiten: Zusammengeführt/Sek.
+3490
+Gelesene Datenbankseiten: Zusammengeführt/Sek.
+3492
+Database Pages Repeatedly Read/sec
+3494
+FCB Async Scan/sec
+3496
+FCB Async Purge/sec
+3498
+FCB Async Threshold-Scan/sec
+3500
+FCB Async Threshold-Purge/sec
+3502
+FCB Async Threshold Purge Failures (Conflicts)/sec
+3504
+FCB Async Threshold Purge Failures (In Use)/sec
+3506
+FCB Async Threshold Purge Failures (Sentinel)/sec
+3508
+FCB Async Threshold Purge Failures (Delete Pending)/sec
+3510
+FCB Async Threshold Purge Failures (Outstanding Versions)/sec
+3512
+FCB Async Threshold Purge Failures (LV Outstanding)/sec
+3514
+FCB Async Threshold Purge Failures (Index Outstanding)/sec
+3516
+FCB Async Threshold Purge Failures (Active Tasks)/sec
+3518
+FCB Async Threshold Purge Failures (Callbacks)/sec
+3520
+FCB Async Threshold Purge Failures (Other)/sec
+3522
+FCB Async Purge Failures (Conflicts)/sec
+3524
+FCB Async Purge Failures (In Use)/sec
+3526
+FCB Async Purge Failures (Sentinel)/sec
+3528
+FCB Async Purge Failures (Delete Pending)/sec
+3530
+FCB Async Purge Failures (Outstanding Versions)/sec
+3532
+FCB Async Purge Failures (LV Outstanding)/sec
+3534
+FCB Async Purge Failures (Index Outstanding)/sec
+3536
+FCB Async Purge Failures (Active Tasks)/sec
+3538
+FCB Async Purge Failures (Callbacks)/sec
+3540
+FCB Async Purge Failures (Other)/sec
+3542
+FCB Sync Purge/sec
+3544
+Table Open Pages Read/sec
+3546
+Table Open Pages Preread/sec
+3548
+Datenbank  ==> Instanzen
+3550
+Konvertierte Seiten/Sek.
+3552
+Konvertierte Seiten
+3554
+Konvertierte Datensätze/Sek.
+3556
+Konvertierte Datensätze
+3558
+Defragmentierungstasks
+3560
+Ausstehende Defragmentierungstasks
+3562
+Verworfene Defragmentierungstasks
+3564
+Geplante Defragmentierungstasks/Sek.
+3566
+Abgeschlossene Defragmentierungstasks/Sek.
+3568
+FCB Async Scan/sec
+3570
+FCB Async Purge/sec
+3572
+FCB Async Threshold-Scan/sec
+3574
+FCB Async Threshold-Purge/sec
+3576
+FCB Async Threshold Purge Failures (Conflicts)/sec
+3578
+FCB Async Threshold Purge Failures (In Use)/sec
+3580
+FCB Async Threshold Purge Failures (Sentinel)/sec
+3582
+FCB Async Threshold Purge Failures (Delete Pending)/sec
+3584
+FCB Async Threshold Purge Failures (Outstanding Versions)/sec
+3586
+FCB Async Threshold Purge Failures (LV Outstanding)/sec
+3588
+FCB Async Threshold Purge Failures (Index Outstanding)/sec
+3590
+FCB Async Threshold Purge Failures (Active Tasks)/sec
+3592
+FCB Async Threshold Purge Failures (Callbacks)/sec
+3594
+FCB Async Threshold Purge Failures (Other)/sec
+3596
+FCB Async Purge Failures (Conflicts)/sec
+3598
+FCB Async Purge Failures (In Use)/sec
+3600
+FCB Async Purge Failures (Sentinel)/sec
+3602
+FCB Async Purge Failures (Delete Pending)/sec
+3604
+FCB Async Purge Failures (Outstanding Versions)/sec
+3606
+FCB Async Purge Failures (LV Outstanding)/sec
+3608
+FCB Async Purge Failures (Index Outstanding)/sec
+3610
+FCB Async Purge Failures (Active Tasks)/sec
+3612
+FCB Async Purge Failures (Callbacks)/sec
+3614
+FCB Async Purge Failures (Other)/sec
+3616
+FCB Sync Purge/sec
+3618
+FCB Sync Purge Stalls/sec
+3620
+Auf Versionscleanup wartende FCB-Zuweisungen/Sek.
+3622
+FCB-Löschung beim Schließen des Cursors/Sek.
+3624
+FCB-Cache % Treffer
+3626
+No name
+3628
+FCB-Cacheverzögerungen/Sek.
+3630
+Maximaler FCB-Cache
+3632
+Bevorzugter FCB-Cache
+3634
+Zugewiesener FCB-Cache
+3636
+FCB Cache Allocated/sec
+3638
+Verfügbarer FCB-Cache
+3640
+FCB Cache Allocations Failed
+3642
+FCB Cache Allocation Average Latency (ms)
+3644
+No name
+3646
+FCB Attached RCEs
+3648
+Sitzungen in Verwendung
+3650
+Sitzungen % in Verwendung
+3652
+No name
+3654
+Tabelle öffnen: % Cachetreffer
+3656
+No name
+3658
+Tabelle öffnen: Cachetreffer/Sek.
+3660
+Tabelle öffnen: Cacheverfehler/Sek.
+3662
+Table Open Pages Read/sec
+3664
+Table Open Pages Preread/sec
+3666
+Tabelle öffnen: Operationen/Sek.
+3668
+Tabelle schließen: Operationen/Sek.
+3670
+Geöffnete Tabellen
+3672
+Protokoll: Schreiben Bytes/Sek.
+3674
+Generierte Protokollbytes/Sek.
+3676
+Protokollpuffergröße
+3678
+Verwendete Bytes im Protokollpuffer
+3680
+Freie Bytes im Protokollpuffer
+3682
+Wartende Protokoll-Threads
+3684
+Protokolldateigröße
+3686
+Protokollprüfpunkttiefe
+3688
+Prüfpunkttiefe für Protokollgenerierung
+3690
+Log Checkpoint Maintenance Outstanding IO Max
+3692
+Prüfpunkttiefe für Protokollgenerierung: Ziel
+3694
+Protokollprüfpunkttiefe als % des Ziels
+3696
+No name
+3698
+Max. Prüfpunkttiefe für Protokollgenerierung
+3700
+Verlustausfalltiefe für Protokollgenerierung
+3702
+Generierte Protokolldateien
+3704
+Vorzeitig generierte Protokolldateien
+3706
+Aktuelle Protokolldateigenerierung
+3708
+Benutzer: Nur Lese-Commits an Level 0/Sek.
+3710
+User Read/Write Transaction Commits to Level 0 (Durable)/sec
+3712
+User Read/Write Transaction Commits to Level 0 (Lazy)/sec
+3714
+User Wait All Transaction Commits/sec
+3716
+User Wait Last Transaction Commits/sec
+3718
+Benutzer: Transaktionscommits an Level 0/Sek.
+3720
+Benutzer: Nur Lese-Rollbacks an Level 0/Sek.
+3722
+Benutzer: Lese-/Schreib-Transaktionsrollbacks an Level 0/Sek.
+3724
+Benutzer: Transaktionsrollbacks an Level 0/Sek.
+3726
+System: Nur Lese-Commits an Level 0/Sek.
+3728
+System Read/Write Transaction Commits to Level 0 (Durable)/sec
+3730
+System Read/Write Transaction Commits to Level 0 (Lazy)/sec
+3732
+System: Transaktionscommits an Level 0/Sek.
+3734
+System: Nur Lese-Transaktionsrollbacks an Level 0/Sek.
+3736
+System: Lese-/Schreib-Transaktionsrollbacks an Level 0/Sek.
+3738
+System: Transaktionsrollbacks an Level 0/Sek.
+3740
+Datenbank: Verbrauchte asynchrone Dateierweiterung durch Seitenzuweisung/Sek.
+3742
+Datenbank: Verzögerungen der Dateierweiterung durch Seitenzuweisung/Sek.
+3744
+Database Page Allocation File Shrink Stalls/sec
+3746
+Protokolldatensätze/Sek.
+3748
+Protokollpufferkapazität: Leerungen/Sek.
+3750
+Protokollpuffer: Commitleerungen/Sek.
+3752
+Log Buffer Flushes Skipped/sec
+3754
+Log Buffer Flushes Blocked/sec
+3756
+Protokollpuffer: Leerungen/Sek.
+3758
+Protokollschreiboperationen/Sek.
+3760
+Protokollierung vollständiger Segmente, Schreibvorgänge/Sek.
+3762
+Protokollierung Teilsegmente, Schreibvorgänge/Sek.
+3764
+Protokolldatensatzverzögerungen/Sek.
+3766
+Zugewiesene Version-Buckets
+3768
+Für Löschvorgänge zugewiesene Version-Buckets
+3770
+Auf Versionscleanup wartende Version-Bucket-Zuweisungen/Sek.
+3772
+Versionsspeicher: Durchschnittliche Länge der RCE-Markierung
+3774
+Versionsspeicher: Unnötige Aufrufe/Sek.
+3776
+Versionsspeicher: Asynchron verteilte Bereinigungsaufgaben/Sek.
+3778
+Versionsspeicher: Synchron verteilte Bereinigungsaufgaben/Sek.
+3780
+Versionsspeicher: Verworfene Bereinigungsaufgaben/Sek.
+3782
+Versionsspeicher: Bereinigungsaufgabenfehler/Sek.
+3784
+Datensatz-Einfügevorgänge/Sek.
+3786
+Datensatz-Löschvorgänge/Sek.
+3788
+Datensatz-Ersetzungsvorgänge/Sek.
+3790
+Datensatz: Nicht erforderliche Ersetzungsvorgänge/Sek.
+3792
+Datensatz: Redundante Ersetzungsvorgänge/Sek.
+3794
+Escrow-Aktualisierung von Datensätzen/Sek.
+3796
+Sekundärer Index: Einfügevorgänge/Sek.
+3798
+Sekundärer Index: Löschvorgänge/Sek.
+3800
+Falsche Indexspaltenaktualisierungen/Sek.
+3802
+Falsche Tupel-Indexspaltenaktualisierungen/Sek.
+3804
+Datensatz: Aktualisierte intrinsische Long-Werte/Sek.
+3806
+Datensatz: Hinzugefügte getrennte Long-Werte/Sek.
+3808
+Datensatz: Erzwungene getrennte Long-Werte/Sek.
+3810
+Datensatz: Alle erzwungenen getrennten Long-Werte/Sek.
+3812
+Datensatz: Alle Verweise für getrennte Long-Werte/Sek.
+3814
+Datensatz: Alle Verweise für getrennte Long-Werte aufheben/Sek.
+3816
+Getrennter Long-Wert: Suchvorgänge/Sek.
+3818
+Getrennter Long-Wert: Abrufvorgänge/Sek.
+3820
+Getrennter Long-Wert: Erstellungsvorgänge/Sek.
+3822
+Long-Value Maximum LID
+3824
+Getrennter Long-Wert: Aktualisierungsvorgänge/Sek.
+3826
+Getrennter Long-Wert: Löschvorgänge/Sek.
+3828
+Getrennter Long-Wert: Kopiervorgänge/Sek.
+3830
+Getrennter Long-Wert: Fragmentsuchvorgänge/Sek.
+3832
+Getrennter Long-Wert: Fragmentabrufvorgänge/Sek.
+3834
+Getrennter Long-Wert: Fragmentanfügevorgänge/Sek.
+3836
+Getrennter Long-Wert: Fragmentersetzungsvorgänge/Sek.
+3838
+Getrennter Long-Wert: Fragmentlöschvorgänge/Sek.
+3840
+Getrennter Long-Wert: Fragmentkopiervorgänge/Sek.
+3842
+B+ Tree Append Splits/sec
+3844
+B+ Tree Right Splits/sec
+3846
+B+ Tree: Hotpoint-Rechtsteilungen/Sek.
+3848
+B+ Tree: Vertikale Teilungen/Sek.
+3850
+B+ Tree: Teilungen/Sek.
+3852
+B+-Gesamtstruktur: Zusammenführungen leerer Seiten/Sek.
+3854
+B+ Tree: Rechtszusammenführungen/Sek.
+3856
+B+ Tree: Teilzusammenführungen/Sek.
+3858
+B+ Tree: Linkszusammenführungen/Sek.
+3860
+B+ Tree: Teillinkszusammenführungen/Sek.
+3862
+B+ Tree: Seitenverschiebevorgänge/Sek.
+3864
+B+ Tree: Zusammenführungen/Sek.
+3866
+B+ Tree: Fehler bei einfachen Seitenbereinigungsversuchen/Sek.
+3868
+B+ Tree: Suchen nach Kurzschlüssen/Sek.
+3870
+B+ Tree: Rechtzeitige Prereads/Sek.
+3872
+B+ Tree: Unnötige Sibling Latches/Sek.
+3874
+B+ Tree Move Nexts/sec
+3876
+B+ Tree: Operation Nächster Datensatz (Nicht sichtbare Knoten ausgelassen)/Sek.
+3878
+B+ Tree Move Nexts (Nodes Filtered)/sec
+3880
+B+ Tree Move Prevs/sec
+3882
+B+ Tree: Operation Vorhergehender Datensatz (Nicht sichtbare Knoten ausgelassen)/Sek.
+3884
+B+ Tree Move Prevs (Nodes Filtered)/sec
+3886
+B+ Tree: Suchoperationen/Sek.
+3888
+B+ Tree: Einfügeoperationen/Sek.
+3890
+B+ Tree: Ersetzungen/Sek.
+3892
+B+ Tree: Flaglöschungen/Sek.
+3894
+B+ Tree: Löschvorgänge/Sek.
+3896
+B+ Tree: Anfügungen/Sek.
+3898
+B+ Tree: Erstellungen/Sek.
+3900
+B+ Tree: Erstellungen (Gesamt)
+3902
+B+ Tree: Löschungen/Sek.
+3904
+B+ Tree: Löschungen (Gesamt)
+3906
+Datenbank: Preread nicht behandelter Seiten/Sek.
+3908
+Database Page Evictions (k=1)/sec
+3910
+Database Page Evictions (k=2)/sec
+3912
+Database Page Evictions (Scavenging)/sec
+3914
+Database Page Evictions (Shrink)/sec
+3916
+Database Page Evictions (Purge)/sec
+3918
+Database Page Evictions (Patch)/sec
+3920
+Datenbankcachegröße (MB)
+3922
+Datenbankcachefehler/Sek.
+3924
+Datenbankcache % Treffer
+3926
+No name
+3928
+Datenbankcache % Treffer (unkorreliert)
+3930
+No name
+3932
+Datenbankcachanforderungen/Sek.
+3934
+Instance Status
+3936
+Datenbankseiten: Asynchrone Leseoperationen/Sek.
+3938
+Datenbankseiten: Synchrone Leseoperationen/Sek.
+3940
+Database Pages Dirtied/sec
+3942
+Database Pages Dirtied (Repeatedly)/sec
+3944
+Datenbankseiten: Geschrieben/Sek.
+3946
+Datenbank: Übertragene Seiten/Sek.
+3948
+Database Pages Non-Resident Reclaimed (Soft Faulted)/sec
+3950
+Database Pages Non-Resident Reclaimed (Failed)/sec
+3952
+Database Pages Non-Resident Re-read/sec
+3954
+Database Pages Non-Resident Evicted (Normally)/sec
+3956
+Database Page Touches (Non-Touch)/sec
+3958
+Database Page Touches (k=1)/sec
+3960
+Database Page Touches (k=2)/sec
+3962
+Database Page Touches (Correlated)/sec
+3964
+Database Pages Colded (Ext)/sec
+3966
+Database Pages Colded (Int)/sec
+3968
+Datenbank: Seitenpreread/Sek.
+3970
+Database Page Preread Stalls/sec
+3972
+Database Pages Preread (Unnecessary)/sec
+3974
+Database Pages Dehydrated/sec
+3976
+Database Pages Rehydrated/sec
+3978
+Datenbank: Seiten mit Versionsanmerkungen/Sek.
+3980
+Datenbank: Seitenversion kopiert/Sek.
+3982
+Datenbankseiten: Wiederholte Schreibvorgänge/Sek.
+3984
+Database Pages Flushed (Cache Shrink)/sec
+3986
+Database Pages Flushed (Checkpoint)/sec
+3988
+Database Pages Flushed (Checkpoint Foreground)/sec
+3990
+Database Pages Flushed (Context Flush)/sec
+3992
+Database Pages Flushed (Idle)/sec
+3994
+Database Pages Flushed (Filthy Foreground)/sec
+3996
+Database Pages Flushed (Scavenge)/sec
+3998
+Database Pages Flushed Opportunely/sec
+4000
+Database Pages Flushed Opportunely Clean/sec
+4002
+Geschriebene Datenbankseiten: Zusammengeführt/Sek.
+4004
+Gelesene Datenbankseiten: Zusammengeführt/Sek.
+4006
+Database Pages Repeatedly Read/sec
+4008
+Streamingsicherung: Gelesene Seiten/Sek.
+4010
+Onlinedegfragmentierung: Seitenverweise/Sek.
+4012
+Onlinedefragmentierung: Gelesene Seiten/Sek.
+4014
+Onlinedefragmentierung: Seitenpreread/Sek.
+4016
+Onlinedefragmentierung: Bearbeitete Seiten/Sek.
+4018
+Onlinedefragmentierung: Erneut bearbeitete Seiten/Sek.
+4020
+Onlinedefragmentierung: Freigegebene Seiten/Sek.
+4022
+Onlinedefragmentierung: Datenverschiebvorgänge/Sek.
+4024
+Onlinedefragmentierung: Seitenverschiebvorgänge/Sek.
+4026
+Onlinedefragmentierung: Protokolldatensätze/Sek.
+4028
+Onlinedefragmentierung: Durchschn. Protokollbytes
+4030
+No name
+4032
+Datenbankwartung: Dauer seit letzter
+4034
+Database Maintenance Pages Read
+4036
+Database Maintenance Pages Read/sec
+4038
+Database Maintenance Pages Zeroed
+4040
+Database Maintenance Pages Zeroed/sec
+4042
+Datenbankwartung: Fehlerhafte Seitenprüfsummen
+4044
+Database Maintenance IO Reads/sec
+4046
+Database Maintenance IO Reads Average Bytes
+4048
+No name
+4050
+Database Maintenance Throttle Setting
+4052
+Database Maintenance IO Re-Reads/sec
+4054
+Database Maintenance IO Re-Reads Average Bytes
+4056
+No name
+4058
+Database Maintenance IO Re-Reads Average Latency
+4060
+No name
+4062
+Datenbankaufgaben: Seitenverweise/Sek.
+4064
+Datenbankaufgaben: Gelesene Seiten/Sek.
+4066
+Datenbankaufgaben: Seitenpreread/Sek.
+4068
+Datenbankaufgaben: Bearbeitete Seiten/Sek.
+4070
+Datenbankaufgaben: Erneut bearbeitete Seiten/Sek.
+4072
+Datenbankaufgaben: Protokolldatensätze/Sek.
+4074
+Datenbankaufgaben: Durchschnittliche Protokollbytes
+4076
+No name
+4078
+E/A: Datenbankleseoperationen (Angefügt)/Sek.
+4080
+E/A: Durchschnittliche Wartezeit für Datenbankleseoperationen (Angefügt)
+4082
+No name
+4084
+I/O Database Reads (Attached) Average Bytes
+4086
+No name
+4088
+I/O Database Reads (Attached) In Heap
+4090
+I/O Database Reads (Attached) Async Pending
+4092
+I/O Database Reads (Attached) Abnormal Latency/sec
+4094
+E/A: Datenbankleseoperationen (Wiederherstellung)/Sek.
+4096
+E/A: Durchschnittliche Wartezeit für Datenbankleseoperationen (Wiederherstellung)
+4098
+No name
+4100
+I/O Database Reads (Recovery) Average Bytes
+4102
+No name
+4104
+I/O Database Reads (Recovery) In Heap
+4106
+I/O Database Reads (Recovery) Async Pending
+4108
+I/O Database Reads (Recovery) Abnormal Latency/sec
+4110
+E/A: Datenbankleseoperationen/Sek.
+4112
+E/A: Durchschnittliche Wartezeit für Datenbankleseoperationen
+4114
+No name
+4116
+I/O Database Reads Average Bytes
+4118
+No name
+4120
+I/O Database Reads In Heap
+4122
+I/O Database Reads Async Pending
+4124
+I/O Database Reads Abnormal Latency/sec
+4126
+E/A: Protokollleseoperationen/Sek.
+4128
+E/A: Durchschnittliche Wartezeit für Protokollleseoperationen
+4130
+No name
+4132
+E/A: Durchschnittliche Anzahl von Bytes für Protokollleseoperationen
+4134
+No name
+4136
+E/A: Protokollleseoperationen im Heap
+4138
+E/A: Ausstehende asynchrone Protokollleseoperationen
+4140
+E/A: Nicht ordnungsgemäße Wartezeit für Protokollleseoperationen/Sek.
+4142
+E/A: Datenbankschreiboperationen (Angefügt)/Sek.
+4144
+E/A: Durchschnittliche Wartezeit für Datenbankschreiboperationen (Angefügt)
+4146
+No name
+4148
+I/O Database Writes (Attached) Average Bytes
+4150
+No name
+4152
+I/O Database Writes (Attached) In Heap
+4154
+I/O Database Writes (Attached) Async Pending
+4156
+I/O Database Writes (Attached) Abnormal Latency/sec
+4158
+E/A: Datenbankschreiboperationen (Wiederherstellung)/Sek.
+4160
+E/A: Durchschnittliche Wartezeit für Datenbankschreiboperationen (Wiederherstellung)
+4162
+No name
+4164
+I/O Database Writes (Recovery) Average Bytes
+4166
+No name
+4168
+I/O Database Writes (Recovery) In Heap
+4170
+I/O Database Writes (Recovery) Async Pending
+4172
+I/O Database Writes (Recovery) Abnormal Latency/sec
+4174
+E/A: Datenbankschreiboperationen/Sek.
+4176
+E/A: Durchschnittliche Wartezeit für Datenbankschreiboperationen
+4178
+No name
+4180
+I/O Database Writes Average Bytes
+4182
+No name
+4184
+I/O Database Writes In Heap
+4186
+I/O Database Writes Async Pending
+4188
+I/O Database Writes Abnormal Latency/sec
+4190
+E/A: Protokollschreiboperationen/Sek.
+4192
+E/A: Durchschnittliche Wartezeit für Protokollschreiboperationen
+4194
+No name
+4196
+E/A: Durchschnittliche Anzahl von Bytes für Protokollschreiboperationen
+4198
+No name
+4200
+E/A: Protokollschreiboperationen im Heap
+4202
+E/A: Ausstehende asynchrone Protokollschreiboperationen
+4204
+E/A: Nicht ordnungsgemäße Wartezeit für Protokollschreiboperationen/Sek.
+4206
+Datensatzbytes: Fehler bei der Komprimierung/Sek.
+4208
+Pages Reorganized (Other)/sec
+4210
+Pages Reorganized (Free Space Request)/sec
+4212
+Pages Reorganized (Page Move Logging)/sec
+4214
+Pages Reorganized (Dehydrate Buffer)/sec
+4216
+BITS, Netzwerknutzung
+4218
+Remoteservergeschwindigkeit (Bit/s)
+4220
+Netzwerkkartengeschwindigkeit (Bit/s)
+4222
+Netzwerkkarte frei (%)
+4224
+IGD-Geschwindigkeit (Bit/s)
+4226
+IGD frei (%)
+4228
+BITS, Downloadblockgröße (Bytes)
+4230
+BITS, Downloadantwortintervall (ms)
+4232
+Geschätzte verfügbare Bandbreite für das Remotesystem (Bit/s)
+4234
+ASP.NET-Zustandsdienst
+4460
+Aktive Statusserversitzungen
+4462
+Abgebrochene Statusserversitzungen
+4464
+Abgelaufene Statusserversitzungen
+4466
+Statusserversitzungen insgesamt
+4468
+ASP.NET Version 4.0.30319
+4470
+ASP.NET-Anwendungen, Version 4.0.30319
+4472
+Anwendungsneustarts
+4474
+Ausgeführte Anwendungen
+4476
+Getrennte Anforderungen
+4478
+Ausführungszeit der Anforderung
+4480
+Zurückgewiesene Anforderungen
+4482
+Anforderungen in Warteschlange
+4484
+Ausgeführte Arbeitsprozesse
+4486
+Arbeitsprozess-Neustarts
+4488
+Wartezeit der Anforderung
+4490
+Aktive Statusserversitzungen
+4492
+Abgebrochene Statusserversitzungen
+4494
+Abgelaufene Statusserversitzungen
+4496
+Statusserversitzungen insgesamt
+4498
+Aktuelle Anforderungen
+4500
+Bei erfolgreicher Überwachung ausgelöste Ereignisse
+4502
+Bei Überwachungsfehlern ausgelöste Ereignisse
+4504
+Ausgelöste Fehlerereignisse
+4506
+Ausgelöste Anforderungsfehlerereignisse
+4508
+Ausgelöste Infrastrukturfehlerereignisse
+4510
+Anforderungen in systemeigener Warteschlange
+4512
+Anonyme Anforderungen
+4514
+Anonyme Anforderungen/s
+4516
+Cacheeinträge gesamt
+4518
+Gesamte Cacheturnoverrate
+4520
+Cachetreffer gesamt
+4522
+Fehlgeschlagene Cachezugriffe gesamt
+4524
+Cache-Trefferrate gesamt
+4526
+Cache-Trefferrate gesamt (Basis)
+4528
+Cache-API-Einträge
+4530
+Turnoverrate für Cache-API
+4532
+Cache-API-Treffer
+4534
+Fehlgeschlagene Cache-API-Zugriffe
+4536
+Cache-API-Trefferrate
+4538
+API-Cache-Trefferrate (Basis)
+4540
+Ausgabecacheeinträge
+4542
+Turnoverrate für den Ausgabecache
+4544
+Ausgabecachetreffer
+4546
+Fehlgeschlagene Ausgabecache-Zugriffe
+4548
+Ausgabecache-Trefferrate
+4550
+Ausgabecache-Trefferrate
+4552
+Kompilierungen insgesamt
+4554
+Debug-Anforderungen
+4556
+Fehler bei der Vorverarbeitung
+4558
+Fehler bei der Kompilierung
+4560
+Fehler beim Ausführen
+4562
+Unbehandelte Fehler beim Ausführen
+4564
+Unbehandelte Fehler während der Ausführung pro Sekunde
+4566
+Fehler gesamt
+4568
+Fehler gesamt/s
+4570
+Pipeline-Instanzenzahl
+4572
+Anforderungsbytes gesamt (einschließl.)
+4574
+Anforderungsbytes gesamt (ausschließl.)
+4576
+Ausgeführte Anforderungen
+4578
+Fehlgeschlagene Anforderungen
+4580
+Nicht gefundene Anforderungen
+4582
+Nicht berechtigte Anforderungen
+4584
+Anfragen in der Anwendungswarteschlange
+4586
+Anforderungen mit Zeitüberschreitung
+4588
+Erfolgreiche Anforderungen
+4590
+Anforderungen gesamt
+4592
+Anforderungen/s
+4594
+Aktive Sitzungen
+4596
+Abgebrochene Sitzungen
+4598
+Sitzungen mit Zeitüberschreitung
+4600
+Sitzungen gesamt
+4602
+Abgebrochene Transaktionen
+4604
+Übermittelte Transaktionen
+4606
+Ausstehende Transaktionen
+4608
+Transaktionen gesamt
+4610
+Transaktionen/s
+4612
+Gesamtanzahl der Statusserververbindungen
+4614
+Gesamtanzahl der SQL Server-Verbindungen
+4616
+Ausgelöste Ereignisse
+4618
+Ausgelöste Ereignisse/s
+4620
+Anwendungslebensdauer-Ereignisse
+4622
+Anwendungslebensdauer-Ereignisse/s
+4624
+Ausgelöste Fehlerereignisse
+4626
+Ausgelöste Fehlerereignisse/s
+4628
+Ausgelöste Anforderungsfehlerereignisse
+4630
+Ausgelöste Anforderungsfehlerereignisse/s
+4632
+Ausgelöste Infrastrukturfehlerereignisse
+4634
+Ausgelöste Infrastrukturfehlerereignisse/s
+4636
+Ausgelöste Anforderungsereignisse
+4638
+Ausgelöste Anforderungsereignisse/s
+4640
+Bei erfolgreicher Überwachung ausgelöste Ereignisse
+4642
+Bei Überwachungsfehlern ausgelöste Ereignisse
+4644
+Erfolgreiche Mitgliedschaftsauthentifizierung
+4646
+Fehler bei Mitgliedschaftsauthentifizierung
+4648
+Erfolgreiche Formularauthentifizierung
+4650
+Fehler bei Formularauthentifizierung
+4652
+Fehler beim Validieren des Ansichtszustands-MAC
+4654
+Ausführungszeit der Anforderung
+4656
+Getrennte Anforderungen
+4658
+Zurückgewiesene Anforderungen
+4660
+Wartezeit der Anforderung
+4662
+Limit des verwendeten Computerspeichers in Prozent des Caches
+4664
+Basis für das Limit des verwendeten Computerspeichers in Prozent des Caches
+4666
+Limit des verwendeten Prozessspeichers in Prozent des Caches
+4668
+Basis für das Limit des verwendeten Prozessspeichers in Prozent des Caches
+4670
+Cachetrimmungen gesamt
+4672
+Cache-API-Trimmungen
+4674
+Ausgabecache-Trimmungen
+4676
+% verwaltete Prozessorzeit (geschätzt)
+4678
+% verwaltete Prozessorzeitbasis (geschätzt)
+4680
+Verwendeter verwalteter Speicher (geschätzt)
+4682
+Eingehende Anforderungsbytes insgesamt (WebSockets)
+4684
+Ausgehende Anforderungsbytes insgesamt (WebSockets)
+4686
+Ausgeführte Anforderungen (WebSockets)
+4688
+Anforderungen mit Fehlern (WebSockets)
+4690
+Erfolgreiche Anforderungen (WebSockets)
+4692
+Anforderungen insgesamt (WebSockets)
+4694
+ASP.NET
+4696
+ASP.NET-Anwendungen
+4698
+Anwendungsneustarts
+4700
+Ausgeführte Anwendungen
+4702
+Getrennte Anforderungen
+4704
+Ausführungszeit der Anforderung
+4706
+Zurückgewiesene Anforderungen
+4708
+Anforderungen in Warteschlange
+4710
+Ausgeführte Arbeitsprozesse
+4712
+Arbeitsprozess-Neustarts
+4714
+Wartezeit der Anforderung
+4716
+Aktive Statusserversitzungen
+4718
+Abgebrochene Statusserversitzungen
+4720
+Abgelaufene Statusserversitzungen
+4722
+Statusserversitzungen insgesamt
+4724
+Aktuelle Anforderungen
+4726
+Bei erfolgreicher Überwachung ausgelöste Ereignisse
+4728
+Bei Überwachungsfehlern ausgelöste Ereignisse
+4730
+Ausgelöste Fehlerereignisse
+4732
+Ausgelöste Anforderungsfehlerereignisse
+4734
+Ausgelöste Infrastrukturfehlerereignisse
+4736
+Anforderungen in systemeigener Warteschlange
+4738
+Anonyme Anforderungen
+4740
+Anonyme Anforderungen/s
+4742
+Cacheeinträge gesamt
+4744
+Gesamte Cacheturnoverrate
+4746
+Cachetreffer gesamt
+4748
+Fehlgeschlagene Cachezugriffe gesamt
+4750
+Cache-Trefferrate gesamt
+4752
+Cache-Trefferrate gesamt (Basis)
+4754
+Cache-API-Einträge
+4756
+Turnoverrate für Cache-API
+4758
+Cache-API-Treffer
+4760
+Fehlgeschlagene Cache-API-Zugriffe
+4762
+Cache-API-Trefferrate
+4764
+API-Cache-Trefferrate (Basis)
+4766
+Ausgabecacheeinträge
+4768
+Turnoverrate für den Ausgabecache
+4770
+Ausgabecachetreffer
+4772
+Fehlgeschlagene Ausgabecache-Zugriffe
+4774
+Ausgabecache-Trefferrate
+4776
+Ausgabecache-Trefferrate
+4778
+Kompilierungen insgesamt
+4780
+Debug-Anforderungen
+4782
+Fehler bei der Vorverarbeitung
+4784
+Fehler bei der Kompilierung
+4786
+Fehler beim Ausführen
+4788
+Unbehandelte Fehler beim Ausführen
+4790
+Unbehandelte Fehler während der Ausführung pro Sekunde
+4792
+Fehler gesamt
+4794
+Fehler gesamt/s
+4796
+Pipeline-Instanzenzahl
+4798
+Anforderungsbytes gesamt (einschließl.)
+4800
+Anforderungsbytes gesamt (ausschließl.)
+4802
+Ausgeführte Anforderungen
+4804
+Fehlgeschlagene Anforderungen
+4806
+Nicht gefundene Anforderungen
+4808
+Nicht berechtigte Anforderungen
+4810
+Anfragen in der Anwendungswarteschlange
+4812
+Anforderungen mit Zeitüberschreitung
+4814
+Erfolgreiche Anforderungen
+4816
+Anforderungen gesamt
+4818
+Anforderungen/s
+4820
+Aktive Sitzungen
+4822
+Abgebrochene Sitzungen
+4824
+Sitzungen mit Zeitüberschreitung
+4826
+Sitzungen gesamt
+4828
+Abgebrochene Transaktionen
+4830
+Übermittelte Transaktionen
+4832
+Ausstehende Transaktionen
+4834
+Transaktionen gesamt
+4836
+Transaktionen/s
+4838
+Gesamtanzahl der Statusserververbindungen
+4840
+Gesamtanzahl der SQL Server-Verbindungen
+4842
+Ausgelöste Ereignisse
+4844
+Ausgelöste Ereignisse/s
+4846
+Anwendungslebensdauer-Ereignisse
+4848
+Anwendungslebensdauer-Ereignisse/s
+4850
+Ausgelöste Fehlerereignisse
+4852
+Ausgelöste Fehlerereignisse/s
+4854
+Ausgelöste Anforderungsfehlerereignisse
+4856
+Ausgelöste Anforderungsfehlerereignisse/s
+4858
+Ausgelöste Infrastrukturfehlerereignisse
+4860
+Ausgelöste Infrastrukturfehlerereignisse/s
+4862
+Ausgelöste Anforderungsereignisse
+4864
+Ausgelöste Anforderungsereignisse/s
+4866
+Bei erfolgreicher Überwachung ausgelöste Ereignisse
+4868
+Bei Überwachungsfehlern ausgelöste Ereignisse
+4870
+Erfolgreiche Mitgliedschaftsauthentifizierung
+4872
+Fehler bei Mitgliedschaftsauthentifizierung
+4874
+Erfolgreiche Formularauthentifizierung
+4876
+Fehler bei Formularauthentifizierung
+4878
+Fehler beim Validieren des Ansichtszustands-MAC
+4880
+Ausführungszeit der Anforderung
+4882
+Getrennte Anforderungen
+4884
+Zurückgewiesene Anforderungen
+4886
+Wartezeit der Anforderung
+4888
+Limit des verwendeten Computerspeichers in Prozent des Caches
+4890
+Basis für das Limit des verwendeten Computerspeichers in Prozent des Caches
+4892
+Limit des verwendeten Prozessspeichers in Prozent des Caches
+4894
+Basis für das Limit des verwendeten Prozessspeichers in Prozent des Caches
+4896
+Cachetrimmungen gesamt
+4898
+Cache-API-Trimmungen
+4900
+Ausgabecache-Trimmungen
+4902
+% verwaltete Prozessorzeit (geschätzt)
+4904
+% verwaltete Prozessorzeitbasis (geschätzt)
+4906
+Verwendeter verwalteter Speicher (geschätzt)
+4908
+Eingehende Anforderungsbytes insgesamt (WebSockets)
+4910
+Ausgehende Anforderungsbytes insgesamt (WebSockets)
+4912
+Ausgeführte Anforderungen (WebSockets)
+4914
+Anforderungen mit Fehlern (WebSockets)
+4916
+Erfolgreiche Anforderungen (WebSockets)
+4918
+Anforderungen insgesamt (WebSockets)
+4920
+.NET CLR-Speicher
+4922
+Auflistungsanzahl der Generation 0
+4924
+Auflistungsanzahl der Generation 1
+4926
+Auflistungsanzahl der Generation 2
+4928
+Von Generation 0 avancierter Speicher
+4930
+Von Generation 1 avancierter Speicher
+4932
+Von Generation 0 avancierte Bytes/Sek.
+4934
+Von Generation 1 avancierte Bytes/Sek.
+4936
+Von Gen 0 hochgestufter Finalization-Speicher
+4938
+Prozess-ID
+4940
+Heapgröße der Generation 0
+4942
+Heapgröße der Generation 1
+4944
+Heapgröße der Generation 2
+4946
+Objektheapgröße
+4948
+Aufgrund ausstehender Objektfestlegung beibehaltene Objekte
+4950
+Anzahl der GC-Handle
+4952
+Zugeordnete Bytes/Sek.
+4954
+Anzahl der ausgelösten GC
+4956
+GC-Zeitdauer in Prozent
+4958
+Nicht angezeigt
+4960
+Anzahl der Bytes in den Heaps
+4962
+Festgelegte Bytes insgesamt
+4964
+Gesamtanzahl der reservierten Bytes
+4966
+Anzahl der fixierten Objekte
+4968
+Anzahl der verwendeten Sinkblöcke
+4970
+.NET CLR-Ladevorgang
+4972
+Gesamtanzahl der geladenen Klassen
+4974
+Ladezeit in Prozent
+4976
+Assemblysuchlänge
+4978
+Gesamtanzahl der Ladefehler
+4980
+Rate der Ladefehler
+4982
+Bytes im Lademodulheap
+4984
+Gesamtanzahl der entladenen Anwendungsdomänen
+4986
+Rate der entladenen Anwendungsdomänen
+4988
+Aktuelle geladene Klassen
+4990
+Rate der geladenen Klassen
+4992
+Aktuelle Anwendungsdomänen
+4994
+Anwendungsdomänen insgesamt
+4996
+Rate der Anwendungsdomänen
+4998
+Aktuelle Assemblys
+5000
+Assemblys insgesamt
+5002
+Assemblyrate
+5004
+.NET CLR-Jit
+5006
+Anzahl der mit JIT kompilierten Methoden
+5008
+Anzahl der mit JIT kompilierten IL-Bytes
+5010
+Gesamtanzahl der mit JIT kompilierten IL-Bytes
+5012
+Mit JIT kompilierte IL-Bytes/Sek.
+5014
+JIT-Standardfehler
+5016
+JIT-Zeitdauer in Prozent
+5018
+Nicht angezeigt
+5020
+.NET CLR-Interop
+5022
+Anzahl der CCWs
+5024
+Anzahl der Stubs
+5026
+Anzahl der Marshallvorgänge
+5028
+Anzahl der TLB-Importe/Sek.
+5030
+Anzahl der TLB-Exporte/Sek.
+5032
+.NET CLR-Sperren und Threads
+5034
+Gesamtanzahl der Konflikte
+5036
+Konfliktrate/Sek.
+5038
+Aktuelle Warteschlangenlänge
+5040
+Maximale Warteschlangenlänge
+5042
+Warteschlangenlänge/Sek.
+5044
+Anzahl der aktuellen logischen Threads
+5046
+Anzahl der aktuellen physischen Threads
+5048
+Anzahl der aktuellen erkannten Threads
+5050
+Gesamtanzahl der erkannten Threads
+5052
+Erkannte Threadrate/Sek.
+5054
+.NET CLR-Sicherheit
+5056
+Laufzeitüberprüfungen insgesamt
+5058
+Zeit für die Signaturauthentifizierung in Prozent
+5060
+Anzahl der Verbindungszeitüberprüfungen
+5062
+Zeit für die RT-Überprüfungen in Prozent
+5064
+Nicht angezeigt
+5066
+Stapeltiefe
+5068
+.NET CLR-Remote
+5070
+Remoteaufrufe/Sek.
+5072
+Channel
+5074
+Kontextproxys
+5076
+Geladene kontextgebundene Klassen
+5078
+Kontextgebundene Objektzuordnung/Sek.
+5080
+Kontext
+5082
+Remoteaufrufe insgesamt
+5084
+.NET CLR-Ausnahmen
+5086
+Anzahl der ausgelösten Ausnahmen
+5088
+Anzahl der ausgelösten Ausnahmen/Sek.
+5090
+Anzahl der Filter/Sek.
+5092
+Finallyanzahl/Sek.
+5094
+Throw-zu-Catch-Tiefe/s
+5096
+.NET-Datenanbieter für SqlServer
+5098
+HardConnectsPerSecond
+5100
+HardDisconnectsPerSecond
+5102
+SoftConnectsPerSecond
+5104
+SoftDisconnectsPerSecond
+5106
+NumberOfNonPooledConnections
+5108
+NumberOfPooledConnections
+5110
+NumberOfActiveConnectionPoolGroups
+5112
+NumberOfInactiveConnectionPoolGroups
+5114
+NumberOfActiveConnectionPools
+5116
+NumberOfInactiveConnectionPools
+5118
+NumberOfActiveConnections
+5120
+NumberOfFreeConnections
+5122
+NumberOfStasisConnections
+5124
+NumberOfReclaimedConnections
+5126
+.NET-Datenanbieter für Oracle
+5128
+HardConnectsPerSecond
+5130
+HardDisconnectsPerSecond
+5132
+SoftConnectsPerSecond
+5134
+SoftDisconnectsPerSecond
+5136
+NumberOfNonPooledConnections
+5138
+NumberOfPooledConnections
+5140
+NumberOfActiveConnectionPoolGroups
+5142
+NumberOfInactiveConnectionPoolGroups
+5144
+NumberOfActiveConnectionPools
+5146
+NumberOfInactiveConnectionPools
+5148
+NumberOfActiveConnections
+5150
+NumberOfFreeConnections
+5152
+NumberOfStasisConnections
+5154
+NumberOfReclaimedConnections
+5156
+.NET CLR-Netzwerk 4.0.0.0
+5158
+Hergestellte Verbindungen
+5160
+Empfangene Bytes
+5162
+Gesendete Bytes
+5164
+Empfangene Datenpakete
+5166
+Gesendete Datenpakete
+5168
+Erstellte HttpWebRequests/s
+5170
+Durchschnittliche Dauer der HttpWebRequests
+5172
+Basis für durchschnittliche Lebensdauer der HttpWebRequests
+5174
+HttpWebRequests in Warteschlange/s
+5176
+Durchschnittliche Wartezeit der HttpWebRequests
+5178
+Basis für  durchschnittliche Warteschlangenzeit der HttpWebRequests
+5180
+Abgebrochene HttpWebRequests/s
+5182
+HttpWebRequest-Fehler/s
+5184
+.NET CLR-Netzwerk
+5186
+Hergestellte Verbindungen
+5188
+Empfangene Bytes
+5190
+Gesendete Bytes
+5192
+Empfangene Datenpakete
+5194
+Gesendete Datenpakete
+5196
+.NET CLR-Daten
+5198
+SqlClient: Aktuelle Anzahl der Verbindungen im Pool und außerhalb des Pools
+5200
+SqlClient: Aktuelle Anzahl der Verbindungen im Pool
+5202
+SqlClient: Aktuelle Anzahl der Verbindungspools
+5204
+SqlClient: Maximale Anzahl der Verbindungen im Pool
+5206
+SqlClient: Gesamtanzahl der Verbindungsfehler
+5208
+SqlClient: Gesamtanzahl der Fehler bei der Befehlsausführung
+7280
+WMI-Objekte
+7282
+HiPerf-Klassen
+7284
+HiPerf-Gültigkeit
+7286
+iSCSI-Verbindungen
+7288
+Empfangene Bytes
+7290
+Gesendete Bytes
+7292
+Gesendete PDUs
+7294
+Empfangene PDUs
+7296
+iSCSI-Initiatorinstanz
+7298
+Sitzungstimeoutfehler
+7300
+Sitzungsdigestfehler
+7302
+Fehlgeschlagene Sitzungen
+7304
+Sitzungsformatfehler
+7306
+iSCSI-Initiatoranmeldungsstatistik
+7308
+Antworten mit akzeptierter Anmeldung
+7310
+Fehlgeschlagene Anmeldungen
+7312
+Antworten mit Anmeldungsauthentifizierungsfehlern
+7314
+Fehlgeschlagene Anmeldungen
+7316
+Fehlgeschlagene Anmeldungsaushandlungen
+7318
+Antworten mit anderen Anmeldefehlern
+7320
+Antworten mit Anmeldeumleitung
+7322
+Normale Abmeldung
+7324
+Andere Abmeldecodes
+7326
+IPSEC-Statistik für den iSCSI-HBA-Hauptmodus
+7328
+AcquireFailures
+7330
+AcquireHeapSize
+7332
+ActiveAcquire
+7334
+ActiveReceive
+7336
+AuthenticationFailures
+7338
+ConnectionListSize
+7340
+GetSPIFailures
+7342
+InvalidCookiesReceived
+7344
+InvalidPackets
+7346
+KeyAdditionFailures
+7348
+KeyAdditions
+7350
+KeyUpdateFailures
+7352
+KeyUpdates
+7354
+NegotiationFailures
+7356
+OakleyMainMode
+7358
+OakleyQuickMode
+7360
+ReceiveFailures
+7362
+ReceiveHeapSize
+7364
+SendFailures
+7366
+SoftAssociations
+7368
+TotalGetSPI
+7370
+MSiSCSI_NICPerformance
+7372
+BytesReceived
+7374
+BytesTransmitted
+7376
+PDUReceived
+7378
+PDUTransmitted
+7380
+IPSEC-Statistik für den iSCSI-HBA-Schnellmodus
+7382
+ActiveSA
+7384
+ActiveTunnels
+7386
+AuthenticatedBytesReceived
+7388
+AuthenticatedBytesSent
+7390
+BadSPIPackets
+7392
+ConfidentialBytesReceived
+7394
+ConfidentialBytesSent
+7396
+KeyAdditions
+7398
+KeyDeletions
+7400
+PacketsNotAuthenticated
+7402
+PacketsNotDecrypted
+7404
+PacketsWithReplayDetection
+7406
+PendingKeyOperations
+7408
+ReKeys
+7410
+TransportBytesReceived
+7412
+TransportBytesSent
+7414
+TunnelBytesReceived
+7416
+TunnelBytesSent
+7418
+iSCSI-Anforderungsverarbeitungszeit
+7420
+Durchschnittliche Anforderungsverarbeitungszeit
+7422
+Max. Anforderungsverarbeitungszeit
+7424
+iSCSI-Sitzungen
+7426
+Empfangene Bytes
+7428
+Gesendete Bytes
+7430
+Verbindungstimeoutfehler
+7432
+Digestfehler
+7434
+Formatfehler
+7436
+Gesendete PDUs
+7438
+Empfangene PDUs
+7440
+Processor Performance
+7442
+Processor Frequency
+7444
+% of Maximum Frequency
+7446
+Processor State Flags
+7448
+Virtual Machines
+7450
+Allocated MB
+7452
+Allocated Pages
+7454
+Virtual Processors
+7456
+Guest External Interrupts
+7458
+Injected Guest External Interrupts (HVM)
+7460
+Host-to-VMM Context Switches
+7462
+Cumulative Guest Run Time
+7464
+VMM Exceptions
+7466
+Virtual Processor is in HVM mode
+7232
+WorkflowServiceHost 4.0.0.0
+7234
+Erstellte Workflows
+7236
+Erstellte Workflows pro Sekunde
+7238
+Aktuell ausgeführte Workflows
+7240
+Abgeschlossene Workflows
+7242
+Abgeschlossene Workflows pro Sekunde
+7244
+Abgebrochene Workflows
+7246
+Abgebrochene Workflows pro Sekunde
+7248
+Workflows im Arbeitsspeicher
+7250
+Persistente Workflows
+7252
+Persistente Workflows pro Sekunde
+7254
+Beendete Workflows
+7256
+Beendete Workflows pro Sekunde
+7258
+Geladene Workflows
+7260
+Geladene Workflows pro Sekunde
+7262
+Entladene Workflows
+7264
+Entladene Workflows pro Sekunde
+7266
+Angehaltene Workflows
+7268
+Angehaltene Workflows pro Sekunde
+7270
+Workflows im Leerlauf pro Sekunde
+7272
+Durchschnittliche Workflowladezeit
+7274
+Durchschnittliche Workflow-Ladezeitbasis
+7276
+Durchschnittliche Workflowpersistenzzeit
+7278
+Durchschnittliche Workflow-Persistenzzeitbasis
+7224
+Terminaldienste
+7226
+Aktive Sitzungen
+7228
+Inaktive Sitzungen
+7230
+Sitzungen insgesamt
+7182
+Pacer-Datenstrom
+7184
+Ausgelassene Pakete
+7186
+Geplante Pakete
+7188
+Übertragene Pakete
+7190
+Geplante Bytes
+7192
+Bytes gesendet
+7194
+Übertragene Bytes/s
+7196
+Geplante Bytes/s
+7198
+Übertragene Pakete/s
+7200
+Geplante Pakete/s
+7202
+Verworfene Pakete/s
+7204
+Ungültige geplante Pakete
+7206
+Ungültige geplante Pakete/Sekunde
+7208
+Durchschnittliche Pakete im Shaper
+7210
+Max. Pakete im Shaper
+7212
+Durchschnittliche Pakete im Sequenzer
+7214
+Max. Pakete im Sequenzer
+7216
+Max. Pakete auf der Netzwerkkarte
+7218
+Durchschnittliche Pakete auf der Netzwerkkarte
+7220
+Ungültige übertragene Pakete
+7222
+Ungültige übertragene Pakete/Sekunde
+7146
+Pacer-Pipe
+7148
+Keine Pakete
+7150
+Geöffnete Datenströme
+7152
+Geschlossene Datenströme
+7154
+Zurückgewiesene Datenströme
+7156
+Geänderte Datenströme
+7158
+Zurückgewiesene Datenstromänderungen
+7160
+Max. gleichzeitige Datenströme
+7162
+Ungültige geplante Pakete
+7164
+Ungültige geplante Pakete/Sekunde
+7166
+Durchschnittliche Pakete im Shaper
+7168
+Max. Pakete im Shaper
+7170
+Durchschnittliche Pakete im Sequenzer
+7172
+Max. Pakete im Sequenzer
+7174
+Max. Pakete auf der Netzwerkkarte
+7176
+Durchschnittliche Pakete auf der Netzwerkkarte
+7178
+Ungültige übertragene Pakete
+7180
+Ungültige übertragene Pakete/Sekunde
+7118
+IKEv1, AuthIP und IKEv2 allgemein
+7120
+IKEv1-Hauptmodus-Aushandlungszeit
+7122
+AuthIP-Hauptmodus-Aushandlungszeit
+7124
+IKEv1-Schnellmodus-Aushandlungszeit
+7126
+AuthIP-Schnellmodus-Aushandlungszeit
+7128
+Erweiterungsmodus-Aushandlungszeit
+7130
+Empfangene Pakete/Sek.
+7132
+Ungültige empfangene Pakete/Sek.
+7134
+Erfolgreiche Aushandlungen
+7136
+Erfolgreiche Aushandlungen/Sek.
+7138
+Fehlerhafte Aushandlungen
+7140
+Fehlerhafte Aushandlungen/Sek.
+7142
+IKEv2-Hauptmodus-Aushandlungszeit
+7144
+IKEv2-Schnellmodus-Aushandlungszeit
+7080
+IPsec IKEv2 IPv4
+7082
+Aktive Hauptmodus-Sicherheitszuordnungen
+7084
+Ausstehende Hauptmodusaushandlungen
+7086
+Hauptmodusaushandlungen
+7088
+Hauptmodusaushandlungen/Sek.
+7090
+Erfolgreiche Hauptmodusaushandlungen
+7092
+Erfolgreiche Hauptmodusaushandlungen/Sek.
+7094
+Hauptmodusaushandlungs-Fehler
+7096
+Hauptmodusaushandlungs-Fehler/Sek.
+7098
+Empfangene Hauptmodusaushandlungs-Anforderungen
+7100
+Empfangene Hauptmodusaushandlungs-Anforderungen/Sek.
+7102
+Aktive Schnellmodus-Sicherheitszuordnungen
+7104
+Ausstehende Schnellmodusaushandlungen
+7106
+Schnellmodusaushandlungen
+7108
+Schnellmodusaushandlungen/Sek.
+7110
+Erfolgreiche Schnellmodusaushandlungen
+7112
+Erfolgreiche Schnellmodusaushandlungen/Sek.
+7114
+Schnellmodusaushandlungs-Fehler
+7116
+Schnellmodusaushandlungs-Fehler/Sek.
+7020
+IPsec AuthIP IPv4
+7022
+Aktive Hauptmodus-Sicherheitszuordnungen
+7024
+Ausstehende Hauptmodusaushandlungen
+7026
+Hauptmodusaushandlungen
+7028
+Hauptmodusaushandlungen/Sek.
+7030
+Erfolgreiche Hauptmodusaushandlungen
+7032
+Erfolgreiche Hauptmodusaushandlungen/Sek.
+7034
+Hauptmodusaushandlungs-Fehler
+7036
+Hauptmodusaushandlungs-Fehler/Sek.
+7038
+Empfangene Hauptmodusaushandlungs-Anforderungen
+7040
+Empfangene Hauptmodusaushandlungs-Anforderungen/Sek.
+7042
+Hauptmodus-Sicherheitszuordnungen mit Identitätswechsel
+7044
+Hauptmodus-Sicherheitszuordnungen mit Identitätswechsel/Sek.
+7046
+Aktive Schnellmodus-Sicherheitszuordnungen
+7048
+Ausstehende Schnellmodusaushandlungen
+7050
+Schnellmodusaushandlungen
+7052
+Schnellmodusaushandlungen/Sek.
+7054
+Erfolgreiche Schnellmodusaushandlungen
+7056
+Erfolgreiche Schnellmodusaushandlungen/Sek.
+7058
+Schnellmodusaushandlungs-Fehler
+7060
+Schnellmodusaushandlungs-Fehler/Sek.
+7062
+Aktive Erweiterungsmodus-Sicherheitszuordnungen
+7064
+Ausstehende Erweiterungsmodusaushandlungen
+7066
+Erweiterungsmodusaushandlungen
+7068
+Erweiterungsmodusaushandlungen/Sek.
+7070
+Erfolgreiche Erweiterungsmodusaushandlungen
+7072
+Erfolgreiche Erweiterungsmodusaushandlungen/Sek.
+7074
+Erweiterungsmodusaushandlungs-Fehler
+7076
+Erweiterungsmodusaushandlungs-Fehler/Sek.
+7078
+Erweiterungsmodus-Sicherheitszuordnungen mit Identitätswechsel
+7006
+IPsec-Verbindungen
+7008
+Gesamtanzahl aktueller Verbindungen
+7010
+Gesamtanzahl kumulierter Verbindungen seit Start
+7012
+Maximale Anzahl von Verbindungen seit Start
+7014
+Eingehende Bytes (gesamt) seit Start
+7016
+Ausgehende Bytes (gesamt) seit Start
+7018
+Anzahl fehlerhafter Authentifizierungen
+6946
+IPsec AuthIP IPv6
+6948
+Aktive Hauptmodus-Sicherheitszuordnungen
+6950
+Ausstehende Hauptmodusaushandlungen
+6952
+Hauptmodusaushandlungen
+6954
+Hauptmodusaushandlungen/Sek.
+6956
+Erfolgreiche Hauptmodusaushandlungen
+6958
+Erfolgreiche Hauptmodusaushandlungen/Sek.
+6960
+Hauptmodusaushandlungs-Fehler
+6962
+Hauptmodusaushandlungs-Fehler/Sek.
+6964
+Empfangene Hauptmodusaushandlungs-Anforderungen
+6966
+Empfangene Hauptmodusaushandlungs-Anforderungen/Sek.
+6968
+Hauptmodus-Sicherheitszuordnungen mit Identitätswechsel
+6970
+Hauptmodus-Sicherheitszuordnungen mit Identitätswechsel/Sek.
+6972
+Aktive Schnellmodus-Sicherheitszuordnungen
+6974
+Ausstehende Schnellmodusaushandlungen
+6976
+Schnellmodusaushandlungen
+6978
+Schnellmodusaushandlungen/Sek.
+6980
+Erfolgreiche Schnellmodusaushandlungen
+6982
+Erfolgreiche Schnellmodusaushandlungen/Sek.
+6984
+Schnellmodusaushandlungs-Fehler
+6986
+Schnellmodusaushandlungs-Fehler/Sek.
+6988
+Aktive Erweiterungsmodus-Sicherheitszuordnungen
+6990
+Ausstehende Erweiterungsmodusaushandlungen
+6992
+Erweiterungsmodusaushandlungen
+6994
+Erweiterungsmodusaushandlungen/Sek.
+6996
+Erfolgreiche Erweiterungsmodusaushandlungen
+6998
+Erfolgreiche Erweiterungsmodusaushandlungen/Sek.
+7000
+Erweiterungsmodusaushandlungs-Fehler
+7002
+Erweiterungsmodusaushandlungs-Fehler/Sek.
+7004
+Erweiterungsmodus-Sicherheitszuordnungen mit Identitätswechsel
+6908
+IPsec IKEv2 IPv6
+6910
+Aktive Hauptmodus-Sicherheitszuordnungen
+6912
+Ausstehende Hauptmodusaushandlungen
+6914
+Hauptmodusaushandlungen
+6916
+Hauptmodusaushandlungen/Sek.
+6918
+Erfolgreiche Hauptmodusaushandlungen
+6920
+Erfolgreiche Hauptmodusaushandlungen/Sek.
+6922
+Hauptmodusaushandlungs-Fehler
+6924
+Hauptmodusaushandlungs-Fehler/Sek.
+6926
+Empfangene Hauptmodusaushandlungs-Anforderungen
+6928
+Empfangene Hauptmodusaushandlungs-Anforderungen/Sek.
+6930
+Aktive Schnellmodus-Sicherheitszuordnungen
+6932
+Ausstehende Schnellmodusaushandlungen
+6934
+Schnellmodusaushandlungen
+6936
+Schnellmodusaushandlungen/Sek.
+6938
+Erfolgreiche Schnellmodusaushandlungen
+6940
+Erfolgreiche Schnellmodusaushandlungen/Sek.
+6942
+Schnellmodusaushandlungs-Fehler
+6944
+Schnellmodusaushandlungs-Fehler/Sek.
+6880
+WFPv4
+6882
+Eingehende Pakete verworfen/Sek.
+6884
+Ausgehende Pakete verworfen/Sek.
+6886
+Pakete verworfen/Sek.
+6888
+Blockierte Bindungen
+6890
+Eingehende Verbindungen blockiert/Sek.
+6892
+Ausgehende Verbindungen blockiert/Sek.
+6894
+Eingehende Verbindungen zugelassen/Sek.
+6896
+Ausgehende Verbindungen zugelassen/Sek.
+6898
+Eingehende Verbindungen
+6900
+Ausgehende Verbindungen
+6902
+Aktive eingehende Verbindungen
+6904
+Aktive ausgehende Verbindungen
+6906
+Klassifiziert als zugelassen/Sek.
+6842
+IPsec IKEv1 IPv4
+6844
+Aktive Hauptmodus-Sicherheitszuordnungen
+6846
+Ausstehende Hauptmodusaushandlungen
+6848
+Hauptmodusaushandlungen
+6850
+Hauptmodusaushandlungen/Sek.
+6852
+Erfolgreiche Hauptmodusaushandlungen
+6854
+Erfolgreiche Hauptmodusaushandlungen/Sek.
+6856
+Hauptmodusaushandlungs-Fehler
+6858
+Hauptmodusaushandlungs-Fehler/Sek.
+6860
+Empfangene Hauptmodusaushandlungs-Anforderungen
+6862
+Empfangene Hauptmodusaushandlungs-Anforderungen/Sek.
+6864
+Aktive Schnellmodus-Sicherheitszuordnungen
+6866
+Ausstehende Schnellmodusaushandlungen
+6868
+Schnellmodusaushandlungen
+6870
+Schnellmodusaushandlungen/Sek.
+6872
+Erfolgreiche Schnellmodusaushandlungen
+6874
+Erfolgreiche Schnellmodusaushandlungen/Sek.
+6876
+Schnellmodusaushandlungs-Fehler
+6878
+Schnellmodusaushandlungs-Fehler/Sek.
+6804
+IPsec IKEv1 IPv6
+6806
+Aktive Hauptmodus-Sicherheitszuordnungen
+6808
+Ausstehende Hauptmodusaushandlungen
+6810
+Hauptmodusaushandlungen
+6812
+Hauptmodusaushandlungen/Sek.
+6814
+Erfolgreiche Hauptmodusaushandlungen
+6816
+Erfolgreiche Hauptmodusaushandlungen/Sek.
+6818
+Hauptmodusaushandlungs-Fehler
+6820
+Hauptmodusaushandlungs-Fehler/Sek.
+6822
+Empfangene Hauptmodusaushandlungs-Anforderungen
+6824
+Empfangene Hauptmodusaushandlungs-Anforderungen/Sek.
+6826
+Aktive Schnellmodus-Sicherheitszuordnungen
+6828
+Ausstehende Schnellmodusaushandlungen
+6830
+Schnellmodusaushandlungen
+6832
+Schnellmodusaushandlungen/Sek.
+6834
+Erfolgreiche Schnellmodusaushandlungen
+6836
+Erfolgreiche Schnellmodusaushandlungen/Sek.
+6838
+Schnellmodusaushandlungs-Fehler
+6840
+Schnellmodusaushandlungs-Fehler/Sek.
+6740
+IPsec-Treiber
+6742
+Aktive Sicherheitszuordnungen
+6744
+Ausstehende Sicherheitszuordnungen
+6746
+Falsche SPI-Pakete
+6748
+Falsche SPI-Pakete/Sek.
+6750
+Bytes empfangen im Tunnelmodus/Sek.
+6752
+Bytes gesendet im Tunnelmodus/Sek.
+6754
+Bytes empfangen im Transportmodus/Sek.
+6756
+Bytes gesendet im Transportmodus/Sek.
+6758
+Abgeladene Sicherheitszuordnungen
+6760
+Abgeladene Bytes empfangen/Sek.
+6762
+Abgeladene Bytes gesendet/Sek.
+6764
+Pakete mit Rahmenerkennungsfehler
+6766
+Pakete mit Rahmenerkennungsfehler/Sek.
+6768
+Nicht authentifizierte Pakete
+6770
+Nicht authentifizierte Pakete/Sek.
+6772
+Nicht entschlüsselte Pakete
+6774
+Nicht entschlüsselte Pakete/Sek.
+6776
+Erneute Schlüssel der Sicherheitszuordnung
+6778
+Hinzugefügte Sicherheitszuordnungen
+6780
+Pakete mit ESP-Überprüfungsfehler
+6782
+Pakete mit ESP-Überprüfungsfehler/Sek.
+6784
+Pakete mit UDP-ESP-Überprüfungsfehler
+6786
+Pakete mit UDP-ESP-Überprüfungsfehler/Sek.
+6788
+Über falsche Sicherheitszuordnung empfangene Pakete
+6790
+Über falsche Sicherheitszuordnung empfangene Pakete/Sek.
+6792
+Empfangene Nur-Text-Pakete
+6794
+Empfangene Nur-Text-Pakete/Sek.
+6796
+Empfangene eingehende Pakete (gesamt)
+6798
+Empfangene eingehende Pakete/Sek.
+6800
+Verworfene eingehende Pakete (gesamt)
+6802
+Verworfene eingehende Pakete/Sek.
+6736
+WFP
+6738
+Anbieteranzahl
+6708
+WFPv6
+6710
+Inbound Packets Discarded/sec
+6712
+Ausgehende Pakete verworfen/Sek.
+6714
+Pakete verworfen/Sek.
+6716
+Blockierte Bindungen
+6718
+Eingehende Verbindungen blockiert/Sek.
+6720
+Ausgehende Verbindungen blockiert/Sek.
+6722
+Eingehende Verbindungen zugelassen/Sek.
+6724
+Ausgehende Verbindungen zugelassen/Sek.
+6726
+Eingehende Verbindungen
+6728
+Ausgehende Verbindungen
+6730
+Aktive eingehende Verbindungen
+6732
+Aktive ausgehende Verbindungen
+6734
+Klassifiziert als zugelassen/Sek.
+6654
+Peer Name Resolution-Protokoll
+6656
+Registrierung
+6658
+Auflösen
+6660
+Cacheeintrag
+6662
+Durchschnittlich gesendete Bytes
+6664
+Durchschnittlich empfangene Bytes
+6666
+Geschätzte Wolkengröße
+6668
+Veralteter Cacheinhalt
+6670
+Sendefehler
+6672
+Empfangsfehler
+6674
+Gesendete Störungen pro Sekunde
+6676
+Empfangene Störungen pro Sekunde
+6678
+Gesendete Ankündigungen pro Sekunde
+6680
+Gesendete Ankündigungen pro Sekunde
+6682
+Gesendete Anforderungen pro Sekunde
+6684
+Empfangene Anforderungen pro Sekunde
+6686
+Gesendete Flutungen pro Sekunde
+6688
+Empfangene Flutungen pro Sekunde
+6690
+Gesendete Abfragen pro Sekunde
+6692
+Empfangene Abfragen pro Sekunde
+6694
+Gesendete Stellen pro Sekunde
+6696
+Empfangene Stellen pro Sekunde
+6698
+Gesendete Bestätigungen pro Sekunde
+6700
+Empfangene Bestätigungen pro Sekunde
+6702
+Gesendete Suchen pro Sekunde
+6704
+Empfangene Suchen pro Sekunde
+6706
+Nachricht unbekannten Typs empfangen
+6648
+Autorisierungs-Manager-Anwendungen
+6650
+Gesamtanzahl von Bereichen
+6652
+Anzahl der in den Speicher geladenen Bereiche
+6616
+Faxdienst
+6618
+Gesamtanzahl der Minuten, an denen gesendet oder empfangen wurde
+6620
+Gesamtanzahl der Seiten
+6622
+Gesendete und empfangene Faxe insgesamt
+6624
+Gesamtanzahl der Bytes.
+6626
+Fehlgeschlagene Faxübertragungen
+6628
+Fehlgeschlagene ausgehende Verbindungen
+6630
+Sendeminuten
+6632
+Gesendete Seiten
+6634
+Gesendete Faxe
+6636
+Gesendete Bytes
+6638
+Fehler bei Empfängen
+6640
+Empfangsminuten
+6642
+Empfangene Seiten
+6644
+Empfangene Faxe
+6646
+Empfangene Bytes
+6606
+Microsoft Winsock BSP
+6608
+Verworfene Datagramme/s
+6610
+Verworfene Datagramme
+6612
+Abgelehnte Verbindungen/s
+6614
+Abgelehnte Verbindungen
+6588
+BitLocker
+6590
+Min. Teilungsgröße Lesepuffer
+6592
+Max. Teilungsgröße Lesepuffer
+6594
+Min. Teilungsgröße Schreibpuffer
+6596
+Max. Teilungsgröße Schreibpuffer
+6598
+Leseanforderungen/Sek.
+6600
+Leseunteranforderungen/Sek.
+6602
+Schreibanforderungen/Sek.
+6604
+Schreibunteranforderungen/Sek.
+6574
+Offlinedateien
+6576
+Empfangene Bytes
+6578
+Übertragene Bytes
+6580
+Übertragene Bytes/s
+6584
+Empfangene Bytes/s
+6546
+Clientseitige Zwischenspeicherung
+6548
+Angeforderte Bytes für SMB-BranchCache
+6550
+Empfangene Bytes für SMB-BranchCache
+6552
+Veröffentlichte Bytes für SMB-BranchCache
+6554
+Vom Server angeforderte Bytes für SMB-BranchCache
+6556
+Angeforderte Hashes für SMB-BranchCache
+6558
+Empfangene Hashes für SMB-BranchCache
+6560
+Empfangene Hashbytes für SMB-BranchCache
+6562
+Vorabrufvorgänge in Warteschlange
+6564
+Aus dem Cache gelesene Vorabrufbytes
+6566
+Vom Server gelesene Vorabrufbytes
+6568
+Aus dem Cache gelesene Anwendungsbytes
+6570
+Vom Server gelesene Anwendungsbytes
+6572
+Vom Server gelesene Anwendungsbytes (nicht zwischengespeichert)
+6500
+Teredorelay
+6502
+Eingehend - Gesamtanzahl der Teredorelaypakete: Erfolg + Fehler
+6504
+Eingehend - Erfolgreiche Teredorelaypakete: Gesamt
+6506
+Eingehend - Erfolgreiche Teredorelaypakete: Bubbles
+6508
+Eingehend - Erfolgreiche Teredorelaypakete: Datenpakete
+6510
+Eingehend - Fehlerhafte Teredorelaypakete: Gesamt
+6512
+Eingehend - Fehlerhafte Teredorelaypakete: Headerfehler
+6514
+Eingehend - Fehlerhafte Teredorelaypakete: Quellfehler
+6516
+Eingehend - Fehlerhafte Teredorelaypakete: Zielfehler
+6518
+Ausgehend - Gesamtanzahl der Teredorelaypakete: Erfolg + Fehler
+6520
+Ausgehend - Erfolgreiche Teredorelaypakete
+6522
+Ausgehend - Erfolgreiche Teredorelaypakete: Bubbles
+6524
+Ausgehend - Erfolgreiche Teredorelaypakete: Datenpakete
+6526
+Ausgehend - Fehlerhafte Teredorelaypakete
+6528
+Ausgehend - Fehlerhafte Teredorelaypakete: Headerfehler
+6530
+Ausgehend - Fehlerhafte Teredorelaypakete: Quellfehler
+6532
+Ausgehend - Fehlerhafte Teredorelaypakete: Zielfehler
+6534
+Eingehend - Gesamtanzahl der Teredorelaypakete: Erfolg + Fehler/Sekunde
+6536
+Ausgehend - Gesamtanzahl der Teredorelaypakete: Erfolg + Fehler/Sekunde
+6538
+Eingehend - Erfolgreiche Teredo-Relaypakete: Benutzermodus für Datenpakete
+6540
+Eingehend - Erfolgreiche Teredo-Relaypakete: Kernelmodus für Datenpakete
+6542
+Ausgehend - Erfolgreiche Teredo-Relaypakete: Benutzermodus für Datenpakete
+6544
+Ausgehend - Erfolgreiche Teredo-Relaypakete: Kernelmodus für Datenpakete
+6484
+IP-HTTPS-Sitzung
+6486
+In der Sitzung empfangene Pakete
+6488
+In der Sitzung gesendete Pakete
+6490
+In der Sitzung empfangene Bytes
+6492
+In der Sitzung gesendete Bytes
+6494
+Fehler - Übertragungsfehler in der Sitzung
+6496
+Fehler - Empfangsfehler in der Sitzung
+6498
+Dauer - Dauer der Sitzung (Sekunden)
+6470
+DNS64 Global
+6472
+AAAA-Abfragen - erfolgreich
+6474
+AAAA-Abfragen - Fehler
+6476
+IP6.ARPA-Abfragen - Übereinstimmung
+6478
+Andere Abfragen - erfolgreich
+6480
+Andere Abfragen - Fehler
+6482
+AAAA - neu bestimmte Datensätze
+6448
+IP-HTTPS-Global
+6450
+Eingehend - Insgesamt empfangene Bytes
+6452
+Ausgehend - Insgesamt gesendete Bytes
+6454
+Verworfen - Zeitüberschreitungen bei Nachbarauflösungen
+6456
+Fehler - Authentifizierungsfehler
+6458
+Ausgehend - Weitergeleitete Bytes gesamt
+6460
+Fehler - Übertragungsfehler auf dem Server
+6462
+Fehler - Empfangsfehler auf dem Server
+6464
+Eingehend - Insgesamt empfangene Pakete
+6466
+Ausgehend - Insgesamt gesendete Pakete
+6468
+Sitzungen - Sitzungen gesamt
+6418
+Teredo-Server
+6420
+Eingehend - Gesamtanzahl der Teredo-Serverpakete: Erfolg + Fehler
+6422
+Eingehend - Erfolgreiche Teredo-Serverpakete: Gesamt
+6424
+Eingehend - Erfolgreiche Teredo-Serverpakete: Bubbles
+6426
+Eingehend - Erfolgreiche Teredo-Serverpakete: Echo
+6428
+Eingehend - Erfolgreiche Teredo-Serverpakete: Routeranfragen primär
+6430
+Eingehend - Erfolgreiche Teredo-Serverpakete: Routeranfragen sekundär
+6432
+Eingehend - Fehlerhafte Teredo-Serverpakete: Gesamt
+6434
+Eingehend - Fehlerhafte Teredo-Serverpakete: Headerfehler
+6436
+Eingehend - Fehlerhafte Teredo-Serverpakete: Quellfehler
+6438
+Eingehend - Fehlerhafte Teredo-Serverpakete: Zielfehler
+6440
+Eingehend - Fehlerhafte Teredo-Serverpakete: Authentifizierungsfehler
+6442
+Ausgehend - Teredo-Server: Routerankündigung primär
+6444
+Ausgehend - Teredo-Server: Routerankündigung sekundär 
+6446
+Eingehend - Gesamtanzahl der Teredo-Serverpakete: Erfolg + Fehler/Sekunde
+6394
+Teredo-Client
+6396
+Eingehend - Teredo-Routerankündigung
+6398
+Eingehend - Teredo-Bubble
+6400
+Eingehend - Teredo-Daten
+6402
+Eingehend - Teredo ungültig
+6404
+Ausgehend - Teredo-Routeranfrage
+6406
+Ausgehend - Teredo-Bubble
+6408
+Ausgehend - Teredo-Daten
+6410
+Eingehend - Benutzermodus für Teredo-Daten
+6412
+Eingehend - Kernelmodus für Teredo-Daten
+6414
+Ausgehend - Benutzermodus für Teredo-Daten
+6416
+Ausgehend - Kernelmodus für Teredo-Daten
+6310
+ServiceModelService 4.0.0.0
+6312
+Aufrufe
+6314
+Aufrufe pro Sekunde
+6316
+Ausstehende Aufrufe
+6318
+Fehlgeschlagene Aufrufe
+6320
+Fehlgeschlagene Aufrufe pro Sekunde
+6322
+Fehlerhafte Aufrufe
+6324
+Fehlerhafte Aufrufe pro Sekunde
+6326
+Aufrufdauer
+6328
+Fehler bei Sicherheitsvalidierung und Authentifizierung
+6330
+Fehler bei Sicherheitsvalidierung und Authentifizierung pro Sekunde
+6332
+Nicht autorisierte Sicherheitsaufrufe
+6334
+Nicht autorisierte Sicherheitsaufrufe pro Sekunde
+6336
+Instanzen
+6338
+Erstellte Instanzen pro Sekunde
+6340
+Fehlerhafte zuverlässige Messagingsitzungen
+6342
+Fehlerhafte zuverlässige Messagingsitzungen pro Sekunde
+6344
+Verworfene zuverlässige Messagingnachrichten
+6346
+Verworfene zuverlässige Messagingnachrichten pro Sekunde
+6348
+Übertragene Transaktionen
+6350
+Übertragene Transaktionen pro Sekunde
+6352
+Transaktive Vorgänge mit ausgeführtem Commit
+6354
+Transaktive Vorgänge mit ausgeführtem Commit pro Sekunde
+6356
+Abgebrochene transaktive Vorgänge
+6358
+Abgebrochene transaktive Vorgänge pro Sekunde
+6360
+Zweifelhafte transaktive Vorgänge
+6362
+Zweifelhafte transaktive Vorgänge pro Sekunde
+6364
+Beschädigte Nachrichten in der Warteschlange
+6366
+Beschädigte Nachrichten in der Warteschlange pro Sekunde
+6368
+Von der Warteschlange zurückgewiesene Nachrichten
+6370
+Von der Warteschlange zurückgewiesene Nachrichten pro Sekunde
+6372
+Aus der Warteschlange verworfene Nachrichten
+6374
+Aus der Warteschlange verworfene Nachrichten pro Sekunde
+6376
+Prozentsatz der Höchstanzahl gleichzeitiger Aufrufe
+6378
+Prozentsatz der Höchstanzahl gleichzeitiger Instanzen
+6380
+Prozentsatz der Höchstanzahl gleichzeitiger Sitzungen
+6382
+CallDurationBase
+6384
+CallsPercentMaxConcurrentCallsBase
+6386
+InstancesPercentMaxConcurrentInstancesBase
+6388
+SessionsPercentMaxConcurrentSessionsBase
+6278
+ServiceModelOperation 4.0.0.0
+6280
+Aufrufe
+6282
+Aufrufe pro Sekunde
+6284
+Ausstehende Aufrufe
+6286
+Fehlgeschlagene Aufrufe
+6288
+Fehlgeschlagene Aufrufe pro Sekunde
+6290
+Fehlerhafte Aufrufe
+6292
+Fehlerhafte Aufrufe pro Sekunde
+6294
+Aufrufdauer
+6296
+Fehler bei Sicherheitsvalidierung und Authentifizierung
+6298
+Fehler bei Sicherheitsvalidierung und Authentifizierung pro Sekunde
+6300
+Nicht autorisierte Sicherheitsaufrufe
+6302
+Nicht autorisierte Sicherheitsaufrufe pro Sekunde
+6304
+Übertragene Transaktionen
+6306
+Übertragene Transaktionen pro Sekunde
+6308
+CallsDurationBase
+6238
+ServiceModelEndpoint 4.0.0.0
+6240
+Aufrufe
+6242
+Aufrufe pro Sekunde
+6244
+Ausstehende Aufrufe
+6246
+Fehlgeschlagene Aufrufe
+6248
+Fehlgeschlagene Aufrufe pro Sekunde
+6250
+Fehlerhafte Aufrufe
+6252
+Fehlerhafte Aufrufe pro Sekunde
+6254
+Aufrufdauer
+6256
+Fehler bei Sicherheitsvalidierung und Authentifizierung
+6258
+Fehler bei Sicherheitsvalidierung und Authentifizierung pro Sekunde
+6260
+Nicht autorisierte Sicherheitsaufrufe
+6262
+Nicht autorisierte Sicherheitsaufrufe pro Sekunde
+6264
+Fehlerhafte zuverlässige Messagingsitzungen
+6266
+Fehlerhafte zuverlässige Messagingsitzungen pro Sekunde
+6268
+Verworfene zuverlässige Messagingnachrichten
+6270
+Verworfene zuverlässige Messagingnachrichten pro Sekunde
+6272
+Übertragene Transaktionen
+6274
+Übertragene Transaktionen pro Sekunde
+6276
+CallDurationBase
+6232
+Energieanzeige
+6234
+Stromverbrauch
+6236
+Energiebudget
+6214
+Anforderungswarteschlangen für HTTP-Dienst
+6216
+Aktuelle Warteschlangengröße
+6218
+Maximales Alter von Warteschlangenelementen
+6220
+Eingangsrate
+6222
+Ablehnungsrate
+6224
+Abgelehnte Anforderungen
+6226
+Cachetrefferrate
+6194
+URL-Gruppen für HTTP-Dienst
+6196
+Rate gesendeter Bytes
+6198
+Rate empfangener Bytes
+6200
+Rate übertragener Bytes
+6202
+Aktuelle Verbindungen
+6204
+Maximale Anzahl an Verbindungen
+6206
+Verbindungsversuche
+6208
+GET-Anforderungen
+6210
+HEAD-Anforderungen
+6212
+Alle Anforderungen
+6180
+HTTP-Dienst
+6182
+Aktuelle URIs im Cache
+6184
+URIs im Cache insgesamt
+6186
+URI-Cachetreffer
+6188
+URI-Cachefehler
+6190
+URI-Cacheleerungen
+6192
+Geleerte URIs insgesamt
+6120
+PowerShell-Workflow
+6122
+Anzahl von fehlerhaften Workflowaufträgen
+6124
+Anzahl von fehlerhaften Workflowaufträgen/s
+6126
+Anzahl von fortgesetzten Workflowaufträgen
+6128
+Anzahl von fortgesetzten Workflowaufträgen/s
+6130
+Anzahl von ausgeführten Workflowaufträgen
+6132
+Anzahl von ausgeführten Workflowaufträgen/s
+6134
+Anzahl von beendeten Workflowaufträgen
+6136
+Anzahl von beendeten Workflowaufträgen/s
+6138
+Anzahl von erfolgreichen Workflowaufträgen
+6140
+Anzahl von erfolgreichen Workflowaufträgen/s
+6142
+Anzahl von angehaltenen Workflowaufträgen
+6144
+Anzahl von angehaltenen Workflowaufträgen
+6146
+Anzahl von beendeten Workflowaufträgen
+6148
+Anzahl von beendeten Workflowaufträge/s
+6150
+Anzahl von wartenden Workflowaufträgen
+6152
+Aktivitätshost-Manager: Anzahl von belegten Hostprozessen
+6154
+Aktivitätshost-Manager: Anzahl von fehlerhaften Anforderungen/s
+6156
+Aktivitätshost-Manager: Anzahl von fehlerhaften Anforderungen in der Warteschlange
+6158
+Aktivitätshost-Manager: Anzahl von eingehenden Anforderungen/s
+6160
+Aktivitätshost-Manager: Anzahl von ausstehenden Anforderungen in der Warteschlange
+6162
+Aktivitätshost-Manager: Anzahl von erstellten Hostprozessen
+6164
+Aktivitätshost-Manager: Anzahl von verworfenen Hostprozessen
+6166
+Aktivitätshost-Manager: Größe des Hostprozesspools
+6168
+PowerShell-Remoting: Anzahl von ausstehenden Anforderungen in der Warteschlange
+6170
+PowerShell-Remoting: Anzahl von verarbeiteten Anforderungen
+6172
+PowerShell-Remoting: Anzahl von Anforderungen in der Warteschlange, die warten müssen
+6174
+PowerShell-Remoting: Anzahl von erstellten Verbindungen
+6176
+PowerShell-Remoting: Anzahl von verworfenen Verbindungen
+6178
+PowerShell-Remoting: Anzahl von geschlossenen und erneut geöffneten Verbindungen
+6054
+RemoteFX-Grafik
+6056
+Eingabeframes/Sekunde
+6058
+Grafikkomprimierungsverhältnis
+6060
+Ausgabeframes/Sekunde
+6062
+Übersprungene Frames/Sekunde - Unzureichende Clientressourcen
+6064
+Übersprungene Frames/Sekunde - Unzureichende Netzwerkressourcen
+6066
+Übersprungene Frames/Sekunde - Unzureichende Serverressourcen
+6068
+Framequalität
+6070
+Durchschnittliche Codierungszeit
+6072
+Quellframes/Sekunde
+6008
+RemoteFX-Netzwerk
+6010
+Grundlegende TCP-RTT
+6012
+Aktuelle TCP-RTT
+6014
+Aktuelle TCP-Bandbreite
+6016
+Empfangsrate insgesamt
+6018
+TCP-Empfangsrate
+6020
+UDP-Empfangsrate
+6022
+Empfangene UDP-Pakete/s
+6024
+Senderate insgesamt
+6026
+TCP-Senderate
+6028
+UDP-Senderate
+6030
+Gesendete UDP-Pakete/s
+6032
+Senderate P0
+6034
+Senderate P1
+6036
+Senderate P2
+6038
+Senderate P3
+6040
+Verlustrate
+6042
+Neuübertragungsrate
+6044
+FEC-Rate
+6048
+Grundlegende UDP-RTT
+6050
+Aktuelle UDP-RTT
+6052
+Aktuelle UDP-Bandbreite
+5916
+SMB-Serverfreigaben
+5918
+Empfangene Bytes/s
+5920
+Anforderungen/Sek.
+5922
+Anzahl von Strukturverbindungen
+5924
+Anzahl derzeit geöffneter Dateien
+5926
+Gesendete Bytes/s
+5928
+Übertragene Bytes/s
+5930
+Derzeit ausstehende Anforderungen
+5932
+Sek./Anforderung (Durchschnitt)
+5936
+Schreibanforderungen/Sek.
+5938
+Sek./Schreibvorgang (Durchschnitt)
+5942
+Geschriebene Bytes/Sek.
+5944
+Leseanforderungen/Sek.
+5946
+Sek./Lesevorgang (Durchschnitt)
+5950
+Gelesene Bytes/s
+5952
+Gesamtanzahl geöffneter Dateien
+5954
+Geöffnete Dateien/s
+5956
+Aktuelle Anzahl der geöffneten permanenten Dateihandles
+5958
+Gesamtanzahl erneut geöffneter permanenter Handles
+5960
+Gesamtanzahl permanenter Handles mit Fehler beim erneuten Öffnen
+5962
+Stabile Handles in Prozent
+5966
+Gesamtanzahl erneut geöffneter stabiler Handles
+5968
+Gesamtanzahl stabiler Handles mit Fehler beim erneuten Öffnen
+5970
+Beständige Handles in Prozent
+5974
+Gesamtanzahl erneut geöffneter beständiger Handles
+5976
+Gesamtanzahl beständiger Handles mit Fehler beim erneuten Öffnen
+5978
+Metadatenanforderungen/Sek.
+5980
+Durchschn. Sek./Datenanforderung
+5984
+Durchschn. Datenbytes/Anforderung
+5988
+Durchschn. Bytes/Lesevorgang
+5992
+Durchschn. Bytes/Schreibvorgang
+5996
+Durchschn. Warteschlangenlänge für Lesevorgänge
+5998
+Durchschn. Warteschlangenlänge für Schreibvorgänge
+6000
+Durchschn. Länge der Datenwarteschlange
+6002
+Datenbytes/Sek.
+6004
+Datenanforderungen/Sek.
+6006
+Aktuelle Länge der Datenwarteschlange
+5824
+SMB-Serversitzungen
+5826
+Empfangene Bytes/s
+5828
+Anforderungen/Sek.
+5830
+Anzahl von Strukturverbindungen
+5832
+Anzahl derzeit geöffneter Dateien
+5834
+Gesendete Bytes/s
+5836
+Übertragene Bytes/s
+5838
+Derzeit ausstehende Anforderungen
+5840
+Sek./Anforderung (Durchschnitt)
+5844
+Schreibanforderungen/Sek.
+5846
+Sek./Schreibvorgang (Durchschnitt)
+5850
+Geschriebene Bytes/Sek.
+5852
+Leseanforderungen/Sek.
+5854
+Sek./Lesevorgang (Durchschnitt)
+5858
+Gelesene Bytes/s
+5860
+Gesamtanzahl geöffneter Dateien
+5862
+Geöffnete Dateien/Sek.
+5864
+Aktuelle Anzahl der geöffneten permanenten Dateihandles
+5866
+Gesamtanzahl erneut geöffneter permanenter Handles
+5868
+Gesamtanzahl permanenter Handles mit Fehler beim erneuten Öffnen
+5870
+Stabile Handles in Prozent
+5874
+Gesamtanzahl erneut geöffneter stabiler Handles
+5876
+Gesamtanzahl stabiler Handles mit Fehler beim erneuten Öffnen
+5878
+Beständige Handles in Prozent
+5882
+Gesamtanzahl erneut geöffneter beständiger Handles
+5884
+Gesamtanzahl beständiger Handles mit Fehler beim erneuten Öffnen
+5886
+Metadatenanforderungen/Sek.
+5888
+Durchschn. Sek./Datenanforderung
+5892
+Durchschn. Datenbytes/Anforderung
+5896
+Durchschn. Bytes/Lesevorgang
+5900
+Durchschn. Bytes/Schreibvorgang
+5904
+Durchschn. Warteschlangenlänge für Lesevorgänge
+5906
+Durchschn. Warteschlangenlänge für Schreibvorgänge
+5908
+Durchschn. Länge der Datenwarteschlange
+5910
+Datenbytes/Sek.
+5912
+Datenanforderungen/Sek.
+5914
+Aktuelle Länge der Datenwarteschlange
+5810
+Anmeldedienst
+5812
+Auf Semaphore wartende
+5814
+Semaphorehalter
+5816
+Semaphoreübernahmen
+5818
+Semaphorezeitlimit
+5820
+Durchschnittliche Semaphorehaltezeit
+5822
+Basis der Semaphorehaltezeit
+5756
+Verteilte Routingtabelle
+5758
+Registrierungen
+5760
+Suchvorgänge
+5762
+Cacheeinträge
+5764
+Durchschnittliche Anzahl gesendeter Bytes/Sekunde
+5766
+Durchschnittliche Anzahl empfangener Bytes/Sekunde
+5768
+Geschätzte Wolkengröße
+5770
+Veraltete Cacheeinträge
+5772
+Sendefehler
+5774
+Empfangsfehler
+5776
+Gesendete Anfragemeldungen/Sekunde
+5778
+Solicit Messages Received/second
+5780
+Gesendete Ankündigungsmeldungen/Sekunde
+5782
+Empfangene Ankündigungsmeldungen/Sekunde
+5784
+Gesendete Anforderungsmeldungen/Sekunde
+5786
+Empfangene Anforderungsmeldungen/Sekunde
+5788
+Flood Messages Sent/second
+5790
+Flood Messages Received/second
+5792
+Gesendete Abfragemeldungen/Sekunde
+5794
+Empfangene Abfragemeldungen/Sekunde
+5796
+Authority Sent/second
+5798
+Authority Messages Received/second
+5800
+Gesendete Bestätigungsmeldungen/Sekunde
+5802
+Empfangene Bestätigungsmeldungen/Sekunde
+5804
+Gesendete Suchmeldungen/Sekunde
+5806
+Empfangene Suchmeldungen/Sekunde
+5808
+Empfangene unbekannte Nachrichten
+5744
+Aktivitäten der physischen Netzwerkschnittstellenkarte
+5746
+Energiezustand des Geräts
+5748
+Angehaltene Zeit in Prozent (unmittelbar)
+5750
+Angehaltene Zeit in Prozent (Lebensdauer)
+5752
+Übergänge zu geringem Energieverbrauch (Lebensdauer)
+5692
+Netzwerkschnittstellenkarten-Aktivität pro Prozessor
+5694
+DPCs in Warteschlange/s
+5696
+Interrupts/s
+5698
+Empfangsanzeigen/s
+5700
+Aufrufe zum Zurückgeben von Paketen/s
+5702
+Passive Aufrufe zum Zurückgeben von Paketen/s
+5704
+Empfangene Pakete/s
+5706
+Zurückgegebene Pakete/s
+5708
+Passiv zurückgegebene Pakete/s
+5710
+DPCs in Warteschlange für andere CPUs/s
+5712
+Anforderungsaufrufe pro Sekunde senden
+5714
+Passive Sendeanforderungsaufrufe/s
+5716
+Vollständige Aufrufe pro Sekunde senden
+5718
+Gesendete Pakete/s
+5720
+Passiv gesendete Pakete/s
+5722
+Gesendete abgeschlossene Pakete/s
+5724
+Erstellung von Scatter-Gather-Listenaufrufen/Sek.
+5726
+RSS-Indirektionstabellenänderungs-Aufrufe/s
+5728
+Empfangsanzeigen mit geringen Ressourcen/s
+5730
+Empfangene Pakete mit geringen Ressourcen/s
+5732
+TCP-Abladevorgang-Empfangsanzeigen/s
+5734
+TCP-Abladevorgang-Sendeanforderungsaufrufe/s
+5736
+Beim TCP-Abladevorgang empfangene Bytes/s
+5738
+Beim TCP-Abladevorgang gesendete Bytes/s
+5740
+Zurückgestellte DPCs/s
+5742
+Zusammengefügte Pakete/s
+5664
+Netzwerkaktivitätszyklen pro Prozessor
+5666
+Interrupt-DPC-Zyklen/s
+5668
+Interrupt-Zyklen/s
+5670
+NDIS-Empfangsanzeigezyklen/s
+5672
+Stapel-Empfangsanzeigezyklen/s
+5674
+NDIS-Rückgabepaketzyklen/s
+5676
+Miniport-Paketrückgabezyklen/s
+5678
+NDIS-Sendezyklen/s
+5680
+Miniport-Sendezyklen/s
+5682
+Abgeschlossene NDIS-Sendezyklen/s
+5684
+Erstellung von Scatter-Gather-Zyklen/s
+5686
+Miniport-RSS-Indirektionstabellenänderungs-Zyklen
+5688
+Abgeschlossene Stapelsendezyklen/s
+5690
+Interrupt-DPC-Latenzzyklen/s
+5642
+RDMA-Aktivität
+5644
+RDMA - initiierte Verbindungen
+5646
+RDMA - akzeptierte Verbindungen
+5648
+RDMA - nicht erfolgreiche Verbindungsversuche
+5650
+RDMA - Verbindungsfehler
+5652
+RDMA - aktive Verbindungen
+5654
+RDMA - CQ-Fehler
+5656
+RDMA - eingehende Bytes/s
+5658
+RDMA - ausgehende Bytes/s
+5660
+RDMA - eingehende Frames/s
+5662
+RDMA - ausgehende Frames/s
+5636
+Datenträgeraktivität des Dateisystems
+5638
+Vom Dateisystem gelesene Bytes
+5640
+Vom Dateisystem geschriebene Bytes
+5624
+Sitzung der Ereignisablaufverfolgung für Windows
+5626
+Pufferspeicherauslastung -- ausgelagerter Pool
+5628
+Pufferspeicherauslastung -- nicht ausgelagerter Pool
+5630
+Protokollierte Ereignisse pro Sekunde
+5632
+Verlorene Ereignisse
+5634
+Anzahl von Echtzeitconsumern
+5558
+Prozessorinformationen
+5560
+Prozessorzeit (%)
+5562
+Benutzerzeit (%)
+5564
+Privilegierte Zeit (%)
+5566
+Interrupts/sec
+5568
+DPC-Zeit (%)
+5570
+Interruptzeit (%)
+5572
+DPCs in Warteschlange/s
+5574
+DPC-Rate
+5576
+Leerlaufzeit (%)
+5578
+% C1-Zeit
+5580
+% C2-Zeit
+5582
+% C3-Zeit
+5584
+C1-Übergänge/s
+5586
+C2-Übergänge/s
+5588
+C3-Übergänge/s
+5590
+% Prioritätszeit
+5592
+Parkstatus
+5594
+Prozessorfrequenz
+5596
+% der maximalen Frequenz
+5598
+Prozessorstatusflags
+5600
+Zeitinterrupts/s
+5602
+Durchschnittliche Leerlaufzeit
+5606
+Unterbrechungen des Leerlaufs/s
+5608
+% Prozessorleistung
+5612
+Prozessorauslastung
+5616
+Privilegierte Auslastung
+5620
+% Leistungslimit
+5622
+Kennzeichen für das Leistungslimit
+5544
+Ereignisablaufverfolgung für Windows
+5546
+Gesamtanzahl unterschiedlicher aktivierter Anbieter
+5548
+Gesamtanzahl unterschiedlicher, im Voraus aktivierter Anbieter
+5550
+Gesamtanzahl unterschiedlicher deaktivierter Anbieter
+5552
+Gesamtanzahl aktiver Sitzungen
+5554
+Gesamte Speicherauslastung --- ausgelagerter Pool
+5556
+Gesamte Speicherauslastung --- nicht ausgelagerter Pool
+5458
+Synchronisierung
+5460
+Übernommene Spinlocks/s
+5462
+Spinlockkonflikte/s
+5464
+Spinlockdrehungen/s
+5466
+Broadcastanforderungen für "IPI Send"
+5468
+Routinenanforderungen für "IPI Send"/s
+5470
+Softwareinterrupts für "IPI Send"/s
+5472
+Initialisierungen von Ausführungsressourcen gesamt/s
+5474
+Erneute Initialisierungen von Ausführungsressourcen gesamt/s
+5476
+Löschungen von Ausführungsressourcen gesamt/s
+5478
+Abrufe von Ausführungsressourcen gesamt/s
+5480
+Konflikte von Ausführungsressourcen gesamt/s
+5482
+Exklusive Freigaben von Ausführungsressourcen gesamt/s
+5484
+Öffentliche Freigaben von Ausführungsressourcen gesamt/s
+5486
+Konvertierung von exklusiv in öffentlich für Ausführungsressourcen gesamt/s
+5488
+Ausführungsressourcenversuche durch AcqExclLite/s
+5490
+Ausführungsressourcenabrufe durch AcqExclLite/s
+5492
+Rekursive exklusive Abrufe für Ausführungsressourcen durch AcqExclLite/s
+5494
+Ausführungsressourcenkonflikt durch AcqExclLite/s
+5496
+no-wait-Vorgänge für Ausführungsressourcen durch AcqExclLite/sec
+5498
+Ausführungsressourcenversuche durch AcqShrdLite/s
+5500
+Rekursive exklusive Abrufe für Ausführungsressourcen durch AcqShrdLite/s
+5502
+Ausführungsressourcenabfragen durch AcqShrdLite/s
+5504
+Rekursive freigegebene Abrufe für Ausführungsressourcen durch AcqShrdLite/s
+5506
+Ausführungsressourcenkonflikt durch AcqShrdLite/s
+5508
+no-wait-Vorgänge für Ausführungsressourcen durch AcqShrdLite/s
+5510
+Ausführungsressourcenversuche durch AcqShrdStarveExcl/s
+5512
+Rekursive exklusive Abfragen für Ausführungsressourcen durch AcqShrdStarveExcl/s
+5514
+Ausführungsressourcenabfragen durch AcqShrdStarveExcl/s
+5516
+Rekursive freigegebene Abfragen für Ausführungsressourcen durch AcqShrdStarveExcl/s
+5518
+Ausführungsressourcenkonflikt durch AcqShrdStarveExcl/s
+5520
+no-wait-Vorgänge für Ausführungsressourcen durch AcqShrdStarveExcl/s
+5522
+Ausführungsressourcenversuche durch AcqShrdWaitForExcl/s
+5524
+Rekursive exklusive Abfragen für Ausführungsressourcen durch AcqShrdWaitForExcl/s
+5526
+Ausführungsressourcenabfragen durch AcqShrdWaitForExcl/s
+5528
+Rekursive freigegebene Abrufe für Ausführungsressourcen durch AcqShrdWaitForExcl/s
+5530
+Ausführungsressourcenkonflikt durch AcqShrdWaitForExcl/s
+5532
+no-wait-Vorgänge für Ausführungsressourcen durch AcqShrdWaitForExcl/s
+5534
+Exklusive Festlegungen von Besitzerzeigern für Ausführungsressourcen/s
+5536
+Freigegebene Festlegungen von Besitzerzeigern für Ausführungsressourcen (Neuer Besitzer)/s
+5538
+Freigegebene Festlegungen von Besitzerzeigern für Ausführungsressourcen (Vorhandener Besitzer)/s
+5540
+Boost für Ausführungsressourcen für exklusive Besitzer/Sek.
+5542
+Boost für Ausführungsressourcen für freigegebene Besitzer/Sek.
+5372
+NUMA-Synchronisierung
+5374
+Abgerufene Spinlocks/s
+5376
+Spinlockkonflikte/s
+5378
+Spinlockdrehungen/s
+5380
+Broadcastanforderungen für "IPI Send"/s
+5382
+Routinenanforderungen für "IPI Send"/s
+5384
+Softwareinterrupts für "IPI Send"/s
+5386
+Initialisierungen von Ausführungsressourcen gesamt/s
+5388
+Erneute Initialisierungen von Ausführungsressourcen gesamt/s
+5390
+Löschungen von Ausführungsressourcen gesamt/s
+5392
+Abrufe von Ausführungsressourcen gesamt/s
+5394
+Konflikte von Ausführungsressourcen gesamt/s
+5396
+Exklusive Freigaben von Ausführungsressourcen gesamt/s
+5398
+Öffentliche Freigaben von Ausführungsressourcen gesamt/s
+5400
+Konvertierung von exklusiv in öffentlich für Ausführungsressourcen gesamt/s
+5402
+Ausführungsressourcenversuche durch AcqExclLite/s
+5404
+Ausführungsressourcenabrufe durch AcqExclLite/s
+5406
+Rekursive exklusive Abrufe für Ausführungsressourcen durch AcqExclLite/s
+5408
+Ausführungsressourcenkonflikte durch AcqExclLite/s
+5410
+no-wait-Vorgänge für Ausführungsressourcen durch AcqExclLite/s
+5412
+Ausführungsressourcenversuche durch AcqShrdLite/s
+5414
+Rekursive exklusive Abrufe für Ausführungsressourcen durch AcqShrdLite/s
+5416
+Ausführungsressourcenabfragen durch AcqShrdLite/s
+5418
+Rekursive freigegebene Abrufe für Ausführungsressourcen durch AcqShrdLite/s
+5420
+Ausführungsressourcenkonflikte durch AcqShrdLite/s
+5422
+no-wait-Vorgänge für Ausführungsressourcen durch AcqShrdLite/s
+5424
+Ausführungsressourcenversuche durch AcqShrdStarveExcl/s
+5426
+Rekursive exklusive Abfragen für Ausführungsressourcen durch AcqShrdStarveExcl/s
+5428
+Ausführungsressourcenabfragen durch AcqShrdStarveExcl/s
+5430
+Rekursive freigegebene Abfragen für Ausführungsressourcen durch AcqShrdStarveExcl/s
+5432
+Ausführungsressourcenkonflikte durch AcqShrdStarveExcl/s
+5434
+no-wait-Vorgänge für Ausführungsressourcen durch AcqShrdStarveExcl/s
+5436
+Ausführungsressourcenversuche durch AcqShrdWaitForExcl/s
+5438
+Rekursive exklusive Abfragen für Ausführungsressourcen durch AcqShrdWaitForExcl/s
+5440
+Ausführungsressourcenabfragen durch AcqShrdWaitForExcl/s
+5442
+Rekursive freigegebene Abrufe für Ausführungsressourcen durch AcqShrdWaitForExcl/s
+5444
+Ausführungsressourcenkonflikte durch AcqShrdWaitForExcl/s
+5446
+no-wait-Vorgänge für Ausführungsressourcen durch AcqShrdWaitForExcl/s
+5448
+Exklusive Festlegungen von Besitzerzeigern für Ausführungsressourcen/s
+5450
+Freigegebene Festlegungen von Besitzerzeigern für Ausführungsressourcen (Neuer Besitzer)/s
+5452
+Freigegebene Festlegungen von Besitzerzeigern für Ausführungsressourcen (Vorhandener Besitzer)/s
+5454
+Boost für Ausführungsressourcen für exklusive Besitzer/Sek.
+5456
+Boost für Ausführungsressourcen für freigegebene Besitzer/Sek.
+5322
+SMB-Clientfreigaben
+5324
+Gelesene Bytes/Sek.
+5326
+Geschriebene Bytes/Sek.
+5328
+Leseanforderungen/Sek.
+5330
+Schreibanforderungen/Sek.
+5332
+Durchschn. Bytes/Lesevorgang
+5336
+Durchschn. Bytes/Schreibvorgang
+5340
+Durchschn. Sek./Lesevorgang
+5344
+Durchschn. Sek./Schreibvorgang
+5348
+Datenbytes/Sek.
+5350
+Datenanforderungen/Sek.
+5352
+Durchschn. Datenbytes/Anforderung
+5356
+Durchschn. Sek./Datenanforderung
+5360
+Aktuelle Länge der Datenwarteschlange
+5362
+Durchschn. Warteschlangenlänge für Lesevorgänge
+5364
+Durchschn. Warteschlangenlänge für Schreibvorgänge
+5366
+Durchschn. Länge der Datenwarteschlange
+5368
+Metadatenanforderungen/Sek.
+5370
+Verzögerungen durch Anforderungslimit/Sek.
+5308
+Netzwerk-QoS-Richtlinie
+5310
+Übertragene Pakete
+5312
+Übertragene Pakete/Sek.
+5314
+Übertragene Bytes
+5316
+Übertragene Bytes/Sek.
+5318
+Verworfene Pakete
+5320
+Verworfene Pakete/Sek.
+5260
+BranchCache
+5262
+Abruf: Bytes vom Server
+5264
+Abruf: Bytes vom Cache
+5266
+Abruf: Verarbeitete Bytes
+5268
+Ermittlung: Gewichtete durchschnittliche Ermittlungszeit
+5270
+SMB: Bytes vom Cache
+5272
+SMB: Bytes vom Server
+5274
+BITS: Bytes vom Cache
+5276
+BITS: Bytes vom Server
+5278
+WININET: Bytes vom Cache
+5280
+WININET: Bytes vom Server
+5282
+WINHTTP: Bytes vom Cache
+5284
+WINHTTP: Bytes vom Server
+5286
+ANDERE: Bytes vom Cache
+5288
+ANDERE: Bytes vom Server
+5290
+Ermittlung: Ermittlungsversuche
+5292
+Lokaler Cache: Abgeschlossene Cachedateisegmente
+5294
+Lokaler Cache: Unvollständige Cachedateisegmente
+5296
+Gehosteter Cache: Unterbreitete Angebote für Clientdateisegmente
+5298
+Abruf: Durchschnittliche Verzweigungsrate
+5300
+Ermittlung: Erfolgreiche Ermittlungen
+5302
+Gehosteter Cache: Warteschlangengröße für Segmentangebote
+5304
+Veröffentlichungscache: Veröffentlichte Inhalte
+5306
+Lokaler Cache: Durchschnittliche Zugriffsdauer
+5244
+WSMan-Kontingentstatistik
+5246
+Gesamte Anforderungen/Sekunde
+5248
+Verstöße gegen Benutzerkontingente/Sekunde
+5250
+Verstöße gegen Systemkontingente/Sekunde
+5252
+Aktive Shells
+5254
+Aktive Vorgänge
+5256
+Aktive Benutzer
+5258
+Prozess-ID
+5210
+RAS
+5212
+Clients gesamt
+5214
+Clients maximal
+5216
+Nicht erfolgreiche Authentifizierungen
+5218
+Von getrennten Clients empfangene Bytes
+5220
+Von getrennten Clients übertragene Bytes
+

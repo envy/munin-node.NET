@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CpuPlugin", "CpuPlugin\CpuP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiskUsagePlugin", "DiskUsagePlugin\DiskUsagePlugin.csproj", "{2DFA06F7-9FB8-4745-8B40-90D97D83F29F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiskstatsPlugin", "DiskstatsPlugin\DiskstatsPlugin.csproj", "{4C7CD2F6-3C53-4C70-9AA5-1F65100EE7D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{2DFA06F7-9FB8-4745-8B40-90D97D83F29F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DFA06F7-9FB8-4745-8B40-90D97D83F29F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DFA06F7-9FB8-4745-8B40-90D97D83F29F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C7CD2F6-3C53-4C70-9AA5-1F65100EE7D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C7CD2F6-3C53-4C70-9AA5-1F65100EE7D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C7CD2F6-3C53-4C70-9AA5-1F65100EE7D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C7CD2F6-3C53-4C70-9AA5-1F65100EE7D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,5 +54,6 @@ Global
 		{0F73AB96-4455-439A-848E-DFB60EA3D07C} = {29E20CEB-2387-4C6A-A1A5-38115814B2AC}
 		{4FD69618-AEFD-478E-A225-181ECF818C8A} = {29E20CEB-2387-4C6A-A1A5-38115814B2AC}
 		{2DFA06F7-9FB8-4745-8B40-90D97D83F29F} = {29E20CEB-2387-4C6A-A1A5-38115814B2AC}
+		{4C7CD2F6-3C53-4C70-9AA5-1F65100EE7D0} = {29E20CEB-2387-4C6A-A1A5-38115814B2AC}
 	EndGlobalSection
 EndGlobal

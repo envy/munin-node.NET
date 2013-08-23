@@ -12,6 +12,11 @@ namespace CpuPlugin
 		private PerformanceCounter _interruptTime;
 		private PerformanceCounter _dpcTime;
 
+		public override Capabilities GetCapabilities()
+		{
+			return Capabilities.None;
+		}
+
 		public override void Initialize()
 		{
 			_idleTime = new PerformanceCounter("Processor", "% Idle Time", "_Total");
@@ -26,7 +31,7 @@ namespace CpuPlugin
 			_dpcTime.NextValue();
 		}
 
-		public override string GetConfig()
+		public override string GetConfig(Capabilities withCapabilities)
 		{
 			return "graph_title CPU usage\n" +
 				   "graph_order user privileged interrupt dpc idle\n" +
@@ -58,7 +63,7 @@ namespace CpuPlugin
 				   "idle.info Idle CPU time";
 		}
 
-		public override string GetValues()
+		public override string GetValues(Capabilities withCapabilities)
 		{
 			return String.Format("user.value {0}\nprivileged.value {1}\ninterrupt.value {2}\ndpc.value {3}\nidle.value {4}", DoubleToString(_userTime.NextValue()),
 								 DoubleToString(_privilegedTime.NextValue()), DoubleToString(_interruptTime.NextValue()), DoubleToString(_dpcTime.NextValue()), DoubleToString(_idleTime.NextValue()));

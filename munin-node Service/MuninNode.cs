@@ -146,6 +146,7 @@ namespace munin_node_Service
 			public readonly byte[] Buffer = new byte[1024];
 			public Socket ClientSocket;
 			public readonly StringBuilder StringBuilder = new StringBuilder();
+			public PluginBase.Capabilities Capabilities = PluginBase.Capabilities.None;
 		}
 
 		/// <summary>
@@ -199,7 +200,7 @@ namespace munin_node_Service
 			if (readBytes > 0)
 			{
 				readState.StringBuilder.Append(Encoding.ASCII.GetString(readState.Buffer, 0, readBytes));
-				if (TryHandleCommand(readState.StringBuilder.ToString(), readState.ClientSocket)) // try to execute
+				if (TryHandleCommand(readState.StringBuilder.ToString(), readState)) // try to execute
 				{
 					readState.StringBuilder.Clear();
 				}
@@ -241,14 +242,15 @@ namespace munin_node_Service
 		/// Tries to parse a command and execute it.
 		/// </summary>
 		/// <param name="command"></param>
-		/// <param name="answerSocket"></param>
+		/// <param name="state"></param>
 		/// <returns>True, if command was succesfully executed, False if command was not completly received</returns>
-		private bool TryHandleCommand(string command, Socket answerSocket)
+		private bool TryHandleCommand(string command, ReadState state)
 		{
 			//munin-update ends every command with a \n, so we can test for that
 			if (!command.EndsWith("\n"))
 				return false; // command was not ended with a \n so command was not complete, receive more bytes
 
+			var answerSocket = state.ClientSocket;
 			command = command.TrimEnd(new[] { '\n' });
 
 			Log(String.Format("Got command: {0}", command));
@@ -269,11 +271,16 @@ namespace munin_node_Service
 			switch (cmd)
 			{
 				case "cap":
-					Send("cap\n", answerSocket); // We are not capable of anything yet
+					if (args.Contains("multigraph"))
+						state.Capabilities |= PluginBase.Capabilities.Multigraph;
+					if (args.Contains("dirtyconfig"))
+						state.Capabilities |= PluginBase.Capabilities.DirtyConfig;
+					Send("cap multigraph dirtyconfig\n", answerSocket); // We are capable of multigraph and dirtyconfig
 					break;
 				case "list":
 					// Return a list of all available plugins
-					var plugins = RegisteredPlugins.Select(_ => _.GetName()).Aggregate((regplugins, next) => regplugins + " " + next) + "\n";
+					var plugins = RegisteredPlugins.Where(_ => !_.GetCapabilities().HasFlag(PluginBase.Capabilities.Multigraph) || (_.GetCapabilities() & state.Capabilities).HasFlag(PluginBase.Capabilities.Multigraph))
+						.Select(_ => _.GetName()).Aggregate((regplugins, next) => regplugins + " " + next) + "\n";
 					Send(plugins, answerSocket);
 					break;
 				case "config":
@@ -284,7 +291,7 @@ namespace munin_node_Service
 						Send("# Unknown service\n.\n", answerSocket);
 						break;
 					}
-					Send(FormatForMunin(plugin.GetConfig()), answerSocket);
+					Send(FormatForMunin(plugin.GetConfig(state.Capabilities)), answerSocket);
 					break;
 				case "fetch":
 					// Return values for a specific plugin
@@ -294,7 +301,7 @@ namespace munin_node_Service
 						Send("# Unknown service\n.\n", answerSocket);
 						break;
 					}
-					Send(FormatForMunin(plugin.GetValues()), answerSocket);
+					Send(FormatForMunin(plugin.GetValues(state.Capabilities)), answerSocket);
 					break;
 				case "nodes":
 					// Return alle nodes this munin-node queries (only this node)

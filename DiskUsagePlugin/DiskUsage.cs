@@ -10,6 +10,11 @@ namespace DiskUsagePlugin
 		private List<DriveInfo> _drives;
 		private string _config;
 
+		public override Capabilities GetCapabilities()
+		{
+			return Capabilities.None;
+		}
+
 		public override void Initialize()
 		{
 			_drives = new List<DriveInfo>();
@@ -32,12 +37,12 @@ namespace DiskUsagePlugin
 			}
 		}
 
-		public override string GetConfig()
+		public override string GetConfig(Capabilities withCapabilities)
 		{
 			return _config;
 		}
 
-		public override string GetValues()
+		public override string GetValues(Capabilities withCapabilities)
 		{
 			var values = "";
 			foreach (var drive in _drives)

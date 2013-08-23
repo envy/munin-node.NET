@@ -26,8 +26,8 @@ namespace munin_node_Service
 		/// <summary>
 		/// Specifies which IP munin-node should bind to and wait for connections
 		/// </summary>
-		public IPAddress ListenOn { private set; get; } 
-		
+		public IPAddress ListenOn { private set; get; }
+
 		/// <summary>
 		/// The hostname which will be reported to munin. If null, munin-node will try to dertermine the hostname.
 		/// </summary>
@@ -36,7 +36,7 @@ namespace munin_node_Service
 		/// <summary>
 		/// Contains all registered plugins.
 		/// </summary>
-		public HashSet<PluginBase> RegisteredPlugins { private set; get; } 
+		public HashSet<PluginBase> RegisteredPlugins { private set; get; }
 
 		public MuninNode(MuninService service)
 		{
@@ -117,14 +117,14 @@ namespace munin_node_Service
 				Assembly possiblePlugin = Assembly.LoadFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "plugins", file));
 				foreach (var type in possiblePlugin.GetTypes())
 				{
-					if (!typeof (PluginBase).IsAssignableFrom(type)) continue;
+					if (!typeof(PluginBase).IsAssignableFrom(type)) continue;
 
-					var plugin = (PluginBase) Activator.CreateInstance(type);
+					var plugin = (PluginBase)Activator.CreateInstance(type);
 					plugin.Initialize();
 					RegisteredPlugins.Add(plugin);
 
 				}
-				
+
 			}
 			Log(String.Format("{0} Plugin(s) loaded: {1}", RegisteredPlugins.Count, RegisteredPlugins.Select(_ => _.GetName()).Aggregate((plugins, next) => plugins + " " + next)));
 
@@ -155,10 +155,10 @@ namespace munin_node_Service
 		private void HandleConnection(IAsyncResult result)
 		{
 			_connectionEstablished.Set();
-			var clientSocket = ((Socket) result.AsyncState).EndAccept(result);
+			var clientSocket = ((Socket)result.AsyncState).EndAccept(result);
 			Log(String.Format("Connection from {0}", clientSocket.RemoteEndPoint));
 			// TODO: check if server is allowed to connect
-			var readState = new ReadState {ClientSocket = clientSocket};
+			var readState = new ReadState { ClientSocket = clientSocket };
 			Send(String.Format("# munin node at {0}\n", Hostname), clientSocket);
 			clientSocket.BeginReceive(readState.Buffer, 0, readState.Buffer.Length, SocketFlags.None, ReceiveCallback, readState);
 		}
@@ -169,7 +169,7 @@ namespace munin_node_Service
 		/// <param name="result"></param>
 		private void ReceiveCallback(IAsyncResult result)
 		{
-			var readState = (ReadState) result.AsyncState;
+			var readState = (ReadState)result.AsyncState;
 			SocketError error;
 			var readBytes = readState.ClientSocket.EndReceive(result, out error);
 			Log(String.Format("Received {0} bytes", readBytes));
@@ -194,7 +194,7 @@ namespace munin_node_Service
 				Log("Client Disconnected");
 				return;
 			}
-			
+
 			// if there is something to read
 			if (readBytes > 0)
 			{
@@ -234,7 +234,7 @@ namespace munin_node_Service
 		/// <param name="result"></param>
 		private void SendCallback(IAsyncResult result)
 		{
-			((Socket) result.AsyncState).EndSend(result);
+			((Socket)result.AsyncState).EndSend(result);
 		}
 
 		/// <summary>
@@ -249,7 +249,7 @@ namespace munin_node_Service
 			if (!command.EndsWith("\n"))
 				return false; // command was not ended with a \n so command was not complete, receive more bytes
 
-			command = command.TrimEnd(new[] {'\n'});
+			command = command.TrimEnd(new[] { '\n' });
 
 			Log(String.Format("Got command: {0}", command));
 			var cmd = command;

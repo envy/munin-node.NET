@@ -46,6 +46,12 @@ namespace munin_node_Service
 			Log("Config loaded, ready to start");
 		}
 
+		/// <summary>
+		/// Log a message to console and maybe eventlog
+		/// </summary>
+		/// <param name="message">Message to log</param>
+		/// <param name="type">Type of message</param>
+		/// <param name="debug">If true, then only log to console, else log to eventlog too</param>
 		private void Log(String message, EventLogEntryType type = EventLogEntryType.Information, bool debug = true)
 		{
 			if (_parentService != null && !debug)
@@ -79,13 +85,27 @@ namespace munin_node_Service
 			}
 		}
 
+		/// <summary>
+		/// Stop munin-node
+		/// </summary>
 		public void Stop()
 		{
 			_listening = false;
-			_serverSocket.Shutdown(SocketShutdown.Both);
-			_serverSocket.Close();
+			try
+			{
+				_serverSocket.Shutdown(SocketShutdown.Both);
+				_serverSocket.Close();
+			}
+			catch (Exception e)
+			{
+				Log(String.Format("Exception during stop: {0}", e.Message), EventLogEntryType.Error, false);
+			}
+
 		}
 
+		/// <summary>
+		/// Loads the config file
+		/// </summary>
 		public void LoadConfig()
 		{
 			// Search for plugins and load them
@@ -118,6 +138,9 @@ namespace munin_node_Service
 			Hostname = String.IsNullOrWhiteSpace(Properties.Settings.Default.Hostname) ? Dns.GetHostName() : Properties.Settings.Default.Hostname;
 		}
 
+		/// <summary>
+		/// Helper class for async receive calls
+		/// </summary>
 		private class ReadState
 		{
 			public readonly byte[] Buffer = new byte[1024];
@@ -140,6 +163,10 @@ namespace munin_node_Service
 			clientSocket.BeginReceive(readState.Buffer, 0, readState.Buffer.Length, SocketFlags.None, ReceiveCallback, readState);
 		}
 
+		/// <summary>
+		/// Handles incoming data
+		/// </summary>
+		/// <param name="result"></param>
 		private void ReceiveCallback(IAsyncResult result)
 		{
 			var readState = (ReadState) result.AsyncState;
@@ -168,15 +195,17 @@ namespace munin_node_Service
 				return;
 			}
 			
+			// if there is something to read
 			if (readBytes > 0)
 			{
 				readState.StringBuilder.Append(Encoding.ASCII.GetString(readState.Buffer, 0, readBytes));
-				if (TryHandleCommand(readState.StringBuilder.ToString(), readState.ClientSocket))
+				if (TryHandleCommand(readState.StringBuilder.ToString(), readState.ClientSocket)) // try to execute
 				{
 					readState.StringBuilder.Clear();
 				}
 			}
 
+			// start next receive
 			try
 			{
 				readState.ClientSocket.BeginReceive(readState.Buffer, 0, readState.Buffer.Length, SocketFlags.None, ReceiveCallback, readState);
@@ -199,6 +228,10 @@ namespace munin_node_Service
 			socket.BeginSend(byteData, 0, byteData.Length, 0, SendCallback, socket);
 		}
 
+		/// <summary>
+		/// Handles finished sends
+		/// </summary>
+		/// <param name="result"></param>
 		private void SendCallback(IAsyncResult result)
 		{
 			((Socket) result.AsyncState).EndSend(result);
@@ -209,24 +242,26 @@ namespace munin_node_Service
 		/// </summary>
 		/// <param name="command"></param>
 		/// <param name="answerSocket"></param>
-		/// <returns>True, if command was succesfully executed, False otherwise</returns>
+		/// <returns>True, if command was succesfully executed, False if command was not completly received</returns>
 		private bool TryHandleCommand(string command, Socket answerSocket)
 		{
 			//munin-update ends every command with a \n, so we can test for that
 			if (!command.EndsWith("\n"))
-				return false;
+				return false; // command was not ended with a \n so command was not complete, receive more bytes
 
 			command = command.TrimEnd(new[] {'\n'});
 
 			Log(String.Format("Got command: {0}", command));
-			string cmd = command;
-			string arg = null;
+			var cmd = command;
+			var args = new List<string>();
 
-			// if command contains arguments (only one, never more), separate them.
+			// if command contains arguments, separate them.
 			if (command.Contains(" "))
 			{
-				cmd = command.Split(' ')[0];
-				arg = command.Split(' ')[1];
+				var split = command.Split(' ');
+				cmd = split[0];
+				for (var i = 1; i < split.Length; i++)
+					args.Add(split[i]);
 			}
 
 			// execute command
@@ -243,7 +278,7 @@ namespace munin_node_Service
 					break;
 				case "config":
 					// Return config parameters for a specific plugin
-					plugin = RegisteredPlugins.FirstOrDefault(_ => _.GetName().Equals(arg));
+					plugin = RegisteredPlugins.FirstOrDefault(_ => _.GetName().Equals(args[0]));
 					if (plugin == null)
 					{
 						Send("# Unknown service\n.\n", answerSocket);
@@ -253,7 +288,7 @@ namespace munin_node_Service
 					break;
 				case "fetch":
 					// Return values for a specific plugin
-					plugin = RegisteredPlugins.FirstOrDefault(_ => _.GetName().Equals(arg));
+					plugin = RegisteredPlugins.FirstOrDefault(_ => _.GetName().Equals(args[0]));
 					if (plugin == null)
 					{
 						Send("# Unknown service\n.\n", answerSocket);
@@ -279,7 +314,12 @@ namespace munin_node_Service
 			return true;
 		}
 
-		private string FormatForMunin(string input)
+		/// <summary>
+		/// Formats fetch and config output so that they always contain an \n.\n at the end.
+		/// </summary>
+		/// <param name="input"></param>
+		/// <returns></returns>
+		private static string FormatForMunin(string input)
 		{
 			if (input.EndsWith("\n") && !input.EndsWith("\n.\n"))
 				return input + ".\n";

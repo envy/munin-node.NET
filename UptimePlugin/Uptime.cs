@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Globalization;
 using munin_node_Service;
 
 namespace UptimePlugin

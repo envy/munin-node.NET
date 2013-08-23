@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
+﻿using System.ComponentModel;
 using System.ServiceProcess;
-using System.Text;
-using System.Threading.Tasks;
 using System.Configuration.Install;
 
 namespace munin_node_Service
@@ -14,8 +9,8 @@ namespace munin_node_Service
 	{
 		public MuninServiceInstaller()
 		{
-			ServiceProcessInstaller serviceProcessInstaller = new ServiceProcessInstaller();
-			ServiceInstaller serviceInstaller = new ServiceInstaller();
+			var serviceProcessInstaller = new ServiceProcessInstaller();
+			var serviceInstaller = new ServiceInstaller();
 
 			serviceProcessInstaller.Account = ServiceAccount.LocalSystem;
 			serviceProcessInstaller.Username = null;
@@ -26,8 +21,8 @@ namespace munin_node_Service
 
 			serviceInstaller.ServiceName = "munin-node Service";
 
-			this.Installers.Add(serviceProcessInstaller);
-			this.Installers.Add(serviceInstaller);
+			Installers.Add(serviceProcessInstaller);
+			Installers.Add(serviceInstaller);
 		}
 	}
 }

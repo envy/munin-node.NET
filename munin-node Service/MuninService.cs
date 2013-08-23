@@ -128,36 +128,5 @@ namespace munin_node_Service
 			}
 			_muninNode = null;
 		}
-
-		/// <summary>
-		/// Receives commands without using sockets.
-		/// A command can be send using:
-		/// ServiceController sc = new ServiceController("munin-node Service");
-		/// sc.ExecuteCommand(128);
-		/// </summary>
-		/// <param name="command">Integer between 128 and 256</param>
-		protected override void OnCustomCommand(int command)
-		{
-			base.OnCustomCommand(command);
-		}
-
-		/// <summary>
-		/// Detects power changes, like low battery or suspend mode
-		/// </summary>
-		/// <param name="powerStatus"></param>
-		/// <returns></returns>
-		protected override bool OnPowerEvent(PowerBroadcastStatus powerStatus)
-		{
-			return base.OnPowerEvent(powerStatus);
-		}
-
-		/// <summary>
-		/// Detects change of session (i.e. Terminal Server)
-		/// </summary>
-		/// <param name="changeDescription"></param>
-		protected override void OnSessionChange(SessionChangeDescription changeDescription)
-		{
-			base.OnSessionChange(changeDescription);
-		}
 	}
 }

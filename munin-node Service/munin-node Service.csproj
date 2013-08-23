@@ -50,7 +50,7 @@
     </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>munin_node_Service.MuninNodeTestStarter</StartupObject>
+    <StartupObject>munin_node_Service.MuninService</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -67,7 +67,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MuninNode.cs" />
-    <Compile Include="MuninNodeTestStarter.cs" />
     <Compile Include="MuninService.cs">
       <SubType>Component</SubType>
     </Compile>

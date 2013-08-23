@@ -11,7 +11,7 @@ using System.Net.Sockets;
 
 namespace munin_node_Service
 {
-	class MuninNode : IDisposable
+	public class MuninNode : IDisposable
 	{
 		private readonly MuninService _parentService;
 		private Socket _serverSocket;

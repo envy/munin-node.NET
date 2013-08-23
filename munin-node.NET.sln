@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{29E2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UptimePlugin", "UptimePlugin\UptimePlugin.csproj", "{0F73AB96-4455-439A-848E-DFB60EA3D07C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "munin-node Standalone", "munin-node Standalone\munin-node Standalone.csproj", "{C5A9E187-3E64-405A-B8F7-C28E5FDABB48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +24,10 @@ Global
 		{0F73AB96-4455-439A-848E-DFB60EA3D07C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F73AB96-4455-439A-848E-DFB60EA3D07C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F73AB96-4455-439A-848E-DFB60EA3D07C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5A9E187-3E64-405A-B8F7-C28E5FDABB48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5A9E187-3E64-405A-B8F7-C28E5FDABB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5A9E187-3E64-405A-B8F7-C28E5FDABB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5A9E187-3E64-405A-B8F7-C28E5FDABB48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

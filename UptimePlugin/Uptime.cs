@@ -11,7 +11,7 @@ namespace UptimePlugin
 
 		public override Capabilities GetCapabilities()
 		{
-			return Capabilities.DirtyConfig;
+			return Capabilities.None;
 		}
 
 		public override void Initialize()
@@ -29,10 +29,6 @@ namespace UptimePlugin
 
 		public override string GetConfig(Capabilities withCapabilities)
 		{
-			if (withCapabilities.HasFlag(Capabilities.DirtyConfig))
-			{
-				return _config + GetValues(withCapabilities);
-			}
 			return _config;
 		}
 

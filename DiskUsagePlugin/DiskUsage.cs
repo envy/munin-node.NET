@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using munin_node_Service;
@@ -31,7 +32,8 @@ namespace DiskUsagePlugin
 			foreach (var drive in _drives)
 			{
 				var driveletter = drive.Name[0];
-				_config += driveletter + ".label " + drive.Name.TrimEnd(new[] { '\\' }) + "\n" +
+				var label = drive.Name + (String.IsNullOrWhiteSpace(drive.VolumeLabel) ? "  " : String.Format("({0})", drive.VolumeLabel));
+				_config += driveletter + ".label " + label + "\n" +
 						   driveletter + ".warning 92\n" +
 						   driveletter + ".critical 98\n";
 			}

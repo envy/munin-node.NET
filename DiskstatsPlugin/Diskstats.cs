@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
 using System.Linq;
 using munin_node_Service;
 
@@ -25,12 +24,13 @@ namespace DiskstatsPlugin
 
 			foreach (var drive in pcc.GetInstanceNames().Where(drive => !drive.Equals("_Total")))
 			{
-				Console.WriteLine("found drive {0}", drive);
-				var perfcounters = new List<PerformanceCounter>();
-				perfcounters.Add(new PerformanceCounter("PhysicalDisk", "Disk Reads/sec", drive));
-				perfcounters.Add(new PerformanceCounter("PhysicalDisk", "Disk Writes/sec", drive));
-				perfcounters.Add(new PerformanceCounter("PhysicalDisk", "Avg. Disk Bytes/Read", drive));
-				perfcounters.Add(new PerformanceCounter("PhysicalDisk", "Avg. Disk Bytes/Write", drive));
+				var perfcounters = new List<PerformanceCounter>
+					{
+						new PerformanceCounter("PhysicalDisk", "Disk Reads/sec", drive),
+						new PerformanceCounter("PhysicalDisk", "Disk Writes/sec", drive),
+						new PerformanceCounter("PhysicalDisk", "Avg. Disk Bytes/Read", drive),
+						new PerformanceCounter("PhysicalDisk", "Avg. Disk Bytes/Write", drive)
+					};
 				_drives.Add(drive, perfcounters);
 			}
 

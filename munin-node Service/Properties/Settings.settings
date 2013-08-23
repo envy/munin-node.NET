@@ -3,13 +3,13 @@
   <Profiles />
   <Settings>
     <Setting Name="AllowedServers" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">0.0.0.0</Value>
+      <Value Profile="(Default)">::ffff:0:0:0:0</Value>
     </Setting>
     <Setting Name="Hostname" Type="System.String" Scope="Application">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="BindTo" Type="System.String" Scope="Application">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">::</Value>
     </Setting>
   </Settings>
 </SettingsFile>

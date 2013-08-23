@@ -13,9 +13,10 @@ namespace munin_node_Service
 {
 	class MuninNode : IDisposable
 	{
-		private MuninService _parentService;
+		private readonly MuninService _parentService;
 		private Socket _serverSocket;
 		private readonly ManualResetEvent _connectionEstablished = new ManualResetEvent(false);
+		private bool _listening;
 
 		/// <summary>
 		/// All munin server which are allowed to access this munin-node.
@@ -40,9 +41,18 @@ namespace munin_node_Service
 		public MuninNode(MuninService service)
 		{
 			_parentService = service;
-			_parentService.Log("Loading Config", EventLogEntryType.Information);
+			Log("Loading Config");
 			LoadConfig();
-			Console.WriteLine("Config loaded, ready to start");
+			Log("Config loaded, ready to start");
+		}
+
+		private void Log(String message, EventLogEntryType type = EventLogEntryType.Information, bool debug = true)
+		{
+			if (_parentService != null && !debug)
+			{
+				_parentService.Log(message, type);
+			}
+			Console.WriteLine(message);
 		}
 
 		public void Dispose()
@@ -50,15 +60,18 @@ namespace munin_node_Service
 			//TODO: dispose everything
 		}
 
+		/// <summary>
+		/// Start munin-node
+		/// </summary>
 		public void Start()
 		{
-			_parentService.Log("Starting socket", EventLogEntryType.Information);
 			_serverSocket = new Socket(AddressFamily.InterNetworkV6, SocketType.Stream, ProtocolType.Tcp);
 			_serverSocket.SetSocketOption(SocketOptionLevel.IPv6, SocketOptionName.IPv6Only, false);
 			_serverSocket.Bind(new IPEndPoint(ListenOn, 4949));
 			_serverSocket.Listen(10);
-			_parentService.Log("munin-node Service ready", EventLogEntryType.Information);
-			while (true)
+			_listening = true;
+			Log(String.Format("munin-node Service ready on {0}", ListenOn), EventLogEntryType.Information, false);
+			while (_listening)
 			{
 				_connectionEstablished.Reset();
 				_serverSocket.BeginAccept(HandleConnection, _serverSocket);
@@ -68,6 +81,7 @@ namespace munin_node_Service
 
 		public void Stop()
 		{
+			_listening = false;
 			_serverSocket.Shutdown(SocketShutdown.Both);
 			_serverSocket.Close();
 		}
@@ -80,14 +94,11 @@ namespace munin_node_Service
 			string[] files = Directory.GetFiles(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "plugins"), "*.dll");
 			foreach (var file in files)
 			{
-				Console.WriteLine("Found file {0}", file);
 				Assembly possiblePlugin = Assembly.LoadFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "plugins", file));
 				foreach (var type in possiblePlugin.GetTypes())
 				{
-					Console.WriteLine("Found possible plugin {0}", type);
 					if (!typeof (PluginBase).IsAssignableFrom(type)) continue;
 
-					Console.WriteLine("Found plugin {0}", type);
 					var plugin = (PluginBase) Activator.CreateInstance(type);
 					plugin.Initialize();
 					RegisteredPlugins.Add(plugin);
@@ -95,7 +106,7 @@ namespace munin_node_Service
 				}
 				
 			}
-			_parentService.Log("Plugins loaded", EventLogEntryType.Information);
+			Log(String.Format("{0} Plugin(s) loaded: {1}", RegisteredPlugins.Count, RegisteredPlugins.Select(_ => _.GetName()).Aggregate((plugins, next) => plugins + " " + next)));
 
 			AllowedServers = new HashSet<IPAddress>();
 			if (true) // TODO: check whether config speficied allowed hosts
@@ -122,7 +133,7 @@ namespace munin_node_Service
 		{
 			_connectionEstablished.Set();
 			var clientSocket = ((Socket) result.AsyncState).EndAccept(result);
-			Console.WriteLine("Connection from {0}", clientSocket.RemoteEndPoint);
+			Log(String.Format("Connection from {0}", clientSocket.RemoteEndPoint));
 			// TODO: check if server is allowed to connect
 			var readState = new ReadState {ClientSocket = clientSocket};
 			Send(String.Format("# munin node at {0}\n", Hostname), clientSocket);
@@ -134,7 +145,7 @@ namespace munin_node_Service
 			var readState = (ReadState) result.AsyncState;
 			SocketError error;
 			var readBytes = readState.ClientSocket.EndReceive(result, out error);
-			Console.WriteLine("Received {0} bytes", readBytes);
+			Log(String.Format("Received {0} bytes", readBytes));
 			switch (error)
 			{
 				case SocketError.ConnectionAborted:
@@ -144,7 +155,7 @@ namespace munin_node_Service
 				case SocketError.Shutdown:
 				case SocketError.Fault:
 				case SocketError.TimedOut:
-					Console.WriteLine("SocketError: {0}", error);
+					Log(String.Format("SocketError: {0}", error));
 					return; // On error/socket close, don't go any further
 			}
 
@@ -153,7 +164,7 @@ namespace munin_node_Service
 			{
 				//socket is dead
 				readState.ClientSocket.Close();
-				Console.WriteLine("Client Disconnected");
+				Log("Client Disconnected");
 				return;
 			}
 			
@@ -172,7 +183,7 @@ namespace munin_node_Service
 			}
 			catch (ObjectDisposedException)
 			{
-				Console.WriteLine("Client Disconnected");
+				Log("Client Disconnected");
 			}
 		}
 
@@ -183,7 +194,7 @@ namespace munin_node_Service
 		/// <param name="socket"></param>
 		private void Send(String message, Socket socket)
 		{
-			Console.WriteLine("Sending answer: {0}", message);
+			Log(String.Format("Sending answer: {0}", message));
 			byte[] byteData = Encoding.ASCII.GetBytes(message);
 			socket.BeginSend(byteData, 0, byteData.Length, 0, SendCallback, socket);
 		}
@@ -201,7 +212,12 @@ namespace munin_node_Service
 		/// <returns>True, if command was succesfully executed, False otherwise</returns>
 		private bool TryHandleCommand(string command, Socket answerSocket)
 		{
+			//munin-update ends every command with a \n, so we can test for that
+			if (!command.EndsWith("\n"))
+				return false;
+
 			command = command.TrimEnd(new[] {'\n'});
+
 			Console.WriteLine("Got command: {0}", command);
 			string cmd = command;
 			string arg = null;
@@ -217,6 +233,9 @@ namespace munin_node_Service
 			PluginBase plugin;
 			switch (cmd)
 			{
+				case "cap":
+					Send("cap\n", answerSocket); // We are not capable of anything yet
+					break;
 				case "list":
 					// Return a list of all available plugins
 					var plugins = RegisteredPlugins.Select(_ => _.GetName()).Aggregate((regplugins, next) => regplugins + " " + next) + "\n";
@@ -254,7 +273,8 @@ namespace munin_node_Service
 					answerSocket.Close();
 					break;
 				default:
-					return false; // Assumption: munin server does not make mistakes while sending commands, so every not understood command has been not received fully (should never happen, the commands are small).
+					Send("# Unknown command. Try cap, list, nodes, config, fetch, version oder quit\n", answerSocket);
+					break;
 			}
 			return true;
 		}

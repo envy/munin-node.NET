@@ -25,7 +25,7 @@ namespace munin_node_Service.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0.0.0.0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("::ffff:0:0:0:0")]
         public string AllowedServers {
             get {
                 return ((string)(this["AllowedServers"]));
@@ -43,7 +43,7 @@ namespace munin_node_Service.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("::")]
         public string BindTo {
             get {
                 return ((string)(this["BindTo"]));

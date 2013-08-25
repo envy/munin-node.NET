@@ -32,7 +32,7 @@ namespace CpuPlugin
 		{
 			return "graph_title CPU usage\n" +
 				   "graph_order privileged interrupt dpc user idle\n" +
-				   "graph args --base 1000 -r -l 0 --upper-limit 100\n" +
+				   "graph_args --base 1000 -l 0 -u 100 -r\n" +
 				   "graph_vlabel %\n" +
 				   "graph_scale no\n" +
 				   "graph_info This graph shows how CPU time is spent.\n" +

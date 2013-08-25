@@ -12,7 +12,7 @@ namespace munin_node_Service
 		/// <returns></returns>
 		public static string DoubleToString(double value)
 		{
-			return value.ToString("0.00", CultureInfo.InvariantCulture);
+			return value.ToString(CultureInfo.InvariantCulture);
 		}
 
 		[Flags]

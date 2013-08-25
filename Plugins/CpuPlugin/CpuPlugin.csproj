@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\build-dbg\plugins\</OutputPath>
+    <OutputPath>..\..\build-dbg\plugins\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -24,7 +24,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\build-rel\plugins\</OutputPath>
+    <OutputPath>..\..\build-rel\plugins\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -38,7 +38,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\munin-node Service\munin-node Service.csproj">
+    <ProjectReference Include="..\..\munin-node Service\munin-node Service.csproj">
       <Project>{38e61188-bb38-4277-aaaa-557005f37cd6}</Project>
       <Name>munin-node Service</Name>
     </ProjectReference>

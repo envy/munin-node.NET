@@ -42,7 +42,7 @@ namespace CpuPlugin
 				   "user.min 0\n" +
 				   "user.draw STACK\n" +
 				   "user.info CPU time spent in user mode\n" +
-			       "user.colour 00ffff\n" +
+			       "user.colour 007fe0\n" +
 				   "privileged.label privileged\n" +
 				   "privileged.min 0\n" +
 				   "privileged.draw AREA\n" +
@@ -57,7 +57,7 @@ namespace CpuPlugin
 				   "dpc.min 0\n" +
 				   "dpc.draw STACK\n" +
 				   "dpc.info CPU time spent in deferred procedure calls (dpc)\n" +
-			       "dpc.colour ffa07a\n" +
+			       "dpc.colour ffd700\n" +
 				   "idle.label idle\n" +
 				   "idle.min 0\n" +
 				   "idle.draw STACK\n" +

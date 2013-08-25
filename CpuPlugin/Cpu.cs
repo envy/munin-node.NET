@@ -42,22 +42,27 @@ namespace CpuPlugin
 				   "user.min 0\n" +
 				   "user.draw STACK\n" +
 				   "user.info CPU time spent in user mode\n" +
+			       "user.colour 00ffff\n" +
 				   "privileged.label privileged\n" +
 				   "privileged.min 0\n" +
 				   "privileged.draw AREA\n" +
 				   "privileged.info CPU time spent in privileged mode\n" +
+			       "privileged.colour FF0000\n" +
 				   "interrupt.label interrupt\n" +
 				   "interrupt.min 0\n" +
 				   "interrupt.draw STACK\n" +
 				   "interrupt.info CPU time spent dealing with interrupts\n" +
+				   "interrupt.colour ffa400\n" +
 				   "dpc.label dpc\n" +
 				   "dpc.min 0\n" +
 				   "dpc.draw STACK\n" +
 				   "dpc.info CPU time spent in deferred procedure calls (dpc)\n" +
+			       "dpc.colour ffa07a\n" +
 				   "idle.label idle\n" +
 				   "idle.min 0\n" +
 				   "idle.draw STACK\n" +
-				   "idle.info Idle CPU time";
+				   "idle.info Idle CPU time\n" +
+			       "idle.colour 90ee90\n";
 		}
 
 		public override string GetValues(Capabilities withCapabilities)

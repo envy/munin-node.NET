@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using munin_node_Service;
@@ -32,7 +33,7 @@ namespace DiskUsagePlugin
 			foreach (var drive in _drives)
 			{
 				var driveletter = drive.Name[0];
-				var label = drive.Name + (String.IsNullOrWhiteSpace(drive.VolumeLabel) ? "  " : String.Format(" ({0})", drive.VolumeLabel));
+				var label = String.IsNullOrWhiteSpace(drive.VolumeLabel) ? drive.Name[0].ToString(CultureInfo.InvariantCulture) : String.Format("{0} ({1})", drive.Name[0], drive.VolumeLabel);
 				_config += driveletter + ".label " + label + "\n" +
 						   driveletter + ".warning 92\n" +
 						   driveletter + ".critical 98\n";

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using munin_node_Service;
 
@@ -60,29 +61,40 @@ namespace DiskstatsPlugin
 
 			foreach (var drive in _drives)
 			{
-				var driveletter = drive.Key.Reverse().ToArray()[1];
-				iopsconfig += driveletter + "_rdio.label " + driveletter + ":\n" +
-						   driveletter + "_rdio.min 0\n" +
-						   driveletter + "_rdio.draw LINE1\n" +
-						   driveletter + "_rdio.graph no\n" +
-						   driveletter + "_wrio.label " + driveletter + ":\n" +
-						   driveletter + "_wrio.min 0\n" +
-						   driveletter + "_wrio.draw LINE1\n" +
-						   driveletter + "_wrio.negative " + driveletter + "_rdio\n";
+				Console.WriteLine("processing {0}", drive.Key);
+				string drivename;
+				var drivenumber = "disk_" + drive.Key[0];
+				if (drive.Key.Length > 2)
+				{
+					drivename = drive.Key.Reverse().ToArray()[1].ToString(CultureInfo.InvariantCulture);		
+				}
+				else
+				{
+					drivename = "unknown"; //TODO: figure out volume label for drives without letter
+				}
 
-				latencyconfig += driveletter + "_avgwait.label " + driveletter + ":\n" +
-				                 driveletter + "_avgwait.info Average wait time for an I/O request\n" +
-				                 driveletter + "_avgwait.min 0\n" +
-				                 driveletter + "_avgwait.draw LINE1\n";
+				iopsconfig += drivenumber + "_rdio.label " + drivename + ":\n" +
+						   drivenumber + "_rdio.min 0\n" +
+						   drivenumber + "_rdio.draw LINE1\n" +
+						   drivenumber + "_rdio.graph no\n" +
+						   drivenumber + "_wrio.label " + drivename + ":\n" +
+						   drivenumber + "_wrio.min 0\n" +
+						   drivenumber + "_wrio.draw LINE1\n" +
+						   drivenumber + "_wrio.negative " + drivenumber + "_rdio\n";
 
-				throughputconfig += driveletter + "_rdbytes.label " + driveletter + ":\n" +
-				                    driveletter + "_rdbytes.min 0\n" +
-				                    driveletter + "_rdbytes.draw LINE1\n" +
-				                    driveletter + "_rdbytes.graph no\n" +
-				                    driveletter + "_wrbytes.label " + driveletter + ":\n" +
-				                    driveletter + "_wrbytes.min 0\n" +
-				                    driveletter + "_wrbytes.draw LINE1\n" +
-				                    driveletter + "_wrbytes.negative " + driveletter + "_rdbytes\n";
+				latencyconfig += drivenumber + "_avgwait.label " + drivename + ":\n" +
+				                 drivenumber + "_avgwait.info Average wait time for an I/O request\n" +
+				                 drivenumber + "_avgwait.min 0\n" +
+				                 drivenumber + "_avgwait.draw LINE1\n";
+
+				throughputconfig += drivenumber + "_rdbytes.label " + drivename + ":\n" +
+				                    drivenumber + "_rdbytes.min 0\n" +
+				                    drivenumber + "_rdbytes.draw LINE1\n" +
+				                    drivenumber + "_rdbytes.graph no\n" +
+									drivenumber + "_wrbytes.label " + drivename + ":\n" +
+				                    drivenumber + "_wrbytes.min 0\n" +
+				                    drivenumber + "_wrbytes.draw LINE1\n" +
+				                    drivenumber + "_wrbytes.negative " + drivenumber + "_rdbytes\n";
 
 				foreach (var counter in drive.Value)
 					counter.NextValue();
@@ -92,9 +104,18 @@ namespace DiskstatsPlugin
 
 			foreach (var drive in _drives)
 			{
-				var driveletter = drive.Key.Reverse().ToArray()[1];
-				iopsconfig += "multigraph diskstats_iops." + driveletter + "\n" +
-						   "graph_title IOs for " + driveletter + "\n" +
+				string drivename;
+				if (drive.Key.Length > 2)
+				{
+					drivename = drive.Key.Reverse().ToArray()[1].ToString(CultureInfo.InvariantCulture);
+				}
+				else
+				{
+					drivename = "unknown"; //TODO: figure out volume label for drives without letter
+				}
+				var drivenumber = "disk_" + drive.Key[0];
+				iopsconfig += "multigraph diskstats_iops." + drivenumber + "\n" +
+						   "graph_title IOs for " + drivename + "\n" +
 						   "graph_args --base 1000\n" +
 						   "graph_vlabel Units read (-) / write (+)\n" +
 						   "graph_category disk\n" +
@@ -117,8 +138,8 @@ namespace DiskstatsPlugin
 						   "avgwrrqsz.draw LINE1\n" +
 						   "avgwrrqsz.negative avgrdrqsz\n";
 
-				latencyconfig += "multigraph diskstats_latency." + driveletter + "\n" +
-				                 "graph_title Average latency for " + driveletter + "\n" +
+				latencyconfig += "multigraph diskstats_latency." + drivenumber + "\n" +
+				                 "graph_title Average latency for " + drivename + "\n" +
 				                 "graph_args --base 1000 --logarithmic\n" +
 				                 "graph_vlabel seconds\n" +
 				                 "graph_category disk\n" +
@@ -135,8 +156,8 @@ namespace DiskstatsPlugin
 				                 "avgwrwait.warning 0:1\n" +
 				                 "avgwrwait.draw LINE1\n";
 
-				throughputconfig += "multigraph diskstats_throughput." + driveletter + "\n" +
-				                    "graph_title Disk throughput for " + driveletter + "\n" +
+				throughputconfig += "multigraph diskstats_throughput." + drivenumber + "\n" +
+				                    "graph_title Disk throughput for " + drivename + "\n" +
 				                    "graph_args --base 1024\n" +
 				                    "graph_vlabel Pr ${graph_period} read(-) / write (+)\n" +
 				                    "graph_category disk\n" +
@@ -169,7 +190,7 @@ namespace DiskstatsPlugin
 			var throughputs = "";
 			foreach (var drive in _drives)
 			{
-				var driveletter = drive.Key.Reverse().ToArray()[1];
+				var drivenumber = "disk_" + drive.Key[0];
 				var readspersec = DoubleToString(drive.Value[0].NextValue());
 				var writespersec = DoubleToString(drive.Value[1].NextValue());
 				var bytesperread = DoubleToString(drive.Value[2].NextValue() / 1000.0);
@@ -180,26 +201,26 @@ namespace DiskstatsPlugin
 				var readbytespersec = DoubleToString(drive.Value[7].NextValue());
 				var writebytespersec = DoubleToString(drive.Value[8].NextValue());
 
-				iopsvalues += driveletter + "_rdio.value " + readspersec + "\n" +
-						  driveletter + "_wrio.value " + writespersec + "\n";
+				iopsvalues += drivenumber + "_rdio.value " + readspersec + "\n" +
+						  drivenumber + "_wrio.value " + writespersec + "\n";
 
-				diskios += "multigraph diskstats_iops." + driveletter + "\n" +
+				diskios += "multigraph diskstats_iops." + drivenumber + "\n" +
 						   "rdio.value " + readspersec + "\n" +
 						   "wrio.value " + writespersec + "\n" +
 						   "avgrdrqsz.value " + bytesperread + "\n" +
 						   "avgwrrqsz.value " + bytesperwrite + "\n";
 
-				latencyvalues += driveletter + "_avgwait.value " + secpertransfer + "\n";
+				latencyvalues += drivenumber + "_avgwait.value " + secpertransfer + "\n";
 
-				latencies += "multigraph diskstats_latency." + driveletter + "\n" +
+				latencies += "multigraph diskstats_latency." + drivenumber + "\n" +
 				             "avgwait.value " + secpertransfer + "\n" +
 				             "avgrdwait.value " + secperread + "\n" +
 				             "avgwrwait.value " + secperwrite + "\n";
 
-				throughputvalues += driveletter + "_rdbytes.value " + readbytespersec + "\n" +
-				                    driveletter + "_wrbytes.value " + writebytespersec + "\n";
+				throughputvalues += drivenumber + "_rdbytes.value " + readbytespersec + "\n" +
+				                    drivenumber + "_wrbytes.value " + writebytespersec + "\n";
 
-				throughputs += "multigraph diskstats_throughput." + driveletter + "\n" +
+				throughputs += "multigraph diskstats_throughput." + drivenumber + "\n" +
 				               "rdbytes.value " + readbytespersec + "\n" +
 				               "wrbytes.value " + writespersec + "\n";
 			}

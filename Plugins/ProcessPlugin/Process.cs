@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using munin_node_Service;
@@ -17,20 +18,16 @@ namespace ProcessPlugin
 		public override void Initialize()
 		{
 			_config = "multigraph processes_count" +
-					  "graph_title This graph shows the number of processes and threads.\n" +
-					  "graph_category processes\n" +
-					  "graph_args --base 1000 -l 0\n" +
-					  "graph_vlabel Number of processes / threads\n" +
-					  "graph order threads, running exited\n" +
-			          "threads.label Threads\n" +
+			          "graph_title This graph shows the number of processes and threads.\n" +
+			          "graph_category processes\n" +
+			          "graph_args --base 1000 -l 0\n" +
+			          "graph_vlabel Number of processes / threads\n" +
+					  "threads.label Running threads\n" +
 			          "threads.min 0\n" +
 			          "threads.draw LINE1\n" +
-			          "running.label Running processes\n" +
-			          "runnung.min 0\n" +
-			          "running.draw AREA\n" +
-			          "exited.label Exited processes\n" +
-			          "exited.min 0\n" +
-			          "exited.draw STACK\n";
+			          "processes.label Running processes\n" +
+			          "processes.min 0\n" +
+			          "processes.draw LINE1\n";
 
 		}
 
@@ -42,22 +39,9 @@ namespace ProcessPlugin
 		public override string GetValues(Capabilities withCapabilities)
 		{
 			var processes = System.Diagnostics.Process.GetProcesses();
-			var threads = 0;
-			var running = 0;
-			var exited = 0;
-			foreach (var process in processes)
-			{
-				if (!process.HasExited)
-				{
-					running++;
-					threads += process.Threads.Count;
-				}
-				else
-				{
-					exited++;
-				}
-			}
-			return String.Format("multigraph processes_count\nthreads.value {0}\nrunning.value {1}\nexited.value {2}", threads, running, exited);
+			var threads = processes.Select(_ => _.Threads).Select(_ => _.Count).Aggregate((count, next) => count + next);
+			var running = processes.Count();
+			return String.Format("multigraph processes_count\nthreads.value {0}\nprocesses.value {1}\n", threads, running);
 		}
 
 		public override string GetName()

@@ -158,7 +158,13 @@ namespace munin_node_Service
 			_connectionEstablished.Set();
 			var clientSocket = ((Socket)result.AsyncState).EndAccept(result);
 			Log(String.Format("Connection from {0}", clientSocket.RemoteEndPoint));
-			// TODO: check if server is allowed to connect
+
+			if (!AllowedServers.Contains(IPAddress.IPv6Any) && !AllowedServers.Contains(((IPEndPoint)clientSocket.RemoteEndPoint).Address))
+			{
+				clientSocket.Close();
+				return;
+			}
+
 			var readState = new ReadState { ClientSocket = clientSocket };
 			Send(String.Format("# munin node at {0}\n", Hostname), clientSocket);
 			clientSocket.BeginReceive(readState.Buffer, 0, readState.Buffer.Length, SocketFlags.None, ReceiveCallback, readState);
@@ -268,6 +274,7 @@ namespace munin_node_Service
 
 			// execute command
 			PluginBase plugin;
+			string output;
 			switch (cmd)
 			{
 				case "cap":
@@ -291,7 +298,15 @@ namespace munin_node_Service
 						Send("# Unknown service\n.\n", answerSocket);
 						break;
 					}
-					Send(FormatForMunin(plugin.GetConfig(state.Capabilities)), answerSocket);
+					try
+					{
+						output = FormatForMunin(plugin.GetConfig(state.Capabilities));
+					}
+					catch (Exception e)
+					{
+						output = String.Format("# Exception while getting values: {0}\n.\n", e.Message);
+					}
+					Send(output, answerSocket);
 					break;
 				case "fetch":
 					// Return values for a specific plugin
@@ -301,7 +316,15 @@ namespace munin_node_Service
 						Send("# Unknown service\n.\n", answerSocket);
 						break;
 					}
-					Send(FormatForMunin(plugin.GetValues(state.Capabilities)), answerSocket);
+					try
+					{
+						output = FormatForMunin(plugin.GetValues(state.Capabilities));
+					}
+					catch (Exception e)
+					{
+						output = String.Format("# Exception while getting values: {0}\n.\n", e.Message);
+					}
+					Send(output, answerSocket);
 					break;
 				case "nodes":
 					// Return alle nodes this munin-node queries (only this node)

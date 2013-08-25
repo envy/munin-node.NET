@@ -18,7 +18,7 @@ namespace ProcessPlugin
 		public override void Initialize()
 		{
 			_config = "multigraph processes_count\n" +
-					  "graph_title Thread Count\n" +
+					  "graph_title Processes\n" +
 					  "graph_info This graph shows the number of processes\n" +
 					  "graph_category processes\n" +
 					  "graph_args --base 1000 -l 0\n" +
@@ -27,7 +27,7 @@ namespace ProcessPlugin
 					  "processes.min 0\n" +
 					  "processes.draw LINE1\n" +
 					  "multigraph processes_threads\n" +
-					  "graph_title Processes\n" +
+					  "graph_title Threads\n" +
 					  "graph_info This graph shows the number of threads\n" +
 					  "graph_category processes\n" +
 					  "graph_args --base 1000 -l 0\n" +

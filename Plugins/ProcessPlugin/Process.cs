@@ -22,7 +22,7 @@ namespace ProcessPlugin
 					  "graph_info This graph shows the number of processes\n" +
 					  "graph_category processes\n" +
 					  "graph_args --base 1000 -l 0\n" +
-					  "graph_vlabel Number of processes / threads\n" +
+					  "graph_vlabel Number of processes\n" +
 					  "processes.label processes\n" +
 					  "processes.min 0\n" +
 					  "processes.draw LINE1\n" +

@@ -25,7 +25,7 @@ namespace DiskUsagePlugin
 				_drives.Add(drive);
 			}
 
-			_config = "graph_title Disk usage in percent\n" +
+			_config = "graph_title Volume usage in percent\n" +
 					  "graph_args --upper-limit 100 -l 0\n" +
 					  "graph_vlabel %\n" +
 					  "graph_scale no\n" +

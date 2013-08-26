@@ -232,7 +232,14 @@ namespace munin_node_Service
 		{
 			Log(String.Format("Sending answer: {0}", message));
 			byte[] byteData = Encoding.ASCII.GetBytes(message);
-			socket.BeginSend(byteData, 0, byteData.Length, 0, SendCallback, socket);
+			try
+			{
+				socket.BeginSend(byteData, 0, byteData.Length, 0, SendCallback, socket);
+			}
+			catch
+			{
+				// do nothing if socket is closed
+			}
 		}
 
 		/// <summary>
@@ -241,7 +248,14 @@ namespace munin_node_Service
 		/// <param name="result"></param>
 		private void SendCallback(IAsyncResult result)
 		{
-			((Socket)result.AsyncState).EndSend(result);
+			try
+			{
+				((Socket)result.AsyncState).EndSend(result);
+			}
+			catch
+			{
+				// do nothing if socket is closed
+			}
 		}
 
 		/// <summary>

@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CpuPlugin", "Plugins\CpuPlu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UptimePlugin", "Plugins\UptimePlugin\UptimePlugin.csproj", "{0F73AB96-4455-439A-848E-DFB60EA3D07C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkPlugin", "Plugins\NetworkPlugin\NetworkPlugin.csproj", "{C6730032-80A7-4A07-BE7E-9E403B0FB2C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{0F73AB96-4455-439A-848E-DFB60EA3D07C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F73AB96-4455-439A-848E-DFB60EA3D07C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F73AB96-4455-439A-848E-DFB60EA3D07C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6730032-80A7-4A07-BE7E-9E403B0FB2C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6730032-80A7-4A07-BE7E-9E403B0FB2C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6730032-80A7-4A07-BE7E-9E403B0FB2C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6730032-80A7-4A07-BE7E-9E403B0FB2C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,5 +75,6 @@ Global
 		{4C7CD2F6-3C53-4C70-9AA5-1F65100EE7D0} = {29E20CEB-2387-4C6A-A1A5-38115814B2AC}
 		{4FD69618-AEFD-478E-A225-181ECF818C8A} = {29E20CEB-2387-4C6A-A1A5-38115814B2AC}
 		{0F73AB96-4455-439A-848E-DFB60EA3D07C} = {29E20CEB-2387-4C6A-A1A5-38115814B2AC}
+		{C6730032-80A7-4A07-BE7E-9E403B0FB2C9} = {29E20CEB-2387-4C6A-A1A5-38115814B2AC}
 	EndGlobalSection
 EndGlobal

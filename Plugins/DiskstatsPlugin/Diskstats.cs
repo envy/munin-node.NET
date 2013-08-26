@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Globalization;
 using System.Linq;
 using munin_node_Service;
 
@@ -61,37 +60,33 @@ namespace DiskstatsPlugin
 
 			foreach (var drive in _drives)
 			{
-				Console.WriteLine("processing {0}", drive.Key);
-				string drivename;
 				var drivenumber = "disk_" + drive.Key[0];
-				if (drive.Key.Length > 2)
+				var drivename = drivenumber;
+				if (drive.Key.Contains(" "))
 				{
-					drivename = drive.Key.Reverse().ToArray()[1].ToString(CultureInfo.InvariantCulture);		
+					drivename += drive.Key.Split(' ').Aggregate((name, next) => name + ", " + next);
 				}
-				else
-				{
-					drivename = "unknown"; //TODO: figure out volume label for drives without letter
-				}
+				// TODO: show something else for drives with volumes without letters
 
-				iopsconfig += drivenumber + "_rdio.label " + drivename + ":\n" +
+				iopsconfig += drivenumber + "_rdio.label " + drivename + "\n" +
 						   drivenumber + "_rdio.min 0\n" +
 						   drivenumber + "_rdio.draw LINE1\n" +
 						   drivenumber + "_rdio.graph no\n" +
-						   drivenumber + "_wrio.label " + drivename + ":\n" +
+						   drivenumber + "_wrio.label " + drivename + "\n" +
 						   drivenumber + "_wrio.min 0\n" +
 						   drivenumber + "_wrio.draw LINE1\n" +
 						   drivenumber + "_wrio.negative " + drivenumber + "_rdio\n";
 
-				latencyconfig += drivenumber + "_avgwait.label " + drivename + ":\n" +
+				latencyconfig += drivenumber + "_avgwait.label " + drivename + "\n" +
 				                 drivenumber + "_avgwait.info Average wait time for an I/O request\n" +
 				                 drivenumber + "_avgwait.min 0\n" +
 				                 drivenumber + "_avgwait.draw LINE1\n";
 
-				throughputconfig += drivenumber + "_rdbytes.label " + drivename + ":\n" +
+				throughputconfig += drivenumber + "_rdbytes.label " + drivename + "\n" +
 				                    drivenumber + "_rdbytes.min 0\n" +
 				                    drivenumber + "_rdbytes.draw LINE1\n" +
 				                    drivenumber + "_rdbytes.graph no\n" +
-									drivenumber + "_wrbytes.label " + drivename + ":\n" +
+									drivenumber + "_wrbytes.label " + drivename + "\n" +
 				                    drivenumber + "_wrbytes.min 0\n" +
 				                    drivenumber + "_wrbytes.draw LINE1\n" +
 				                    drivenumber + "_wrbytes.negative " + drivenumber + "_rdbytes\n";
@@ -104,16 +99,14 @@ namespace DiskstatsPlugin
 
 			foreach (var drive in _drives)
 			{
-				string drivename;
-				if (drive.Key.Length > 2)
-				{
-					drivename = drive.Key.Reverse().ToArray()[1].ToString(CultureInfo.InvariantCulture);
-				}
-				else
-				{
-					drivename = "unknown"; //TODO: figure out volume label for drives without letter
-				}
 				var drivenumber = "disk_" + drive.Key[0];
+				var drivename = drivenumber;
+				if (drive.Key.Contains(" "))
+				{
+					drivename += drive.Key.Split(' ').Aggregate((name, next) => name + ", " + next);
+				}
+				// TODO: show something else for drives with volumes without letters
+
 				iopsconfig += "multigraph diskstats_iops." + drivenumber + "\n" +
 						   "graph_title IOs for " + drivename + "\n" +
 						   "graph_args --base 1000\n" +

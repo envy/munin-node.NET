@@ -103,7 +103,7 @@ namespace DiskstatsPlugin
 				var drivename = drivenumber;
 				if (drive.Key.Contains(" "))
 				{
-					drivename = drive.Key.Split(' ').Aggregate((name, next) => name + ", " + next);
+					drivename = "disk_ " + drive.Key.Split(' ').Aggregate((name, next) => name + ", " + next);
 				}
 				// TODO: show something else for drives with volumes without letters
 

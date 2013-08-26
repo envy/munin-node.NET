@@ -63,7 +63,7 @@ namespace NetworkPlugin
 
 		public override string GetValues(Capabilities withCapabilities)
 		{
-			var values = "";
+			var values = "multigraph network\n";
 			var graphs = "";
 			
 			foreach (var adapter in _adapters)

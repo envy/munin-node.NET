@@ -17,6 +17,11 @@ namespace DHCPPlugin
 
 		public override void Initialize()
 		{
+			if (!PerformanceCounterCategory.Exists("DHCP Server"))
+			{
+				throw new Exception("No DHCP performance counters found!");
+			}
+
 			_packetspersec = new PerformanceCounter("DHCP Server", "Packets Received/sec");
 			_packetspersec.NextValue();
 			_config = "graph_title DHCP traffic\n" +
@@ -27,14 +32,13 @@ namespace DHCPPlugin
 					  "dhcp.label IPv4 packets/sec\n" +
 					  "dhcp.min 0\n" +
 					  "dhcp.draw LINE1\n";
-			if (PerformanceCounterCategory.Exists("DHCP Server v6"))
-			{
-				_packetspersec6 = new PerformanceCounter("DHCP Server v6", "Packets Received/sec");
-				_packetspersec6.NextValue();
-				_config += "dhcp6.label IPv6 packets/sec\n" +
-				           "dhcp6.min 0\n" +
-				           "dhcp6.draw LINE1\n";
-			}
+
+			if (!PerformanceCounterCategory.Exists("DHCP Server v6")) return;
+			_packetspersec6 = new PerformanceCounter("DHCP Server v6", "Packets Received/sec");
+			_packetspersec6.NextValue();
+			_config += "dhcp6.label IPv6 packets/sec\n" +
+			           "dhcp6.min 0\n" +
+			           "dhcp6.draw LINE1\n";
 		}
 
 		public override string GetConfig(Capabilities withCapabilities)

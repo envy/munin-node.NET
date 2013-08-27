@@ -120,9 +120,16 @@ namespace munin_node_Service
 					if (!typeof(PluginBase).IsAssignableFrom(type)) continue;
 
 					var plugin = (PluginBase)Activator.CreateInstance(type);
-					plugin.Initialize();
+					try
+					{
+						plugin.Initialize();
+					}
+					catch (Exception e)
+					{
+						Log("Failed to initialize plugin " + type + "\nException: " + e.Message, EventLogEntryType.Warning, false);
+						continue;
+					}
 					RegisteredPlugins.Add(plugin);
-
 				}
 
 			}
@@ -231,7 +238,7 @@ namespace munin_node_Service
 		private void Send(String message, Socket socket)
 		{
 			Log(String.Format("Sending answer: {0}", message));
-			byte[] byteData = Encoding.ASCII.GetBytes(message);
+			var byteData = Encoding.ASCII.GetBytes(message);
 			try
 			{
 				socket.BeginSend(byteData, 0, byteData.Length, 0, SendCallback, socket);

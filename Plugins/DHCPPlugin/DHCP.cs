@@ -48,7 +48,7 @@ namespace DHCPPlugin
 
 		public override string GetValues(Capabilities withCapabilities)
 		{
-			return _packetspersec6 == null ? String.Format("dhcp.value {0}\n", _packetspersec.NextValue()) : String.Format("dhcp.value {0}\ndhcp6.value {1}\n", _packetspersec.NextValue(), _packetspersec6.NextValue());
+			return _packetspersec6 == null ? String.Format("dhcp.value {0}\n", DoubleToString(_packetspersec.NextValue())) : String.Format("dhcp.value {0}\ndhcp6.value {1}\n", DoubleToString(_packetspersec.NextValue()), DoubleToString(_packetspersec6.NextValue()));
 		}
 
 		public override string GetName()

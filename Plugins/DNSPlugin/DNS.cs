@@ -39,7 +39,7 @@ namespace DNSPlugin
 
 		public override string GetValues(Capabilities withCapabilities)
 		{
-			return String.Format("queries.value {0}\n", _queriespersec.NextValue());
+			return String.Format("queries.value {0}\n", DoubleToString(_queriespersec.NextValue()));
 		}
 
 		public override string GetName()

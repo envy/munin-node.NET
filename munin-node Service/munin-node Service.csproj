@@ -53,6 +53,9 @@
     <StartupObject>munin_node_Service.MuninService</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="example-munin-node.cfg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="munin-node.cfg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

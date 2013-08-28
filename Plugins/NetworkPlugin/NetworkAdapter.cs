@@ -26,9 +26,10 @@ namespace NetworkPlugin
 
 			DeviceName = DeviceName.Replace('(', '[').Replace(')', ']'); // for intel: Intel(R) => Intel[R] in perfcounter
 			DeviceName = DeviceName.Replace('#', '_'); // for cards with same name which are numbered like this: #2 #3 => _2 _3
+			DeviceName = DeviceName.Replace('/', '_'); // for Intel Pro/1000
 
-			_bytespersecout = new PerformanceCounter("Network Adapter", "Bytes Sent/sec", DeviceName);
-			_bytespersecin = new PerformanceCounter("Network Adapter", "Bytes Received/sec", DeviceName);
+			_bytespersecout = new PerformanceCounter("Network Interface", "Bytes Sent/sec", DeviceName);
+			_bytespersecin = new PerformanceCounter("Network Interface", "Bytes Received/sec", DeviceName);
 
 			_bytespersecin.NextValue();
 			_bytespersecout.NextValue();

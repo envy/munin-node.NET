@@ -41,6 +41,7 @@ build-dbg/
 *.vshost*
 build-rel/plugins/munin-node Service.exe
 munin-node.cfg
+build-rel/plugins/*.cfg
 
 # Visual C++ cache files
 ipch/

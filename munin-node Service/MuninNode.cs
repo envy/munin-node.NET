@@ -129,7 +129,7 @@ namespace munin_node_Service
 					}
 					catch (Exception e)
 					{
-						Log("Failed to initialize plugin " + type + "\nException: " + e.Message, EventLogEntryType.Warning, false);
+						Log("Failed to initialize plugin " + type + "\nException: " + e, EventLogEntryType.Warning, false);
 						continue;
 					}
 					RegisteredPlugins.Add(plugin);

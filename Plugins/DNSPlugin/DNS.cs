@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using munin_node_Service;
 
 namespace DNSPlugin
@@ -16,7 +14,7 @@ namespace DNSPlugin
 			return Capabilities.None;
 		}
 
-		public override void Initialize()
+		public override void Initialize(Dictionary<string, string> config)
 		{
 			if (!PerformanceCounterCategory.Exists("DNS"))
 				throw new Exception("No DNS performance counters found!");

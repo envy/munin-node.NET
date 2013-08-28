@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace ProcessPlugin
 			return Capabilities.Multigraph;
 		}
 
-		public override void Initialize()
+		public override void Initialize(Dictionary<string, string> config)
 		{
 			_config = "multigraph processes_count\n" +
 					  "graph_title Processes\n" +

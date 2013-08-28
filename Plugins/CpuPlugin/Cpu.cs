@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using munin_node_Service;
 
@@ -16,7 +17,7 @@ namespace CpuPlugin
 			return Capabilities.None;
 		}
 
-		public override void Initialize()
+		public override void Initialize(Dictionary<string, string> config)
 		{
 			_userTime = new PerformanceCounter("Processor", "% User Time", "_Total");
 			_privilegedTime = new PerformanceCounter("Processor", "% Privileged Time", "_Total");

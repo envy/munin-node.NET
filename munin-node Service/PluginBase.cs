@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 
 namespace munin_node_Service
@@ -41,7 +42,8 @@ namespace munin_node_Service
 		/// <summary>
 		/// Do all your startuplogic here.
 		/// </summary>
-		public abstract void Initialize();
+		/// <param name="config">The plugin configuration as specified in munin-node.cfg. If there is no config, an empty dictionary is given.</param>
+		public abstract void Initialize(Dictionary<string, string> config);
 
 		/// <summary>
 		/// Return your config values for graph building.

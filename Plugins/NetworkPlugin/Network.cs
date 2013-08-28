@@ -15,7 +15,7 @@ namespace NetworkPlugin
 			return Capabilities.Multigraph;
 		}
 
-		public override void Initialize()
+		public override void Initialize(Dictionary<string, string> config)
 		{
 			_adapters = new List<NetworkAdapter>();
 

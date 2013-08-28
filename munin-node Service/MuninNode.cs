@@ -17,6 +17,7 @@ namespace munin_node_Service
 		private Socket _serverSocket;
 		private readonly ManualResetEvent _connectionEstablished = new ManualResetEvent(false);
 		private bool _listening;
+		private Configuration _config;
 
 		/// <summary>
 		/// All munin server which are allowed to access this munin-node.
@@ -108,6 +109,8 @@ namespace munin_node_Service
 		/// </summary>
 		public void LoadConfig()
 		{
+			_config = new Configuration(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "munin-node.cfg"));
+
 			// Search for plugins and load them
 			RegisteredPlugins = new HashSet<PluginBase>();
 
@@ -122,7 +125,7 @@ namespace munin_node_Service
 					var plugin = (PluginBase)Activator.CreateInstance(type);
 					try
 					{
-						plugin.Initialize();
+						plugin.Initialize(_config.GetSectionConfig(plugin.GetName()));
 					}
 					catch (Exception e)
 					{
@@ -136,13 +139,62 @@ namespace munin_node_Service
 			Log(String.Format("{0} Plugin(s) loaded: {1}", RegisteredPlugins.Count, RegisteredPlugins.Select(_ => _.GetName()).Aggregate((plugins, next) => plugins + " " + next)));
 
 			AllowedServers = new HashSet<IPAddress>();
-			if (true) // TODO: check whether config speficied allowed hosts
+
+			var muninconf = _config.GetSectionConfig("munin-node");
+			if (muninconf.ContainsKey("listenon"))
+			{
+				var value = muninconf["listenon"];
+				if (value.Equals("::") || value.Equals("0.0.0.0"))
+				{
+					ListenOn = IPAddress.IPv6Any;
+				}
+				else
+				{
+					ListenOn = IPAddress.Parse(value);
+				}
+			}
+			else
+			{
+				ListenOn = IPAddress.IPv6Any;
+			}
+
+			if (muninconf.ContainsKey("hostname"))
+			{
+				var value = muninconf["hostname"];
+				Hostname = value;
+			}
+			else
+			{
+				Hostname = Dns.GetHostName();
+			}
+
+			if (muninconf.ContainsKey("allowedservers"))
+			{
+				var value = muninconf["allowedservers"];
+				if (value.Contains(','))
+				{
+					foreach (var pip in value.Split(','))
+					{
+						IPAddress ip;
+						if (IPAddress.TryParse(pip, out ip))
+						{
+							AllowedServers.Add(ip);
+						}
+					}
+				}
+				else
+				{
+					IPAddress ip;
+					if (IPAddress.TryParse(value, out ip))
+					{
+						AllowedServers.Add(ip);
+					}
+				}
+			}
+			else
 			{
 				AllowedServers.Add(IPAddress.IPv6Any);
 			}
-
-			ListenOn = String.IsNullOrWhiteSpace(Properties.Settings.Default.BindTo) ? IPAddress.IPv6Any : IPAddress.Parse(Properties.Settings.Default.BindTo);
-			Hostname = String.IsNullOrWhiteSpace(Properties.Settings.Default.Hostname) ? Dns.GetHostName() : Properties.Settings.Default.Hostname;
 		}
 
 		/// <summary>

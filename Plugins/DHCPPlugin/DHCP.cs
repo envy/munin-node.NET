@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using munin_node_Service;
 
@@ -15,7 +16,7 @@ namespace DHCPPlugin
 			return Capabilities.None;
 		}
 
-		public override void Initialize()
+		public override void Initialize(Dictionary<string, string> config)
 		{
 			if (!PerformanceCounterCategory.Exists("DHCP Server"))
 			{

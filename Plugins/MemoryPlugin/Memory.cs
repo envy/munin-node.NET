@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using Microsoft.VisualBasic.Devices;
 using munin_node_Service;
@@ -20,7 +21,7 @@ namespace MemoryPlugin
 			return Capabilities.None;
 		}
 
-		public override void Initialize()
+		public override void Initialize(Dictionary<string, string> config)
 		{
 			_info = new ComputerInfo();
 			_cache = new PerformanceCounter("Memory", "Cache Bytes");

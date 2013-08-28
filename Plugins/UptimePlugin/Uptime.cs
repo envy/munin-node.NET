@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using munin_node_Service;
 
@@ -14,7 +15,7 @@ namespace UptimePlugin
 			return Capabilities.None;
 		}
 
-		public override void Initialize()
+		public override void Initialize(Dictionary<string, string> config)
 		{
 			_performanceCounter = new PerformanceCounter("System", "System Up Time");
 			_performanceCounter.NextValue();

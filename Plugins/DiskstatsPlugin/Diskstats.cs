@@ -16,7 +16,7 @@ namespace DiskstatsPlugin
 			return Capabilities.Multigraph;
 		}
 
-		public override void Initialize()
+		public override void Initialize(Dictionary<string, string> config)
 		{
 			_drives = new SortedDictionary<string, List<PerformanceCounter>>();
 

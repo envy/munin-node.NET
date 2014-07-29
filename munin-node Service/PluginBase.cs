@@ -31,6 +31,10 @@ namespace munin_node_Service
 			/// If your plugin reports multigraph capability, it will only be queried if the munin server reports that it understands multigraph.
 			/// </summary>
 			Multigraph = 2,
+			/// <summary>
+			/// See <see cref="PluginBase.Capabilities.DirtyConfig"/> and <see cref="PluginBase.Capabilities.Multigraph"/>
+			/// </summary>
+			DirtyConfigMultigraph = 3,
 		}
 
 		/// <summary>
